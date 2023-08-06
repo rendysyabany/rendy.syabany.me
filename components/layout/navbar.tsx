@@ -42,15 +42,15 @@ export default function NavBar() {
       <div
         className={`fixed top-0 flex w-full justify-center border-b border-gray-200 bg-white`}
       >
-        <div className="mx-5 flex h-16 w-full max-w-[720px] items-center justify-between">
+        <div className="px-5 flex h-16 w-full max-w-[720px] items-center justify-between">
           <NavigationMenu>
             <NavigationMenuList className="gap-2">
               {navContent.map((nav, i) => (
                 <NavigationMenuItem key={i}>
                   <Link href={nav.link} legacyBehavior passHref>
                     <p
-                      className={`cursor-pointer font-sans text-sm text-[#6F7E82] hover:underline ${
-                        currentPath === nav.link && "font-bold text-[#3C4A4D]"
+                      className={`cursor-pointer font-sans text-sm text-gray-500 hover:underline ${
+                        currentPath === nav.link && "font-bold text-gray-700"
                       }`}
                     >
                       {nav.title}
@@ -66,7 +66,7 @@ export default function NavBar() {
               <NavigationMenuItem>
                 <Link href="https://syabany.me" legacyBehavior passHref>
                   <p
-                    className={`cursor-pointer font-sans text-sm text-[#6F7E82] hover:underline`}
+                    className={`cursor-pointer font-sans text-sm text-gray-500 hover:underline`}
                   >
                     Connect with me
                   </p>
