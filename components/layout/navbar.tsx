@@ -14,6 +14,8 @@ import useScroll from "@/lib/hooks/use-scroll";
 import { useSignInModal } from "./sign-in-modal";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Button } from "../ui/button";
+import { Sun, SunIcon } from "lucide-react";
 
 export default function NavBar() {
   const currentPath = usePathname();
@@ -42,24 +44,41 @@ export default function NavBar() {
       >
         <div className="mx-5 flex h-16 w-full max-w-[720px] items-center justify-between">
           <NavigationMenu>
-            <NavigationMenuList className="gap-4">
+            <NavigationMenuList className="gap-2">
               {navContent.map((nav, i) => (
                 <NavigationMenuItem key={i}>
                   <Link href={nav.link} legacyBehavior passHref>
-                    <p className={`font-sans cursor-pointer hover:underline text-[#6F7E82] tex-sm ${currentPath === nav.link && "underline font-semibold text-[#3C4A4D]"}`}>{nav.title}</p>
+                    <p
+                      className={`cursor-pointer font-sans text-sm text-[#6F7E82] hover:underline ${
+                        currentPath === nav.link && "font-bold text-[#3C4A4D]"
+                      }`}
+                    >
+                      {nav.title}
+                    </p>
                   </Link>
                 </NavigationMenuItem>
               ))}
             </NavigationMenuList>
           </NavigationMenu>
-          <div>
-            <button
-              className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
-              onClick={() => console.log("click")}
-            >
-              Sign In
-            </button>
-          </div>
+
+          <NavigationMenu>
+            <NavigationMenuList className="gap-2">
+              <NavigationMenuItem>
+                <Link href="https://syabany.me" legacyBehavior passHref>
+                  <p
+                    className={`cursor-pointer font-sans text-sm text-[#6F7E82] hover:underline`}
+                  >
+                    Connect with me
+                  </p>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Button onClick={()=> console.log("click-lamp")} variant="link" size="icon">
+                  <Sun className="h-4 w-4" />
+                </Button>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
       </div>
     </>
