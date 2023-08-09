@@ -1,4 +1,4 @@
-import Content from "@/components/home/content";
+import Content from "@/components/pages/home/content";
 import { DEPLOY_URL } from "@/lib/constants";
 import Image from "next/image";
 import Balancer from "react-wrap-balancer";

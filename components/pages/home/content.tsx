@@ -47,7 +47,7 @@ export default function Content() {
       id: 8,
       src: "https://picsum.photos/id/1023/600/800",
       alt: "Eighth Image",
-    }
+    },
   ];
 
   return (
@@ -63,33 +63,45 @@ export default function Content() {
               Sya’bany
             </span>
           </div>
-          <div className="self-stretch text-base font-medium leading-snug text-gray-500">
+          <div className="self-stretch text-base font-normal leading-snug text-gray-500 mt-[-2px]">
             Product Designer & Indie Maker
           </div>
         </div>
       </div>
 
-      <div className="text-md self-stretch font-serif font-normal leading-normal tracking-wide text-gray-600">
-        A digital nomad fan who loves designing & building digital products. I
-        have embraced a dynamic lifestyle that allows me to work remotely.
-        Alongside my nomadic adventures, I find immense joy in building digital
-        products, continuously seeking opportunities to combine my technical
-        expertise and creative flair to{" "}
-        <span className="font-medium underline">
-          craft innovative and user-centric solutions.
-        </span>
+      <div className="">
+        <p className="text-lg self-stretch font-serif font-normal leading-normal tracking-wide text-gray-600">
+          <span>
+            A digital nomad fan who loves designing & building digital products.
+            I have embraced a dynamic lifestyle that allows me to work remotely.
+            Alongside my nomadic adventures, I find immense joy in building
+            digital products, continuously seeking opportunities to combine my
+            technical expertise and creative flair to{" "}
+          </span>
+          <span className="font-semibold">
+            craft innovative and user-centric solutions.
+          </span>
+        </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-4">
-      <div className="row-span-2">
-        <img src={images[0].src} alt={images[0].alt} className="w-full h-full object-cover" />
-      </div>
-      {images.slice(1).map((image) => (
-        <div key={image.id} className="col-span-1 row-span-1">
-          <img src={image.src} alt={image.alt} className="w-full h-[160px] object-cover" />
+      <div className="grid grid-cols-3 gap-2">
+        <div className="row-span-2">
+          <img
+            src={images[0].src}
+            alt={images[0].alt}
+            className="h-full w-full object-cover"
+          />
         </div>
-      ))}
-    </div>
+        {images.slice(1).map((image) => (
+          <div key={image.id} className="col-span-1 row-span-1">
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="h-[160px] w-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

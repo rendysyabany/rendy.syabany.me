@@ -40,7 +40,7 @@ export default function NavBar() {
     <>
       <SignInModal />
       <div
-        className={`fixed top-0 flex w-full justify-center border-b border-gray-200 bg-white`}
+        className={`fixed z-10 top-0 flex w-full justify-center border-b border-gray-200 bg-white`}
       >
         <div className="px-5 flex h-16 w-full max-w-[720px] items-center justify-between">
           <NavigationMenu>
