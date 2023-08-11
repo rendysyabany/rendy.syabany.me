@@ -89,7 +89,7 @@ export default function Content() {
           <img
             src={images[0].src}
             alt={images[0].alt}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover rounded-xl"
           />
         </div>
         {images.slice(1).map((image) => (
@@ -97,7 +97,7 @@ export default function Content() {
             <img
               src={image.src}
               alt={image.alt}
-              className="h-[160px] w-full object-cover"
+              className="h-[160px] w-full object-cover rounded-xl"
             />
           </div>
         ))}

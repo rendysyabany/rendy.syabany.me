@@ -72,12 +72,7 @@ export default function Content() {
       id: 7,
       src: "https://picsum.photos/id/1022/600/800",
       alt: "Seventh Image",
-    },
-    {
-      id: 8,
-      src: "https://picsum.photos/id/1023/600/800",
-      alt: "Eighth Image",
-    },
+    }
   ];
 
   const tagSkill = [
@@ -301,7 +296,7 @@ export default function Content() {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  className=" object-cover"
+                  className="rounded-xl object-cover"
                   fill
                 />
               </AspectRatio>

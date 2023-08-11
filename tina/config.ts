@@ -29,8 +29,14 @@ export default defineConfig({
             type: "string",
             name: "title",
             label: "Title",
-            isTitle: true,
+            // isTitle: true,
             required: true,
+          },
+          {
+            type: "string",
+            name: "test",
+            label: "Test",
+            // isTest: true,
           },
           {
             type: "rich-text",
@@ -41,8 +47,38 @@ export default defineConfig({
         ],
         ui: {
           // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
+          router: ({ document }) => `/writing/${document._sys.filename}`,
         },
+      },
+      {
+        name: "work",
+        label: "Works",
+        path: "content/works",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            // isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "client",
+            label: "Client",
+            // isTest: true,
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true,
+          },
+        ],
+        // ui: {
+        //   // This is an DEMO router. You can remove this to fit your site
+        //   router: ({ document }) => `/demo/blog/${document._sys.filename}`,
+        // },
       },
     ],
   },
