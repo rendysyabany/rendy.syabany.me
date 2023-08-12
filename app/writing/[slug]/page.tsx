@@ -1,6 +1,8 @@
+import React from "react";
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
+
 import { getPostMetadata } from "@/lib/getPostMetadata";
 
 const getPostContent = (slug: string) => {
@@ -12,8 +14,17 @@ const getPostContent = (slug: string) => {
 };
 
 const PostPage = (props: any) => {
-  const slug = props.params.slug;
+  const { slug } = props.params;
   const post = getPostContent(slug);
+
+  if (!post) {
+    return <div>Error loading post content.</div>;
+  }
+
+  const {
+    data: { title, shortDescription, publishDate },
+    content,
+  } = post;
 
   const h1Style = "text-4xl font-bold mb-4 text-blue-900";
   const h2Style = "text-3xl font-semibold mb-3 text-gray-700";
@@ -27,13 +38,13 @@ const PostPage = (props: any) => {
       <div className="flex flex-col gap-8">
         <div className="inline-flex flex-col items-start justify-start gap-4">
           <p className="text-sm mb-2 font-serif font-normal leading-normal tracking-normal text-gray-500">
-            Published on 07 November 2019
+            Published on 09 Januari 2023
           </p>
           <p className="text-3xl font-semibold leading-9 tracking-normal text-gray-700">
-            {post.data.title}
+            {title}
           </p>
           <p className="text-md font-serif font-normal leading-normal tracking-normal text-gray-500">
-            {post.data.shortDescription}
+            {shortDescription}
           </p>
         </div>
       </div>
@@ -55,7 +66,7 @@ const PostPage = (props: any) => {
             },
           }}
         >
-          {post.content}
+          {content}
         </Markdown>
       </article>
     </div>
