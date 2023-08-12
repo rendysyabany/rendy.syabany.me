@@ -1,11 +1,14 @@
-import React from 'react';
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
+import React from "react";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import Link from "next/link";
 
 interface PostData {
   data: {
     title: string;
+    shortDescription: string;
+    slug: string;
     // Add more properties as needed
   };
 }
@@ -15,10 +18,10 @@ const getAllPostContents = (): PostData[] => {
   const fileNames = fs.readdirSync(folder);
   const postContents: PostData[] = [];
 
-  fileNames.forEach(fileName => {
-    if (fileName.endsWith('.md')) {
+  fileNames.forEach((fileName) => {
+    if (fileName.endsWith(".md")) {
       const filePath = path.join(folder, fileName);
-      const content = fs.readFileSync(filePath, 'utf8');
+      const content = fs.readFileSync(filePath, "utf8");
       const matterResult = matter(content) as unknown as PostData;
       postContents.push(matterResult);
     }
@@ -29,17 +32,32 @@ const getAllPostContents = (): PostData[] => {
 
 const Writing = () => {
   const post = getAllPostContents();
+  console.log(JSON.stringify(post));
+  const postUrls = fs.readdirSync("content/posts/").map(filename => `/writing/${filename.replace(/\.md$/, '')}`);
 
   return (
-    <div>
-      <h1>All Posts</h1>
-      <ul>
-        <pre>{JSON.stringify(post.map(d => d.data), null, 1)}</pre>
-        {/* {post.content} */}
-        {/* {allPostContents.map((post, index) => (
-          <li key={index}>{post.data.title}</li>
-        ))} */}
-      </ul>
+    <div className="mx-5 flex flex-col gap-6">
+      {post.map((data, i) => (
+        <Link
+          href={postUrls[i]}
+          key={i}
+          className="flex flex-col gap-0"
+        >
+          <div className="inline-flex flex-col items-start justify-start gap-2">
+            <p className="text-md font-semibold leading-6 tracking-normal text-gray-700">
+              {data.data.title}
+            </p>
+            <p className="line-clamp-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-500">
+              {data.data.shortDescription}
+            </p>
+            <p className="mt-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-700">
+              Published on 07 November 2019,{" "}
+              <span className="font-medium underline">Read more</span>
+            </p>
+          </div>
+          <div className="my-4 border-t border-gray-300"></div>
+        </Link>
+      ))}
     </div>
   );
 };

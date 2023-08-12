@@ -34,9 +34,11 @@ export default defineConfig({
           },
           {
             type: "string",
-            name: "test",
-            label: "Test",
-            // isTest: true,
+            name: "shortDescription",
+            label: "Short Description",
+            ui: {
+              component: "textarea"
+            }
           },
           {
             type: "rich-text",
@@ -45,11 +47,12 @@ export default defineConfig({
             isBody: true,
           },
         ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/writing/${document._sys.filename}`,
-        },
+        // ui: {
+        //   // This is an DEMO router. You can remove this to fit your site
+        //   router: ({ document }) => `/writing/${document._sys.filename}`,
+        // },
       },
+
       {
         name: "work",
         label: "Works",
