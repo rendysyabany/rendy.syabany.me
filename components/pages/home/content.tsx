@@ -70,7 +70,7 @@ export default function Content() {
       </div>
 
       <div className="">
-        <p className="text-lg self-stretch font-serif font-normal leading-normal tracking-wide text-gray-600">
+        <p className="text-lg self-stretch font-serif font-normal leading-normal tracking-normal text-gray-600">
           <span>
             A digital nomad fan who loves designing & building digital products.
             I have embraced a dynamic lifestyle that allows me to work remotely.
