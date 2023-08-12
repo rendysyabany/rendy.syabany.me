@@ -8,9 +8,15 @@ import { getPostMetadata } from "@/lib/getPostMetadata";
 const getPostContent = (slug: string) => {
   const folder = "content/posts/";
   const file = `${folder}${slug}.md`;
-  const content = fs.readFileSync(file, "utf8");
-  const matterResult = matter(content);
-  return matterResult;
+
+  try {
+    const content = fs.readFileSync(file, "utf8");
+    const matterResult = matter(content);
+    return matterResult;
+  } catch (error) {
+    // console.error("Error reading post content:", error);
+    return null;
+  }
 };
 
 const PostPage = (props: any) => {
@@ -18,7 +24,7 @@ const PostPage = (props: any) => {
   const post = getPostContent(slug);
 
   if (!post) {
-    return <div>Error loading post content.</div>;
+    return <div>Content not found.</div>;
   }
 
   const {
