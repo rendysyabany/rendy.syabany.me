@@ -2,15 +2,16 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     fontFamily: {
-      'sans': 'Avenir',
-      'serif': 'Source Serif Pro'
+      sans: ["var(--font-inter)"],
+      serif: ["var(--source-serif-4)"],
+      mono: ["var(--font-roboto-mono)"],
     },
     container: {
       center: true,
@@ -77,4 +78,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

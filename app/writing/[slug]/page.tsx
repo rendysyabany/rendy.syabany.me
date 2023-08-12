@@ -50,10 +50,10 @@ const PostPage = (props: any) => {
     <div className="mx-5 flex flex-col gap-6">
       <div className="flex flex-col gap-8">
         <div className="inline-flex flex-col items-start justify-start gap-4">
-          <p className="text-sm mb-2 font-serif font-normal leading-normal tracking-normal text-gray-500">
+          <p className="text-sm mb-2 font-serif font-normal leading-normal tracking-wide text-gray-500">
             Published on 09 Januari 2023
           </p>
-          <p className="text-3xl font-semibold leading-9 tracking-normal text-gray-700">
+          <p className="font-sans text-3xl font-semibold leading-9 tracking-normal text-gray-700">
             {title}
           </p>
           <p className="text-md font-serif font-normal leading-normal tracking-normal text-gray-500">

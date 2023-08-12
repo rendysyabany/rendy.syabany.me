@@ -44,7 +44,7 @@ const Writing = () => {
           className="flex flex-col gap-0"
         >
           <div className="inline-flex flex-col items-start justify-start gap-2">
-            <p className="text-md font-semibold leading-6 tracking-normal text-gray-700">
+            <p className="font-sans text-lg font-semibold leading-6 tracking-normal text-gray-700">
               {data.data.title}
             </p>
             <p className="line-clamp-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-500">

@@ -1,11 +1,11 @@
-import "./globals.css";
+import Footer from "@/components/layout/footer";
+import NavBar from "@/components/layout/navbar";
 import { Analytics } from "@vercel/analytics/react";
 import cx from "classnames";
-import { sfPro, inter } from "./fonts";
-import Nav from "@/components/layout/nav";
-import Footer from "@/components/layout/footer";
 import { Suspense } from "react";
-import NavBar from "@/components/layout/navbar";
+import { inter, roboto_mono, roboto_serif, source_serif_4 } from "./fonts";
+import "./globals.css";
+// import { Roboto, Roboto_Serif } from 'next/font/google'
 
 export const metadata = {
   title: "Precedent - Building blocks for your Next.js project",
@@ -28,8 +28,8 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={cx(sfPro.variable, inter.variable)}>
+    <html lang="en" >
+      <body className={cx(source_serif_4.variable, inter.variable, roboto_mono.variable)}>
         {/* <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" /> */}
         <Suspense fallback="...">
           <NavBar />
