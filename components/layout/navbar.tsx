@@ -63,7 +63,7 @@ export default function NavBar() {
 
           <NavigationMenu>
             <NavigationMenuList className="gap-2">
-              <NavigationMenuItem>
+              {/* <NavigationMenuItem>
                 <Link href="https://syabany.me" legacyBehavior passHref>
                   <p
                     className={`cursor-pointer font-sans text-sm text-gray-500 hover:underline`}
@@ -71,7 +71,7 @@ export default function NavBar() {
                     Connect with me
                   </p>
                 </Link>
-              </NavigationMenuItem>
+              </NavigationMenuItem> */}
               <NavigationMenuItem>
                 <Button onClick={()=> console.log("click-lamp")} variant="link" size="icon">
                   <Sun className="h-4 w-4" />
