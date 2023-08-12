@@ -152,9 +152,9 @@ export default function Content() {
         <img className="h-16 w-16 rounded-full" src={avatar} />
         <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
           <div className="self-stretch">
-            <span className="text-xl font-black leading-loose text-gray-700">
-              Rendyansyay
-            </span>
+            <p className="font-sans text-xl font-semibold leading-loose text-gray-700">
+              Rendyansyah <span className="font-light">Syabany</span>
+            </p>
           </div>
           <div className="mt-[-2px] self-stretch text-base font-normal leading-snug text-gray-500">
             Product Designer & Indie Maker
@@ -168,7 +168,7 @@ export default function Content() {
             key={i}
             variant="secondary"
             style={{ backgroundColor: tag.bgColor }}
-            className="font-medium text-gray-600"
+            className="font-sans font-medium text-gray-600"
           >
             {tag.title}
           </Badge>
@@ -176,7 +176,7 @@ export default function Content() {
       </div>
 
       <div className="">
-        <p className="self-stretch font-serif text-lg font-normal leading-normal tracking-wide text-gray-600">
+        <p className="self-stretch font-serif text-lg font-normal leading-normal tracking-normal text-gray-600">
           <span>
             I thrive on transforming ideas into tangible solutions, blending
             aesthetics with functionality to create products that delight users.
@@ -201,7 +201,7 @@ export default function Content() {
             height={600}
           />
         ))}
-        <div className="text-sm font-semibold leading-tight text-gray-700 underline">
+        <div className="font-sans text-sm font-medium leading-tight text-gray-700 underline">
           Download Resume
         </div>
       </div>
@@ -210,7 +210,7 @@ export default function Content() {
 
       <div className="flex flex-col gap-8">
         <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
-          <p className="self-stretch text-xl font-semibold leading-loose text-gray-700">
+          <p className="font-sans self-stretch text-xl font-semibold leading-loose text-gray-700">
             My own beloved products.
           </p>
           <p className="text-md mt-[-2px] self-stretch font-serif font-normal leading-snug text-gray-500">
@@ -251,7 +251,7 @@ export default function Content() {
 
       <div className="flex flex-col gap-8">
         <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
-          <p className="self-stretch text-xl font-semibold leading-loose text-gray-700">
+          <p className="font-sans self-stretch text-xl font-semibold leading-loose text-gray-700">
             Selected Works.
           </p>
           <p className="text-md mt-[-2px] self-stretch font-serif font-normal leading-snug text-gray-500">
@@ -267,7 +267,7 @@ export default function Content() {
               style={{ backgroundColor: project.bgColor }}
             >
               <div className="flex h-auto flex-col items-start justify-start gap-0 self-stretch">
-                <div className="text-md self-stretch font-sans font-bold leading-normal text-gray-700">
+                <div className="text-md self-stretch font-sans font-semibold leading-normal text-gray-700">
                   {project.title}
                 </div>
                 <div className="self-stretch font-serif text-sm font-normal leading-normal text-gray-500">
@@ -309,7 +309,7 @@ export default function Content() {
 
       <div className="flex flex-col gap-8">
         <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
-          <p className="self-stretch text-xl font-semibold leading-loose text-gray-700">
+          <p className="font-sans self-stretch text-xl font-semibold leading-loose text-gray-700">
             Stack Gear.
           </p>
           <p className="text-md mt-[-2px] self-stretch font-serif font-normal leading-snug text-gray-500">
@@ -330,7 +330,7 @@ export default function Content() {
                 width={600}
                 height={600}
               />
-              <div className="flex flex-col items-center justify-center">
+              <div className="font-sans flex flex-col items-center justify-center">
                 <div className="text-base font-semibold text-gray-700">
                   {gear.name}
                 </div>
