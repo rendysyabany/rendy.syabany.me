@@ -32,7 +32,7 @@ const getAllPostContents = (): PostData[] => {
 
 const Writing = () => {
   const post = getAllPostContents();
-  console.log(JSON.stringify(post));
+  // console.log(JSON.stringify(post));
   const postUrls = fs.readdirSync("content/posts/").map(filename => `/writing/${filename.replace(/\.md$/, '')}`);
 
   return (
