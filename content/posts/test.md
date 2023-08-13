@@ -9,6 +9,7 @@ shortDescription: >-
   Alongside my nomadic adventures, I find immense joy in building digital
   products, continuously seeking opportunities to combine my technical expertise
   and creative flair to craft innovative and user-centric solutions.
+datePublished: 2023-08-09T17:00:00.000Z
 ---
 
 > Find immense joy in building digital products, continuously seeking opportunities

@@ -35,7 +35,7 @@ const PostPage = (props: any) => {
   }
 
   const {
-    data: { title, shortDescription, publishDate },
+    data: { title, shortDescription },
     content,
   } = post;
 
