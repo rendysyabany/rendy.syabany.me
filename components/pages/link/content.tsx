@@ -6,9 +6,7 @@ import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Key
-} from "react";
+import { Key } from "react";
 
 const getPostContent = (filePath: string) => {
   try {
@@ -41,9 +39,9 @@ export default function Content() {
   const data = post && post.data;
 
   return (
-    <>
-      <div className="mx-5 flex flex-col gap-2 max-w-[560px]">
-        <div className="inline-flex h-auto w-full items-center justify-start gap-4">
+    <div className="flex flex-col w-full items-center justify-center">
+      <div className="flex flex-col w-full max-w-[460px] gap-2 justify-center">
+        <div className="flex h-auto w-full items-center justify-start gap-4">
           <img
             className="h-14 w-14 rounded-full sm:h-16 sm:w-16"
             src={data.avatar}
@@ -61,10 +59,10 @@ export default function Content() {
           </div>
         </div>
 
-        <div className="my-4 border-t border-gray-300"></div>
+        {/* <div className="my-4 border-t border-gray-300"></div> */}
 
-        <div className="flex flex-col gap-8 justify-center">
-          <div className="grid h-auto w-full grid-cols-1 items-start justify-center gap-2.5">
+        <div className="mt-6 flex flex-col justify-center gap-8">
+          <div className="grid h-auto w-full grid-cols-1 items-start justify-center gap-4">
             {data.link.map(
               (
                 linkItem: {
@@ -74,39 +72,41 @@ export default function Content() {
                 },
                 i: Key | null | undefined,
               ) => (
-                <div
+                <Link
                   key={i}
-                  className="flex h-auto w-full min-w-[260px] items-center justify-start gap-4 rounded-xl bg-gray-100 p-4"
+                  href={"https://" + linkItem.linkUrl}
+                  target="_blank"
+                  className="flex h-auto w-full min-w-[260px] flex-col items-center justify-start gap-0 overflow-hidden rounded-xl bg-gray-100"
                   // style={{
                   //   backgroundColor:
                   //     product.productItemBgColor && product.productItemBgColor,
                   // }}
                 >
-                  <Image
-                    className="h-14 w-14 rounded-lg"
-                    src={linkItem.linkImage}
-                    alt={linkItem.linkTitle}
-                    width={600}
-                    height={600}
-                  />
-                  <div className="inline-flex flex-wrap shrink grow basis-0 flex-col items-start justify-start gap-0.5">
+                  {linkItem.linkImage && (
+                    <AspectRatio className="z-0" ratio={1 / 1}>
+                      <Image
+                        className="h-full w-full object-cover"
+                        src={linkItem.linkImage}
+                        alt={linkItem.linkTitle}
+                        width={600}
+                        height={600}
+                      />
+                    </AspectRatio>
+                  )}
+                  <div className="inline-flex w-full shrink grow basis-0 flex-col flex-wrap flex-wrap items-start justify-start gap-0.5 p-4">
                     <div className="text-md self-stretch font-sans font-semibold leading-relaxed text-gray-700">
                       {linkItem.linkTitle}
                     </div>
-                    <a
-                      href={"https://" + linkItem.linkUrl}
-                      className="text-sm font-medium leading-none text-gray-500 underline"
-                    >
+                    <p className="text-sm font-medium leading-none text-gray-500 underline">
                       {linkItem.linkUrl}
-                    </a>
+                    </p>
                   </div>
-                </div>
+                </Link>
               ),
             )}
           </div>
         </div>
-
       </div>
-    </>
+    </div>
   );
 }

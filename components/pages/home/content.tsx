@@ -52,7 +52,7 @@ export default function Content() {
   return (
     <div className="mx-5 flex flex-col gap-8">
       <div className="inline-flex h-auto w-full items-center justify-start gap-4">
-        <img className="h-14 w-14 sm:h-16 sm:w-16 rounded-full" src={avatar} />
+        {/* <img className="h-14 w-14 sm:h-16 sm:w-16 rounded-full" src={avatar} /> */}
         <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
           <div className="self-stretch">
             <span className="font-sans text-md sm:text-xl font-semibold leading-loose text-gray-700">
@@ -93,7 +93,7 @@ export default function Content() {
               alt={image.caption}
               width={400}
               height={400}
-              className="h-[160px] w-full object-cover rounded-xl"
+              className="h-[120px] sm:h-[160px] w-full object-cover rounded-xl"
             />
           </div>
         ))}

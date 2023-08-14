@@ -195,7 +195,7 @@ export default function Content() {
         </p>
       </div>
 
-      <div className="inline-flex h-11 w-80 items-center justify-start gap-4 rounded-md bg-neutral-100 p-2.5">
+      <div className="inline-flex h-auto w-full items-center justify-start gap-4 rounded-md bg-neutral-100 p-2.5">
         {social.map((soc, i) => (
           <Image
             key={i}

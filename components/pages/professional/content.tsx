@@ -131,7 +131,7 @@ export default function Content() {
           {data.about}
         </Markdown>
 
-        <div className="inline-flex flex-wrap h-11 w-80 items-center justify-start gap-4 rounded-md bg-neutral-100 p-2.5">
+        <div className="inline-flex flex-wrap h-auto w-fit items-center justify-start gap-4 rounded-md bg-neutral-100 p-3">
           {data.social.map(
             (soc: { socialUrl: string; socialIcon: any }, i: any) => (
               <Image
@@ -185,7 +185,7 @@ export default function Content() {
                   }}
                 >
                   <Image
-                    className="h-14 w-14 rounded-lg"
+                    className="h-14 w-14 rounded-lg object-cover"
                     src={product.productItemLogo}
                     alt={product.productItemName}
                     width={600}

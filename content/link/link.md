@@ -1,7 +1,7 @@
 ---
 firstName: Rendyansyah
 lastName: Sya'bany
-description: 'Technology, SaaS & Digital Product Enthusiast'
+description: Rendy.syabany.me
 link:
   - linkTitle: Test title very long title
     linkUrl: 'https://rendy.syabany.me'
@@ -11,9 +11,11 @@ link:
     linkImage: /img1.jpg
   - linkTitle: img2
     linkUrl: 'https://syabany.com'
-    linkImage: /img2.jpg
+    linkImage: ''
 avatar: /avatar.jpg
 ---
+
+
 
 
 

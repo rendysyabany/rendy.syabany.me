@@ -3,6 +3,7 @@ import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetadata"
+import { format } from "date-fns";
 
 const getPostContent = (slug: string) => {
   const folder = "content/posts/";
@@ -35,7 +36,7 @@ const PostPage = (props: any) => {
   }
 
   const {
-    data: { title, shortDescription },
+    data: { title, shortDescription, datePublished },
     content,
   } = post;
 
@@ -52,7 +53,7 @@ const PostPage = (props: any) => {
       <div className="flex flex-col gap-8">
         <div className="inline-flex flex-col items-start justify-start gap-4">
           <p className="text-sm mb-2 font-serif font-normal leading-normal tracking-normal text-gray-500">
-            Published on 09 Januari 2023
+          Published on {format(new Date(datePublished), 'dd MMMM yyyy')}
           </p>
           <p className="font-sans text-xl sm:text-3xl font-semibold leading-7 sm:leading-9 tracking-normal text-gray-700">
             {title}

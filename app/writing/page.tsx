@@ -3,12 +3,14 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
+import { format } from "date-fns";
 
 interface PostData {
   data: {
     title: string;
     shortDescription: string;
     slug: string;
+    datePublished: any;
     // Add more properties as needed
   };
 }
@@ -33,25 +35,24 @@ const getAllPostContents = (): PostData[] => {
 const Writing = () => {
   const post = getAllPostContents();
   // console.log(JSON.stringify(post));
-  const postUrls = fs.readdirSync("content/posts/").map(filename => `/writing/${filename.replace(/\.md$/, '')}`);
+  // const publishedDate = format(new Date(post && post.datePublished), 'dd MMMM yyyy');
+  const postUrls = fs
+    .readdirSync("content/posts/")
+    .map((filename) => `/writing/${filename.replace(/\.md$/, "")}`);
 
   return (
     <div className="mx-5 flex flex-col gap-6">
       {post.map((data, i) => (
-        <Link
-          href={postUrls[i]}
-          key={i}
-          className="flex flex-col gap-0"
-        >
+        <Link href={postUrls[i]} key={i} className="flex flex-col gap-0">
           <div className="inline-flex flex-col items-start justify-start gap-2">
-            <p className="font-sans text-md sm:text-lg font-semibold leading-6 tracking-normal text-gray-700">
+            <p className="text-md font-sans font-semibold leading-6 tracking-normal text-gray-700 sm:text-lg">
               {data.data.title}
             </p>
             <p className="line-clamp-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-500">
               {data.data.shortDescription}
             </p>
             <p className="mt-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-700">
-              Published on 07 November 2019,{" "}
+              Published on {format(new Date(data.data.datePublished), 'dd MMMM yyyy')},{" "}
               <span className="font-medium underline">Read more</span>
             </p>
           </div>
