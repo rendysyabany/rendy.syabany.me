@@ -196,12 +196,12 @@ export default function Content() {
                     height={600}
                   />
                   <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0.5">
-                    <div className="text-md self-stretch font-bold leading-relaxed text-gray-700">
+                    <div className="font-sans text-md self-stretch font-semibold leading-relaxed text-gray-700">
                       {product.productItemName}
                     </div>
                     <a
                       href={"https://" + product.productItemUrl}
-                      className="text-xs font-medium leading-none text-gray-500 underline"
+                      className="text-sm font-medium leading-none text-gray-500 underline"
                     >
                       {product.productItemUrl}
                     </a>
