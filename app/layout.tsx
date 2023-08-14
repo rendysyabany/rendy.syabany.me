@@ -9,13 +9,11 @@ import "./globals.css";
 
 export const metadata = {
   title: "Rendyansyah Sya'bany",
-  description:
-    "Personal Website & Profile",
+  description: "Personal Website & Profile",
   twitter: {
     card: "summary_large_image",
     title: "Personal Website & Profile",
-    description:
-      "Personal Website & Profile",
+    description: "Personal Website & Profile",
     creator: "@rendysyabany",
   },
   metadataBase: new URL("https://syabany.me"),
@@ -28,13 +26,19 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" >
-      <body className={cx(source_serif_4.variable, inter.variable, roboto_mono.variable)}>
+    <html lang="en">
+      <body
+        className={cx(
+          source_serif_4.variable,
+          inter.variable,
+          roboto_mono.variable,
+        )}
+      >
         {/* <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" /> */}
         <Suspense fallback="...">
           <NavBar />
         </Suspense>
-        <main className="flex min-h-screen w-full flex-col items-center pt-24 pb-6">
+        <main className="flex min-h-screen w-full flex-col items-center pb-6 pt-24">
           <div className="flex w-full max-w-[720px]">{children}</div>
         </main>
         <Footer />

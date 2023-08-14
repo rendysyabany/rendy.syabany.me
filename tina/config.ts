@@ -465,6 +465,76 @@ export default defineConfig({
         ],
       },
 
+      {
+        label: "Link",
+        name: "link",
+        path: "content/link",
+        ui: {
+          // global: true,
+          allowedActions: {
+            create: false,
+            delete: false,
+          },
+        },
+        format: "md",
+        fields: [
+          {
+            type: "image",
+            name: "avatar",
+            label: "Avatar",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "firstName",
+            label: "First Name",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "lastName",
+            label: "Last Name",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            required: true,
+          },
+          {
+            label: "Link",
+            name: "link",
+            type: "object",
+            list: true,
+            ui: {
+              itemProps: (item) => {
+                return { label: `${item?.linkTitle}  ( ${item?.linkUrl} ) ` };
+              },
+            },
+            fields: [
+              {
+                type: "string",
+                name: "linkTitle",
+                label: "Link Title",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "linkUrl",
+                label: "Link URL",
+                required: true,
+              },
+              {
+                label: "link Image",
+                name: "linkImage",
+                type: "image",
+              }
+            ],
+          },
+        ],
+      },
+
       // {
       //   label: "Setting",
       //   name: "setting",
