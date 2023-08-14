@@ -1,14 +1,8 @@
 ---
-name: dasdasd work
 firstName: Rendyansyah
 lastName: Sya’bany
 description: Product Designer & Indie Maker
-about: "I thrive on transforming ideas into tangible solutions, blending aesthetics with functionality to create products that delight users.\L\n\nThe empathy-driven approach allows me to create products that truly resonate with the end-users, making a positive impact on their lives. I am dedicated to human-centered design principles, where the user's experience takes center stage in every decision I make."
-gallery:
-  - caption: dsadasda
-    galleryItem: /authjs.webp
-  - caption: CEOs
-    galleryItem: /Create-New-Order-Fill-1.jpg
+about: "I thrive on transforming ideas into tangible solutions, blending aesthetics with functionality to create products that delight users.\L\n\n\n\nThe empathy-driven approach allows me to create products that truly resonate with the end-users, making a positive impact on their lives. I am dedicated to human-centered design principles, where the user's experience takes center stage in every decision I make."
 expertise:
   - title: Design System Architect
     bgColor: '#FFE8E8'
@@ -19,26 +13,49 @@ social:
     socialIcon: /logo.png
   - socialUrl: 'https://linkedin.com'
     socialIcon: /authjs.webp
-productSectionTitle: My own beloved products
-productSectionDescription: I love building my own products and I hope will solve many problems.
+productSectionTitle: My own beloved productss
+productSectionDescription: I love building my own products and I hope will solve many problems.s
 productItem:
+  - productItemLogo: /img2.jpg
+    productItemName: Kreator Peradaban
+    productItemUrl: kreatorperadaban.com
   - productItemLogo: /prisma.svg
     productItemName: Bahagia.day
-    productItemUrl: 'https://bahagia.day'
+    productItemUrl: bahagia.day
+    productItemBgColor: '#FFE4E6'
 gearSectionTitle: Stack Gear
 gearSectionDescription: I love building my own products and I hope will solve many problems.
 gearItem:
+  - gearItemLogo: /thirteen.svg
+    gearItemName: Nextjs
+    gearItemDescription: Frontend Framework
   - gearItemLogo: /authjs.webp
     gearItemName: Figma
     gearItemDescription: 'UI Design, prototyping '
-deskSectionTitle: Desk Setup
-deskSectionDescription: I love building my own products and I hope will solve many problems.
+deskSectionTitle: Desk Setup.ee
+deskSectionDescription: I love building my own products and I hope will solve many problems.ee
 deskGallery:
   - deskGalleryCaption: sample
-    deskGalleryItem: /authjs.webp
+    deskGalleryItem: /img6.jpg
   - deskGalleryCaption: room
-    deskGalleryItem: /Create-New-Order-Fill-1.jpg
+    deskGalleryItem: /img4.jpg
+resumeUrl: 'https://syabany.me/resume'
+designGallery:
+  - caption: dua
+    item: /img5.jpg
+  - caption: satu
+    item: /img3.jpg
 ---
+
+
+
+
+
+
+
+
+
+
 
 
 

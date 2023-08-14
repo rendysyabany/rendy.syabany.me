@@ -44,7 +44,7 @@ export default function Content() {
     data: { firstName, lastName, description, about, gallery }
   } = post;
 
-  console.log(post.data)
+  // console.log(post.data)
 
   const avatar =
     "https://pbs.twimg.com/profile_images/1526474082434199552/DyPn7nem_400x400.jpg";

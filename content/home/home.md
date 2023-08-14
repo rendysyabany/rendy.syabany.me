@@ -1,7 +1,7 @@
 ---
 firstName: Rendyansyah
 lastName: Sya'bany
-description: Product Designer & Indie Maker
+description: "Technocoly, SaaS & Digital Product Enthusiast \U0001F331"
 about: >-
   A digital nomad fan who loves designing & building digital products. I have
   embraced a dynamic lifestyle that allows me to work remotely. Alongside my
@@ -26,6 +26,9 @@ gallery:
   - caption: img8
     galleryItem: /img8.jpg
 ---
+
+
+
 
 
 

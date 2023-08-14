@@ -250,6 +250,12 @@ export default defineConfig({
                 label: "Product Item Url",
                 required: true,
               },
+              {
+                type: "string",
+                name: "productItemBgColor",
+                label: "Product Item Backgorund Color",
+                required: false,
+              },
             ],
           },
           {
@@ -304,6 +310,7 @@ export default defineConfig({
             name: "deskSectionDescription",
             type: "string",
           },
+
           {
             label: "Desk Setup Gallery",
             name: "deskGallery",
@@ -320,12 +327,39 @@ export default defineConfig({
               {
                 type: "string",
                 name: "deskGalleryCaption",
-                label: "Desk Gallery Caption",
+                label: "Caption",
                 required: true,
               },
               {
-                label: "Desk Gallery Item",
+                label: "Item",
                 name: "deskGalleryItem",
+                type: "image",
+              }
+            ],
+          },
+          
+          {
+            label: "Design Gallery",
+            name: "designGallery",
+            type: "object",
+            list: true,
+            ui: {
+              // This allows the customization of the list item UI
+              // Data can be accessed by item?.<Name of field>
+              itemProps: (item) => {
+                return { label: `${item?.caption}  ( ${item?.item} ) ` };
+              },
+            },
+            fields: [
+              {
+                type: "string",
+                name: "caption",
+                label: "Caption",
+                required: true,
+              },
+              {
+                label: "Item",
+                name: "item",
                 type: "image",
               }
             ],
