@@ -52,31 +52,31 @@ export default function Content() {
   return (
     <div className="mx-5 flex flex-col gap-8">
       <div className="inline-flex h-auto w-full items-center justify-start gap-4">
-        <img className="h-16 w-16 rounded-full" src={avatar} />
+        <img className="h-14 w-14 sm:h-16 sm:w-16 rounded-full" src={avatar} />
         <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
           <div className="self-stretch">
-            <span className="font-sans text-xl font-semibold leading-loose text-gray-700">
+            <span className="font-sans text-md sm:text-xl font-semibold leading-loose text-gray-700">
               {firstName}{" "}
             </span>
-            <span className="font-sans text-xl font-light leading-loose text-gray-700">
+            <span className="font-sans text-md sm:text-xl font-light leading-loose text-gray-700">
               {lastName}
             </span>
           </div>
-          <div className="self-stretch text-base font-normal leading-snug text-gray-500 mt-[-2px]">
+          <div className="self-stretch text-sm sm:text-base font-normal leading-snug text-gray-500 mt-[-2px]">
             {description}
           </div>
         </div>
       </div>
 
       <div className="">
-        <p className="text-lg self-stretch font-serif font-normal leading-normal tracking-normal text-gray-600">
+        <p className="text-md sm:text-lg self-stretch font-serif font-normal leading-normal tracking-normal text-gray-600">
           <span>
             {about}
           </span>
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
         <div className="row-span-2">
           <Image
             src={gallery[0].galleryItem}

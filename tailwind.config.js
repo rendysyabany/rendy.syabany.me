@@ -20,6 +20,9 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    letterSpacing: {
+      normal: '0.2px',
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",

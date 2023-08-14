@@ -51,8 +51,6 @@ export default function Content() {
   const avatar =
     "https://pbs.twimg.com/profile_images/1526474082434199552/DyPn7nem_400x400.jpg";
 
-
-
   const project = [
     {
       title: "Madu Sumbawa Premium",
@@ -91,34 +89,29 @@ export default function Content() {
     <>
       <div className="mx-5 flex flex-col gap-8">
         <div className="inline-flex h-auto w-full items-center justify-start gap-4">
-          <img className="h-16 w-16 rounded-full" src={data.avatar} />
+          <img
+            className="h-14 w-14 rounded-full sm:h-16 sm:w-16"
+            src={data.avatar}
+          />
           <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
             <div className="self-stretch">
-              <p className="font-sans text-xl font-semibold leading-loose text-gray-700">
+              <p className="text-md font-sans font-semibold leading-loose text-gray-700 sm:text-xl">
                 {data.firstName}{" "}
                 <span className="font-light">{data.lastName}</span>
               </p>
             </div>
-            <div className="mt-[-2px] self-stretch text-base font-normal leading-snug text-gray-500">
+            <div className="mt-[-2px] self-stretch text-sm font-normal leading-snug text-gray-500 sm:text-base">
               {data.description}
             </div>
           </div>
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {data.expertise.map(
             (
               tag: {
                 bgColor: any;
-                title:
-                  | string
-                  | number
-                  | boolean
-                  | ReactElement<any, string | JSXElementConstructor<any>>
-                  | ReactFragment
-                  | ReactPortal
-                  | null
-                  | undefined;
+                title: string;
               },
               i: Key | null | undefined,
             ) => (
@@ -134,11 +127,11 @@ export default function Content() {
           )}
         </div>
 
-        <Markdown className="flex flex-col gap-3 self-stretch font-serif text-lg font-normal leading-normal tracking-normal text-gray-600">
+        <Markdown className="flex flex-col gap-3 self-stretch font-serif text-md sm:text-lg font-normal leading-normal tracking-normal text-gray-600">
           {data.about}
         </Markdown>
 
-        <div className="inline-flex h-11 w-80 items-center justify-start gap-4 rounded-md bg-neutral-100 p-2.5">
+        <div className="inline-flex flex-wrap h-11 w-80 items-center justify-start gap-4 rounded-md bg-neutral-100 p-2.5">
           {data.social.map(
             (soc: { socialUrl: string; socialIcon: any }, i: any) => (
               <Image
@@ -154,7 +147,7 @@ export default function Content() {
           <Link
             href={data.resumeUrl}
             target="_blank"
-            className="font-sans text-sm font-medium leading-tight text-gray-700 underline"
+            className="font-sans text-xs sm:text-sm font-medium leading-tight text-gray-700 underline"
           >
             Download Resume
           </Link>
@@ -172,7 +165,7 @@ export default function Content() {
             </p>
           </div>
 
-          <div className="grid h-auto w-full grid-cols-2 items-start justify-start gap-2.5">
+          <div className="grid h-auto w-full grid-cols-1 sm:grid-cols-2 items-start justify-start gap-2.5">
             {data.productItem.map(
               (
                 product: {
@@ -186,7 +179,10 @@ export default function Content() {
                 <div
                   key={i}
                   className="flex h-auto w-full min-w-[260px] items-center justify-start gap-4 rounded-xl bg-gray-100 p-4"
-                  style={{ backgroundColor: product.productItemBgColor && product.productItemBgColor}}
+                  style={{
+                    backgroundColor:
+                      product.productItemBgColor && product.productItemBgColor,
+                  }}
                 >
                   <Image
                     className="h-14 w-14 rounded-lg"
@@ -196,7 +192,7 @@ export default function Content() {
                     height={600}
                   />
                   <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0.5">
-                    <div className="font-sans text-md self-stretch font-semibold leading-relaxed text-gray-700">
+                    <div className="text-md self-stretch font-sans font-semibold leading-relaxed text-gray-700">
                       {product.productItemName}
                     </div>
                     <a
@@ -225,7 +221,7 @@ export default function Content() {
             </p>
           </div>
 
-          <div className="flex h-auto w-full flex-col items-start justify-start gap-2.5">
+          <div className="flex flex-wrap h-auto w-full flex-col items-start justify-start gap-2.5">
             {project.map((project, i) => (
               <div
                 key={i}
@@ -255,19 +251,21 @@ export default function Content() {
             ))}
           </div>
 
-          <div className="grid grid-cols-3 gap-2">
-            {data.designGallery.map((shot: {caption: string, item: any},i: any) => (
-              <div key={i} className="col-span-1 row-span-1">
-                <AspectRatio className="z-0" ratio={1 / 1}>
-                  <Image
-                    src={shot.item}
-                    alt={shot.caption}
-                    className="rounded-xl object-cover"
-                    fill
-                  />
-                </AspectRatio>
-              </div>
-            ))}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            {data.designGallery.map(
+              (shot: { caption: string; item: any }, i: any) => (
+                <div key={i} className="col-span-1 row-span-1">
+                  <AspectRatio className="z-0" ratio={1 / 1}>
+                    <Image
+                      src={shot.item}
+                      alt={shot.caption}
+                      className="rounded-xl object-cover"
+                      fill
+                    />
+                  </AspectRatio>
+                </div>
+              ),
+            )}
           </div>
         </div>
 
@@ -283,29 +281,38 @@ export default function Content() {
             </p>
           </div>
 
-          <div className="grid h-auto w-full grid-cols-4 items-start justify-start gap-2.5">
-            {data.gearItem.map((gear: {gearItemLogo: any, gearItemName: string, gearItemDescription: string}, i: any) => (
-              <div
-                key={i}
-                className="inline-flex h-auto w-full min-w-[140px] flex-col items-center justify-center gap-1.5 rounded-lg bg-neutral-100 px-3.5 py-4"
-              >
-                <Image
-                  className="h-12 w-12 rounded-lg"
-                  src={gear.gearItemLogo}
-                  alt={gear.gearItemName}
-                  width={600}
-                  height={600}
-                />
-                <div className="flex flex-col items-center justify-center font-sans">
-                  <div className="text-base font-semibold text-gray-700">
-                    {gear.gearItemName}
-                  </div>
-                  <div className="text-center text-xs font-normal text-gray-500">
-                    {gear.gearItemDescription}
+          <div className="grid h-auto w-full grid-cols-2 sm:grid-cols-4 items-start justify-start gap-2.5">
+            {data.gearItem.map(
+              (
+                gear: {
+                  gearItemLogo: any;
+                  gearItemName: string;
+                  gearItemDescription: string;
+                },
+                i: any,
+              ) => (
+                <div
+                  key={i}
+                  className="inline-flex h-auto w-full min-w-[140px] flex-col items-center justify-center gap-1.5 rounded-lg bg-neutral-100 px-3.5 py-4"
+                >
+                  <Image
+                    className="h-12 w-12 rounded-lg"
+                    src={gear.gearItemLogo}
+                    alt={gear.gearItemName}
+                    width={600}
+                    height={600}
+                  />
+                  <div className="flex flex-col items-center justify-center font-sans">
+                    <div className="text-base font-semibold text-gray-700">
+                      {gear.gearItemName}
+                    </div>
+                    <div className="text-center text-xs font-normal text-gray-500">
+                      {gear.gearItemDescription}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ),
+            )}
           </div>
         </div>
 
@@ -320,19 +327,24 @@ export default function Content() {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-2">
-            {data.deskGallery.map((shot: {deskGalleryCaption: string, deskGalleryItem: any},i: any) => (
-              <div key={i} className="col-span-1 row-span-1">
-                <AspectRatio className="z-0" ratio={1 / 1}>
-                  <Image
-                    src={shot.deskGalleryItem}
-                    alt={shot.deskGalleryCaption}
-                    className="rounded-xl object-cover"
-                    fill
-                  />
-                </AspectRatio>
-              </div>
-            ))}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            {data.deskGallery.map(
+              (
+                shot: { deskGalleryCaption: string; deskGalleryItem: any },
+                i: any,
+              ) => (
+                <div key={i} className="col-span-1 row-span-1">
+                  <AspectRatio className="z-0" ratio={1 / 1}>
+                    <Image
+                      src={shot.deskGalleryItem}
+                      alt={shot.deskGalleryCaption}
+                      className="rounded-xl object-cover"
+                      fill
+                    />
+                  </AspectRatio>
+                </div>
+              ),
+            )}
           </div>
         </div>
       </div>

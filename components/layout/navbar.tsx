@@ -54,7 +54,7 @@ export default function NavBar() {
                   <Link href={nav.link} legacyBehavior passHref>
                     <p
                       className={`cursor-pointer font-sans text-sm text-gray-500 hover:underline ${
-                        currentPath === nav.link && "font-bold text-gray-700"
+                        currentPath === nav.link && "font-semibold text-gray-700"
                       }`}
                     >
                       {nav.title}
