@@ -18,11 +18,6 @@ import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import Link from "next/link";
 
-interface ImageData {
-  galleryItem: string;
-  caption: string;
-}
-
 const getPostContent = (filePath: string) => {
   try {
     const content = fs.readFileSync(filePath, "utf8");
@@ -51,105 +46,12 @@ export default function Content() {
     return <div>Content not found.</div>;
   }
 
-  // const {
-  //   data: {
-  //     firstName,
-  //     lastName,
-  //     description,
-  //     about,
-  //     gallery,
-  //     expertise,
-  //     social,
-  //   },
-  // } = post;
-
   const data = post && post.data;
 
   const avatar =
     "https://pbs.twimg.com/profile_images/1526474082434199552/DyPn7nem_400x400.jpg";
 
-  const product = [
-    {
-      image:
-        "https://pbs.twimg.com/profile_images/1526474082434199552/DyPn7nem_400x400.jpg",
-      title: "Bahagia.day",
-      url: "Bahagia.day",
-      bgColor: "#FFE4E6",
-    },
-    {
-      image:
-        "https://pbs.twimg.com/profile_images/1526474082434199552/DyPn7nem_400x400.jpg",
-      title: "Kreator Peradaban",
-      url: "Kreatorperadaban.com",
-      bgColor: "#FFE4E6",
-    },
-  ];
 
-  const social = [
-    { icon: "/social/ic-linkedIn.svg" },
-    { icon: "/social/ic-telegram.svg" },
-    { icon: "/social/ic-twitter.svg" },
-    { icon: "/social/ic-whatsApp.svg" },
-  ];
-
-  const images = [
-    {
-      id: 1,
-      src: "https://picsum.photos/id/1018/600/800",
-      alt: "First Image",
-      // colSpan: 2,
-      rowSpan: 2,
-    },
-    {
-      id: 2,
-      src: "https://picsum.photos/id/1015/600/800",
-      alt: "Second Image",
-    },
-    {
-      id: 3,
-      src: "https://picsum.photos/id/1020/600/800",
-      alt: "Third Image",
-    },
-    {
-      id: 4,
-      src: "https://picsum.photos/id/1019/600/800",
-      alt: "Fourth Image",
-    },
-    {
-      id: 5,
-      src: "https://picsum.photos/id/1016/600/800",
-      alt: "Fifth Image",
-    },
-    {
-      id: 6,
-      src: "https://picsum.photos/id/1021/600/800",
-      alt: "Sixth Image",
-    },
-    {
-      id: 7,
-      src: "https://picsum.photos/id/1022/600/800",
-      alt: "Seventh Image",
-    },
-  ];
-
-  const tagSkill = [
-    {
-      title: "Figma Expert",
-      bgColor: "#f6f2e9",
-    },
-    {
-      title: "Design System Architect",
-      bgColor: "#F5FBF1",
-    },
-    {
-      title: "Usability Analyst",
-      bgColor: "#FFE8E8",
-    },
-    {
-      title: "No-Code Enthusiast",
-      bgColor: "#F5FBF1",
-    },
-  ];
 
   const project = [
     {
@@ -185,29 +87,11 @@ export default function Content() {
     },
   ];
 
-  const gear = [
-    {
-      name: "Figma",
-      description: "UI Design, prototyping",
-      logo: "https://pbs.twimg.com/profile_images/1526474082434199552/DyPn7nem_400x400.jpg",
-    },
-    {
-      name: "Nextjs",
-      description: "UI Design, prototyping",
-      logo: "https://pbs.twimg.com/profile_images/1526474082434199552/DyPn7nem_400x400.jpg",
-    },
-    {
-      name: "SkuyJs",
-      description: "UI Design, prototyping",
-      logo: "https://pbs.twimg.com/profile_images/1526474082434199552/DyPn7nem_400x400.jpg",
-    },
-  ];
-
   return (
     <>
       <div className="mx-5 flex flex-col gap-8">
-        <div className="inline-flex h-20 w-96 items-center justify-start gap-4">
-          <img className="h-16 w-16 rounded-full" src={avatar} />
+        <div className="inline-flex h-auto w-full items-center justify-start gap-4">
+          <img className="h-16 w-16 rounded-full" src={data.avatar} />
           <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
             <div className="self-stretch">
               <p className="font-sans text-xl font-semibold leading-loose text-gray-700">

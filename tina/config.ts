@@ -128,6 +128,12 @@ export default defineConfig({
         format: "md",
         fields: [
           {
+            type: "image",
+            name: "avatar",
+            label: "Avatar",
+            required: true,
+          },
+          {
             type: "string",
             name: "firstName",
             label: "First Name",
@@ -381,6 +387,12 @@ export default defineConfig({
         format: "md",
         fields: [
           {
+            type: "image",
+            name: "avatar",
+            label: "Avatar",
+            required: true,
+          },
+          {
             type: "string",
             name: "firstName",
             label: "First Name",
@@ -452,6 +464,50 @@ export default defineConfig({
           },
         ],
       },
+
+      // {
+      //   label: "Setting",
+      //   name: "setting",
+      //   path: "content/setting",
+      //   ui: {
+      //     // global: true,
+      //     allowedActions: {
+      //       create: false,
+      //       delete: false,
+      //     },
+      //   },
+      //   format: "md",
+      //   fields: [
+      //     {
+      //       type: "string",
+      //       name: "firstName",
+      //       label: "First Name",
+      //       required: true,
+      //     },
+      //     {
+      //       type: "string",
+      //       name: "lastName",
+      //       label: "Last Name",
+      //       required: true,
+      //     },
+      //     {
+      //       type: "string",
+      //       name: "description",
+      //       label: "Description",
+      //       required: true,
+      //     },
+      //     {
+      //       type: "string",
+      //       name: "about",
+      //       label: "About",
+      //       required: true,
+      //       ui: {
+      //         component: "textarea",
+      //       },
+      //     },
+          
+      //   ],
+      // },
 
       // {
       //   name: "pages",

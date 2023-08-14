@@ -45,7 +45,9 @@ designGallery:
     item: /img5.jpg
   - caption: satu
     item: /img3.jpg
+avatar: /avatar.jpg
 ---
+
 
 
 

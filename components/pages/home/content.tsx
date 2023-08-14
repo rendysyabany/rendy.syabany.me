@@ -41,61 +41,17 @@ export default function Content() {
   }
 
   const {
-    data: { firstName, lastName, description, about, gallery }
+    data: { avatar, firstName, lastName, description, about, gallery }
   } = post;
 
   // console.log(post.data)
 
-  const avatar =
-    "https://pbs.twimg.com/profile_images/1526474082434199552/DyPn7nem_400x400.jpg";
-  const images = [
-    {
-      id: 1,
-      src: "https://picsum.photos/id/1018/600/800",
-      alt: "First Image",
-      // colSpan: 2,
-      rowSpan: 2,
-    },
-    {
-      id: 2,
-      src: "https://picsum.photos/id/1015/600/800",
-      alt: "Second Image",
-    },
-    {
-      id: 3,
-      src: "https://picsum.photos/id/1020/600/800",
-      alt: "Third Image",
-    },
-    {
-      id: 4,
-      src: "https://picsum.photos/id/1019/600/800",
-      alt: "Fourth Image",
-    },
-    {
-      id: 5,
-      src: "https://picsum.photos/id/1016/600/800",
-      alt: "Fifth Image",
-    },
-    {
-      id: 6,
-      src: "https://picsum.photos/id/1021/600/800",
-      alt: "Sixth Image",
-    },
-    {
-      id: 7,
-      src: "https://picsum.photos/id/1022/600/800",
-      alt: "Seventh Image",
-    },
-    {
-      id: 8,
-      src: "https://picsum.photos/id/1023/600/800",
-      alt: "Eighth Image",
-    },
-  ];
+  // const avatar =
+  //   "https://pbs.twimg.com/profile_images/1526474082434199552/DyPn7nem_400x400.jpg";
 
   return (
     <div className="mx-5 flex flex-col gap-8">
-      <div className="inline-flex h-20 w-96 items-center justify-start gap-4">
+      <div className="inline-flex h-auto w-full items-center justify-start gap-4">
         <img className="h-16 w-16 rounded-full" src={avatar} />
         <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
           <div className="self-stretch">

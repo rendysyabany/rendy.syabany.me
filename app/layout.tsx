@@ -8,17 +8,17 @@ import "./globals.css";
 // import { Roboto, Roboto_Serif } from 'next/font/google'
 
 export const metadata = {
-  title: "Precedent - Building blocks for your Next.js project",
+  title: "Rendyansyah Sya'bany",
   description:
-    "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
+    "Personal Website & Profile",
   twitter: {
     card: "summary_large_image",
-    title: "Precedent - Building blocks for your Next.js project",
+    title: "Personal Website & Profile",
     description:
-      "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
-    creator: "@steventey",
+      "Personal Website & Profile",
+    creator: "@rendysyabany",
   },
-  metadataBase: new URL("https://precedent.dev"),
+  metadataBase: new URL("https://syabany.me"),
   themeColor: "#FFF",
 };
 

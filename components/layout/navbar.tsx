@@ -34,6 +34,10 @@ export default function NavBar() {
       title: "Writing",
       link: "/writing",
     },
+    {
+      title: "Link",
+      link: "/link",
+    },
   ];
 
   return (
