@@ -39,12 +39,13 @@ const PostPage = (props: any) => {
     content,
   } = post;
 
-  const h1Style = "text-xl sm:text-4xl font-bold mb-4 text-blue-900";
-  const h2Style = "text-lg sm:text-3xl font-semibold mb-3 text-gray-700";
+  const h1Style = "text-2xl sm:text-4xl font-bold mb-4 text-gray-700";
+  const h2Style = "text-xl sm:text-3xl font-semibold mb-3 text-gray-700";
+  const h3Style = "text-lg sm:text-2xl font-semibold mb-3 text-gray-700";
   const pStyle =
-    "text-md sm:text-lg mt-[-2px] font-serif font-normal leading-normal tracking-normal text-gray-700";
+    "text-md sm:text-lg mt-[-2px] font-serif font-normal leading-relaxed tracking-normal text-gray-700";
   const quoteStyle =
-    "text-lg sm:text-xl mt-[-2px] font-serif font-normal leading-normal tracking-normal text-gray-700 pl-4 border-l-2 border-gray-400 italic";
+    "text-xl sm:text-2xl mt-[-2px] font-serif font-normal leading-normal tracking-normal text-gray-700 pl-4 border-l-2 border-gray-400 italic";
 
   return (
     <div className="mx-5 flex flex-col gap-6">
@@ -53,7 +54,7 @@ const PostPage = (props: any) => {
           <p className="text-sm mb-2 font-serif font-normal leading-normal tracking-normal text-gray-500">
             Published on 09 Januari 2023
           </p>
-          <p className="font-sans text-lg sm:text-3xl font-semibold leading-7 sm:leading-9 tracking-normal text-gray-700">
+          <p className="font-sans text-xl sm:text-3xl font-semibold leading-7 sm:leading-9 tracking-normal text-gray-700">
             {title}
           </p>
           <p className="text-md font-serif font-normal leading-normal tracking-normal text-gray-500">

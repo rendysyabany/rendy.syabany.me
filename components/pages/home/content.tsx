@@ -62,7 +62,7 @@ export default function Content() {
               {lastName}
             </span>
           </div>
-          <div className="self-stretch text-sm sm:text-base font-normal leading-snug text-gray-500 mt-[-2px]">
+          <div className="self-stretch text-sm sm:text-base font-normal leading-normal text-gray-500 mt-[-2px]">
             {description}
           </div>
         </div>

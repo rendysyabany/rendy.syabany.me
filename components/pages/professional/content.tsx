@@ -100,7 +100,7 @@ export default function Content() {
                 <span className="font-light">{data.lastName}</span>
               </p>
             </div>
-            <div className="mt-[-2px] self-stretch text-sm font-normal leading-snug text-gray-500 sm:text-base">
+            <div className="mt-[-2px] self-stretch text-sm font-normal leading-normal text-gray-500 sm:text-base">
               {data.description}
             </div>
           </div>
@@ -236,7 +236,7 @@ export default function Content() {
                     {project.description}
                   </div>
                 </div>
-                <div className="inline-flex items-start justify-start gap-2.5 self-stretch">
+                <div className="inline-flex flex-wrap items-start justify-start gap-2.5 self-stretch">
                   {project.category.map((category, i) => (
                     <Badge
                       key={i}
