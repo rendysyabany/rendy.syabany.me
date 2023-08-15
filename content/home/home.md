@@ -1,5 +1,5 @@
 ---
-firstName: Nada
+firstName: Nanda
 lastName: Sari Ningrum
 description: 'Technology, SaaS & Digital Product Enthusiast'
 about: >-
@@ -27,8 +27,9 @@ gallery:
     galleryItem: /img7.jpg
   - caption: img8
     galleryItem: /img8.jpg
-avatar: /avatar.jpg
+avatar: /nanda.png
 ---
+
 
 
 
