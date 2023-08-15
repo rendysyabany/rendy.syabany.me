@@ -34,7 +34,7 @@ productItem:
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
 gearSectionTitle: Stack Gear
-gearSectionDescription: I love building my own products and I hope will solve many problems.
+gearSectionDescription: Empowering with my technology stack that I used
 gearItem:
   - gearItemLogo: /thirteen.svg
     gearItemName: Nextjs
@@ -42,8 +42,8 @@ gearItem:
   - gearItemLogo: /authjs.webp
     gearItemName: Figma
     gearItemDescription: 'UI Design, prototyping '
-deskSectionTitle: Desk Setup.ee
-deskSectionDescription: I love building my own products and I hope will solve many problems.ee
+deskSectionTitle: Desk Setup
+deskSectionDescription: "Checkout my desk-setup gallery below \U0001F60A"
 deskGallery:
   - deskGalleryCaption: sample
     deskGalleryItem: /img6.jpg
@@ -58,6 +58,7 @@ designGallery:
     item: /img3.jpg
 avatar: /avatar.jpg
 ---
+
 
 
 
