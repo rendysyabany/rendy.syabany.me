@@ -9,11 +9,12 @@ link:
   - linkTitle: Instagram Threads
     linkUrl: 'https://threads.net/rendysyabany'
     linkImage: ''
-  - linkTitle: img2
-    linkUrl: 'https://syabany.com'
+  - linkTitle: Instagram
+    linkUrl: 'https://instagram.com/rendysyabany'
     linkImage: ''
 avatar: /avatar.jpg
 ---
+
 
 
 
