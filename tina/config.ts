@@ -20,7 +20,7 @@ export default defineConfig({
   media: {
     tina: {
       mediaRoot: "",
-      publicFolder: "public/rendy",
+      publicFolder: "public",
     },
   },
   schema: {

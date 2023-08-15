@@ -3,8 +3,11 @@ firstName: Rendyansyah
 lastName: Sya'bany
 description: Rendy.syabany.me
 link:
-  - linkTitle: Facebook
-    linkUrl: 'https://facebook.com/rendy.syabany'
+  - linkTitle: Kreator Peradaban
+    linkUrl: 'https://kreatorperadaban.com'
+    linkImage: ''
+  - linkTitle: Bahagia.day
+    linkUrl: 'https://bahagia.day'
     linkImage: ''
   - linkTitle: Instagram Threads
     linkUrl: 'https://threads.net/rendysyabany'
