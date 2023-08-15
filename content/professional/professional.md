@@ -13,6 +13,8 @@ expertise:
   - title: No-Code Enthusiast
     bgColor: '#ECF2F9'
 social:
+  - socialUrl: 'https://t.me/rendysyabany'
+    socialIcon: /ic-telegram.png
   - socialUrl: 'mailto:rendy@syabany.me'
     socialIcon: /envelope.png
   - socialUrl: 'https://twitter.com/rendysyabany'
@@ -53,6 +55,7 @@ designGallery:
     item: /img3.jpg
 avatar: /avatar.jpg
 ---
+
 
 
 
