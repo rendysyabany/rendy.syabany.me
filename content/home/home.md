@@ -1,6 +1,6 @@
 ---
-firstName: Rendyansyah
-lastName: Sya'bany
+firstName: Nada
+lastName: Sari Ningrum
 description: 'Technology, SaaS & Digital Product Enthusiast'
 about: >-
   A digital nomad fan who loves designing & building digital products. I have
@@ -29,6 +29,7 @@ gallery:
     galleryItem: /img8.jpg
 avatar: /avatar.jpg
 ---
+
 
 
 
