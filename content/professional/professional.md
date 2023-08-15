@@ -13,18 +13,18 @@ expertise:
   - title: No-Code Enthusiast
     bgColor: '#ECF2F9'
 social:
+  - socialUrl: 'mailto:rendy@syabany.me'
+    socialIcon: /envelope.png
+  - socialUrl: 'https://linkedin.com/in/rendysyabany'
+    socialIcon: /ic-linkedIn.png
+  - socialUrl: 'https://twitter.com/rendysyabany'
+    socialIcon: /ic-twitter.png
   - socialUrl: 'https://wa.me/6281281199619'
     socialIcon: /ic-whatsapp.png
   - socialUrl: 'https://t.me/rendysyabany'
     socialIcon: /ic-telegram.png
-  - socialUrl: 'mailto:rendy@syabany.me'
-    socialIcon: /envelope.png
-  - socialUrl: 'https://twitter.com/rendysyabany'
-    socialIcon: /ic-twitter.png
-  - socialUrl: 'https://linkedin.com/in/rendysyabany'
-    socialIcon: /ic-linkedIn.png
-productSectionTitle: My own beloved productss
-productSectionDescription: I love building my own products and I hope will solve many problems.s
+productSectionTitle: My own beloved products
+productSectionDescription: I love building my own products and I hope will solve many problems
 productItem:
   - productItemLogo: /img2.jpg
     productItemName: Kreator Peradaban
@@ -49,7 +49,8 @@ deskGallery:
     deskGalleryItem: /img6.jpg
   - deskGalleryCaption: room
     deskGalleryItem: /img4.jpg
-resumeUrl: 'https://syabany.me/resume'
+resumeUrl: >-
+  https://drive.google.com/file/d/12whUX_fX5GAs4fVSlhUCOsvyJr0u46Kp/view?usp=sharing
 designGallery:
   - caption: dua
     item: /img5.jpg
@@ -57,6 +58,7 @@ designGallery:
     item: /img3.jpg
 avatar: /avatar.jpg
 ---
+
 
 
 
