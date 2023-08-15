@@ -24,7 +24,7 @@ social:
   - socialUrl: 'https://t.me/rendysyabany'
     socialIcon: /ic-telegram.png
 productSectionTitle: My own beloved products
-productSectionDescription: I love building my own products and I hope will solve many problems
+productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
   - productItemLogo: /img2.jpg
     productItemName: Kreator Peradaban
@@ -58,6 +58,7 @@ designGallery:
     item: /img3.jpg
 avatar: /avatar.jpg
 ---
+
 
 
 
