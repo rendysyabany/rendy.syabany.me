@@ -26,10 +26,10 @@ export default function NavBar() {
       title: "Home",
       link: "/",
     },
-    {
-      title: "Professional",
-      link: "/professional",
-    },
+    // {
+    //   title: "Professional",
+    //   link: "/professional",
+    // },
     {
       title: "Writing",
       link: "/writing",

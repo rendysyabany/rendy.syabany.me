@@ -83,19 +83,19 @@ export default function Content() {
   return (
     <div className="mx-5 flex flex-col gap-8">
       <div className="inline-flex h-auto w-full items-center justify-start gap-4">
-        {/* <img className="h-14 w-14 sm:h-16 sm:w-16 rounded-full" src={avatar} /> */}
+        <img className="h-14 w-14 sm:h-16 sm:w-16 rounded-full" src={avatar} />
         <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
           <div className="self-stretch">
-            <span className="text-lg font-sans font-semibold leading-loose text-gray-700 sm:text-xl">
+            <span className="text-md font-sans font-semibold leading-loose text-gray-700 sm:text-xl">
               {firstName}{" "}
             </span>
-            <span className="text-lg font-sans font-light leading-loose text-gray-700 sm:text-xl">
+            <span className="text-md font-sans font-light leading-loose text-gray-700 sm:text-xl">
               {lastName}
             </span>
           </div>
-          {/* <div className="mt-[-2px] self-stretch text-sm font-normal leading-normal text-gray-500 sm:text-base">
+          <div className="mt-[-2px] self-stretch text-sm font-normal leading-normal text-gray-500 sm:text-base">
             {description}
-          </div> */}
+          </div>
         </div>
       </div>
 
