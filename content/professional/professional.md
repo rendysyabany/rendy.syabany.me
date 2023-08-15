@@ -26,9 +26,10 @@ social:
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
-  - productItemLogo: /img2.jpg
+  - productItemLogo: /kreatorperadaban-logo.jpg
     productItemName: Kreator Peradaban
     productItemUrl: kreatorperadaban.com
+    productItemBgColor: '#F6F6F9'
   - productItemLogo: /prisma.svg
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
@@ -58,6 +59,7 @@ designGallery:
     item: /img3.jpg
 avatar: /avatar.jpg
 ---
+
 
 
 
