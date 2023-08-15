@@ -85,15 +85,19 @@ gearItem:
 deskSectionTitle: Desk Setup
 deskSectionDescription: "Checkout my desk-setup gallery below \U0001F60A"
 deskGallery:
-  - deskGalleryCaption: sample
+  - deskGalleryCaption: desk gallery
     deskGalleryItem: /img6.jpg
-  - deskGalleryCaption: room
+  - deskGalleryCaption: desk gallery
     deskGalleryItem: /img4.jpg
+  - deskGalleryCaption: desk gallery
+    deskGalleryItem: /img3.jpg
+  - deskGalleryCaption: desk gallery
+    deskGalleryItem: /img8.jpg
 resumeUrl: >-
   https://drive.google.com/file/d/12whUX_fX5GAs4fVSlhUCOsvyJr0u46Kp/view?usp=sharing
 designGallery:
   - caption: design shot
-    item: /rendy/shots/aqu.webp
+    item: /rendy/shots/aqua.webp
   - caption: design shot
     item: /rendy/shots/beautieslife.webp
   - caption: design shot

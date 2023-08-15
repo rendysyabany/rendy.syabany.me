@@ -6,9 +6,7 @@ import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Key
-} from "react";
+import { Key } from "react";
 
 const getPostContent = (filePath: string) => {
   try {
@@ -42,9 +40,9 @@ export default function Content() {
 
   const project = [
     {
-      title: "Madu Sumbawa Premium",
+      title: "Coming soon project case study",
       description:
-        "I love building my own products and I hope will solve many problems.",
+        "here ini for project case study description...",
       category: [
         {
           title: "Mobile App",
@@ -56,18 +54,15 @@ export default function Content() {
       bgColor: "#F9F7E1",
     },
     {
-      title: "Madu Sumbawa Premium 2",
+      title: "Coming soon project case study",
       description:
-        "I love building my own products and I hope will solve many problems.",
+        "here ini for project case study description...",
       category: [
         {
           title: "Mobile App",
         },
         {
           title: "Design System",
-        },
-        {
-          title: "Web App",
         },
       ],
       bgColor: "#FFE4E6",
@@ -116,11 +111,11 @@ export default function Content() {
           )}
         </div>
 
-        <Markdown className="flex flex-col gap-3 self-stretch font-serif text-md sm:text-lg font-normal leading-normal tracking-normal text-gray-600">
+        <Markdown className="text-md flex flex-col gap-3 self-stretch font-serif font-normal leading-normal tracking-normal text-gray-600 sm:text-lg">
           {data.about}
         </Markdown>
 
-        <div className="inline-flex flex-wrap h-auto w-fit items-center justify-start gap-4 rounded-md bg-neutral-100 p-3">
+        <div className="inline-flex h-auto w-fit flex-wrap items-center justify-start gap-4 rounded-md bg-neutral-100 p-3">
           {data.social.map(
             (soc: { socialUrl: string; socialIcon: any }, i: any) => (
               <Image
@@ -136,7 +131,7 @@ export default function Content() {
           <Link
             href={data.resumeUrl}
             target="_blank"
-            className="font-sans text-xs sm:text-sm font-medium leading-tight text-gray-700 underline"
+            className="font-sans text-xs font-medium leading-tight text-gray-700 underline sm:text-sm"
           >
             Download Resume
           </Link>
@@ -154,7 +149,7 @@ export default function Content() {
             </p>
           </div>
 
-          <div className="grid h-auto w-full grid-cols-1 sm:grid-cols-2 items-start justify-start gap-2.5">
+          <div className="grid h-auto w-full grid-cols-1 items-start justify-start gap-2.5 sm:grid-cols-2">
             {data.productItem.map(
               (
                 product: {
@@ -205,12 +200,11 @@ export default function Content() {
               Selected Works.
             </p>
             <p className="text-md mt-[-2px] self-stretch font-serif font-normal leading-snug text-gray-500">
-              I love building my own products and I hope will solve many
-              problems.
+              Elevating excellence through my selected work.
             </p>
           </div>
 
-          <div className="flex flex-wrap h-auto w-full flex-col items-start justify-start gap-2.5">
+          <div className="flex h-auto w-full flex-col flex-wrap items-start justify-start gap-2.5">
             {project.map((project, i) => (
               <div
                 key={i}
@@ -240,7 +234,7 @@ export default function Content() {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
             {data.designGallery.map(
               (shot: { caption: string; item: any }, i: any) => (
                 <div key={i} className="col-span-1 row-span-1">
@@ -270,7 +264,7 @@ export default function Content() {
             </p>
           </div>
 
-          <div className="grid h-auto w-full grid-cols-2 sm:grid-cols-4 items-start justify-start gap-2.5">
+          <div className="grid h-auto w-full grid-cols-2 items-start justify-start gap-2.5 sm:grid-cols-4">
             {data.gearItem.map(
               (
                 gear: {
@@ -316,7 +310,7 @@ export default function Content() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
             {data.deskGallery.map(
               (
                 shot: { deskGalleryCaption: string; deskGalleryItem: any },
