@@ -59,9 +59,9 @@ export default function Content() {
           </div>
         </div>
 
-        {/* <div className="my-4 border-t border-gray-300"></div> */}
+        <div className="my-4 border-t border-gray-300"></div>
 
-        <div className="mt-6 flex flex-col justify-center gap-8">
+        <div className="mt-0 flex flex-col justify-center gap-8">
           <div className="grid h-auto w-full grid-cols-1 items-start justify-center gap-4">
             {data.link.map(
               (

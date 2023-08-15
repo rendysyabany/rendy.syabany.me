@@ -41,8 +41,7 @@ export default function Content() {
   const project = [
     {
       title: "Coming soon project case study",
-      description:
-        "here ini for project case study description...",
+      description: "here ini for project case study description...",
       category: [
         {
           title: "Mobile App",
@@ -55,8 +54,7 @@ export default function Content() {
     },
     {
       title: "Coming soon project case study",
-      description:
-        "here ini for project case study description...",
+      description: "here ini for project case study description...",
       category: [
         {
           title: "Mobile App",
@@ -71,7 +69,19 @@ export default function Content() {
 
   return (
     <>
-      <div className="mx-5 flex flex-col gap-8">
+      <div className="flex flex-col fixed bottom-4 z-10 h-auto w-full max-w-[720px] items-center justify-start">
+        <div className="inline-flex flex-row h-auto w-fit flex-wrap items-center justify-start gap-5 rounded-md bg-gray-700 px-3 py-2">
+          <Link
+            href={data.resumeUrl}
+            target="_blank"
+            className="font-sans text-xs font-medium leading-tight text-white sm:text-sm"
+          >
+            Download PDF Resume
+          </Link>
+        </div>
+      </div>
+
+      <div className="mx-5 flex flex-col gap-8 pb-10">
         <div className="inline-flex h-auto w-full items-center justify-start gap-4">
           <img
             className="h-14 w-14 rounded-full sm:h-16 sm:w-16"
@@ -118,23 +128,17 @@ export default function Content() {
         <div className="inline-flex h-auto w-fit flex-wrap items-center justify-start gap-4 rounded-md bg-neutral-100 p-3">
           {data.social.map(
             (soc: { socialUrl: string; socialIcon: any }, i: any) => (
-              <Image
-                key={i}
-                src={soc.socialIcon}
-                alt={soc.socialUrl}
-                className="h-6 w-6 object-cover"
-                width={600}
-                height={600}
-              />
+              <Link key={i} href={soc.socialUrl}>
+                <Image
+                  src={soc.socialIcon}
+                  alt={soc.socialUrl}
+                  className="h-6 w-6 object-cover"
+                  width={600}
+                  height={600}
+                />
+              </Link>
             ),
           )}
-          <Link
-            href={data.resumeUrl}
-            target="_blank"
-            className="font-sans text-xs font-medium leading-tight text-gray-700 underline sm:text-sm"
-          >
-            Download Resume
-          </Link>
         </div>
 
         <div className="my-4 border-t border-gray-300"></div>
