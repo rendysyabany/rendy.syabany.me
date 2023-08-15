@@ -35,7 +35,7 @@ productItem:
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
 gearSectionTitle: Stack Gear
-gearSectionDescription: Empowering with my technology stack that I used
+gearSectionDescription: Empower with the technology stack I use
 gearItem:
   - gearItemLogo: /thirteen.svg
     gearItemName: Nextjs
@@ -59,6 +59,7 @@ designGallery:
     item: /img3.jpg
 avatar: /avatar.jpg
 ---
+
 
 
 
