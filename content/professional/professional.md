@@ -17,8 +17,8 @@ social:
     socialIcon: /envelope.png
   - socialUrl: 'https://twitter.com/rendysyabany'
     socialIcon: /ic-twitter.png
-  - socialUrl: 'https://linkedin.com'
-    socialIcon: /authjs.webp
+  - socialUrl: 'https://linkedin.com/in/rendysyabany'
+    socialIcon: /ic-linkedIn.png
 productSectionTitle: My own beloved productss
 productSectionDescription: I love building my own products and I hope will solve many problems.s
 productItem:
@@ -53,6 +53,7 @@ designGallery:
     item: /img3.jpg
 avatar: /avatar.jpg
 ---
+
 
 
 
