@@ -17,8 +17,6 @@ social:
     socialIcon: /envelope.png
   - socialUrl: 'https://linkedin.com/in/rendysyabany'
     socialIcon: /ic-linkedIn.png
-  - socialUrl: 'https://twitter.com/rendysyabany'
-    socialIcon: /ic-twitter.png
   - socialUrl: 'https://wa.me/6281281199619'
     socialIcon: /ic-whatsapp.png
   - socialUrl: 'https://t.me/rendysyabany'
@@ -45,43 +43,43 @@ gearItem:
     gearItemDescription: 'UID, DS & prototyping'
   - gearItemLogo: /rendy/law-of-ux.jpg
     gearItemName: Law of UX
-    gearItemDescription: 'UX Best Practice'
+    gearItemDescription: UX Best Practice
   - gearItemLogo: /rendy/checklist-design.svg
     gearItemName: Checklist
-    gearItemDescription: 'Design Checklist'
+    gearItemDescription: Design Checklist
   - gearItemLogo: /rendy/supernova.jpg
     gearItemName: Supernova
-    gearItemDescription: 'DS Manager'
+    gearItemDescription: DS Manager
   - gearItemLogo: /rendy/notion.jpg
     gearItemName: Notion
-    gearItemDescription: 'Doc & Tasks'
+    gearItemDescription: Doc & Tasks
   - gearItemLogo: /rendy/nextjs.jpg
     gearItemName: Nextjs
     gearItemDescription: Frontend Framework
   - gearItemLogo: /rendy/tailwindcss.jpg
     gearItemName: Tailwindcss
-    gearItemDescription: 'CSS Framework'
+    gearItemDescription: CSS Framework
   - gearItemLogo: /rendy/mantine.jpg
     gearItemName: Mantine
-    gearItemDescription: 'FE UI Library'
+    gearItemDescription: FE UI Library
   - gearItemLogo: /rendy/strapi.jpg
     gearItemName: Strapi
-    gearItemDescription: 'Headless CMS'
+    gearItemDescription: Headless CMS
   - gearItemLogo: /rendy/notion-api.jpg
     gearItemName: Notion API
-    gearItemDescription: 'Headless CMS'
+    gearItemDescription: Headless CMS
   - gearItemLogo: /rendy/vercel.jpg
     gearItemName: Vercel
-    gearItemDescription: 'PaaS'
+    gearItemDescription: PaaS
   - gearItemLogo: /rendy/railway.jpg
     gearItemName: Railway
-    gearItemDescription: 'IaaS'
+    gearItemDescription: IaaS
   - gearItemLogo: /rendy/better-uptime.jpg
     gearItemName: Better Uptime
-    gearItemDescription: 'Monitoring Tool'
+    gearItemDescription: Monitoring Tool
   - gearItemLogo: /rendy/umami-is.png
     gearItemName: Umami.is
-    gearItemDescription: 'Analytics'
+    gearItemDescription: Analytics
 deskSectionTitle: Desk Setup
 deskSectionDescription: "Checkout my desk-setup gallery below \U0001F60A"
 deskGallery:
@@ -122,3 +120,4 @@ designGallery:
     item: /rendy/shots/tukang.webp
 avatar: /avatar.jpg
 ---
+
