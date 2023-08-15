@@ -30,7 +30,7 @@ productItem:
     productItemName: Kreator Peradaban
     productItemUrl: kreatorperadaban.com
     productItemBgColor: '#F6F6F9'
-  - productItemLogo: /prisma.svg
+  - productItemLogo: /bahagia-day-logo.jpg
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
@@ -59,6 +59,7 @@ designGallery:
     item: /img3.jpg
 avatar: /avatar.jpg
 ---
+
 
 
 
