@@ -3,9 +3,9 @@ firstName: Rendyansyah
 lastName: Sya'bany
 description: Rendy.syabany.me
 link:
-  - linkTitle: Test title very long title
-    linkUrl: 'https://rendy.syabany.me'
-    linkImage: /img5.jpg
+  - linkTitle: Facebook
+    linkUrl: 'https://facebook.com/rendy.syabany'
+    linkImage: ''
   - linkTitle: img1
     linkUrl: 'https://syabany.com'
     linkImage: /img1.jpg
@@ -14,6 +14,7 @@ link:
     linkImage: ''
 avatar: /avatar.jpg
 ---
+
 
 
 
