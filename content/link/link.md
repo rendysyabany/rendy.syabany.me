@@ -6,14 +6,15 @@ link:
   - linkTitle: Facebook
     linkUrl: 'https://facebook.com/rendy.syabany'
     linkImage: ''
-  - linkTitle: img1
-    linkUrl: 'https://syabany.com'
-    linkImage: /img1.jpg
+  - linkTitle: Instagram Threads
+    linkUrl: 'https://threads.net/rendysyabany'
+    linkImage: ''
   - linkTitle: img2
     linkUrl: 'https://syabany.com'
     linkImage: ''
 avatar: /avatar.jpg
 ---
+
 
 
 
