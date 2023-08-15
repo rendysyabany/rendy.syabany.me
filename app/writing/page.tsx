@@ -34,8 +34,6 @@ const getAllPostContents = (): PostData[] => {
 
 const Writing = () => {
   const post = getAllPostContents();
-  // console.log(JSON.stringify(post));
-  // const publishedDate = format(new Date(post && post.datePublished), 'dd MMMM yyyy');
   const postUrls = fs
     .readdirSync("content/posts/")
     .map((filename) => `/writing/${filename.replace(/\.md$/, "")}`);
@@ -56,7 +54,7 @@ const Writing = () => {
               <span className="font-medium underline">Read more</span>
             </p>
           </div>
-          <div className="my-4 border-t border-gray-300"></div>
+          {i !== post.length - 1 && <div className="mt-6 border-t border-gray-300 w-full mx-auto"></div>}
         </Link>
       ))}
     </div>

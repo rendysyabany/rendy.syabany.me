@@ -1,22 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Badge } from "@/components/ui/badge";
-import matter from "gray-matter";
-import { Mail } from "lucide-react";
-import Image from "next/image";
-import {
-  JSXElementConstructor,
-  Key,
-  ReactElement,
-  ReactFragment,
-  ReactNode,
-  ReactPortal,
-} from "react";
-import ReactMarkdown from "react-markdown";
-import Balancer from "react-wrap-balancer";
 import fs from "fs";
+import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
+import Image from "next/image";
 import Link from "next/link";
+import {
+  Key
+} from "react";
 
 const getPostContent = (filePath: string) => {
   try {
@@ -47,9 +39,6 @@ export default function Content() {
   }
 
   const data = post && post.data;
-
-  const avatar =
-    "https://pbs.twimg.com/profile_images/1526474082434199552/DyPn7nem_400x400.jpg";
 
   const project = [
     {
