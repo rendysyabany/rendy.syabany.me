@@ -1,6 +1,6 @@
 ---
-firstName: Nanda
-lastName: Sari Ningrum
+firstName: Rendyansyah
+lastName: Sya'bany
 description: 'Technology, SaaS & Digital Product Enthusiast'
 about: >-
   A digital nomad fan who loves designing & building digital products. I have
@@ -21,7 +21,7 @@ gallery:
     galleryItem: /img5.jpg
   - caption: img8
     galleryItem: /img8.jpg
-avatar: /nanda.png
+avatar: /avatar.jpg
 ---
 
 

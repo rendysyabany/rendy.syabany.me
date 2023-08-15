@@ -8,15 +8,15 @@ import "./globals.css";
 // import { Roboto, Roboto_Serif } from 'next/font/google'
 
 export const metadata = {
-  title: "Nanda Sari Ningrum",
+  title: "Rendyansyah Sya'bany",
   description: "Personal Website & Profile",
   twitter: {
     card: "summary_large_image",
     title: "Personal Website & Profile",
     description: "Personal Website & Profile",
-    creator: "@nandasyabany",
+    creator: "@rendysyabany",
   },
-  metadataBase: new URL("https://nanda.syabany.me"),
+  metadataBase: new URL("https://syabany.me"),
   themeColor: "#FFF",
 };
 
