@@ -1,6 +1,6 @@
 ---
-firstName: Rendyansyah
-lastName: Sya’bany
+firstName: Nanda
+lastName: Sari Ningrum
 description: Product Designer & Indie Maker
 about: "I thrive on transforming ideas into tangible solutions, blending aesthetics with functionality to create products that delight users.\L\n\nThe empathy-driven approach allows me to create products that truly resonate with the end-users, making a positive impact on their lives. I am dedicated to human-centered design principles, where the user's experience takes center stage in every decision I make."
 expertise:
@@ -94,30 +94,43 @@ deskGallery:
 resumeUrl: >-
   https://drive.google.com/file/d/12whUX_fX5GAs4fVSlhUCOsvyJr0u46Kp/view?usp=sharing
 designGallery:
-  - caption: design shot
-    item: /rendy/shots/aqua.webp
-  - caption: design shot
-    item: /rendy/shots/beautieslife.webp
-  - caption: design shot
-    item: /rendy/shots/dashboardstore.webp
-  - caption: design shot
-    item: /rendy/shots/dashboardstore2.webp
-  - caption: design shot
-    item: /rendy/shots/exera.webp
-  - caption: design shot
-    item: /rendy/shots/goorita.webp
-  - caption: design shot
-    item: /rendy/shots/goorita2.webp
-  - caption: design shot
-    item: /rendy/shots/masuke.webp
-  - caption: design shot
-    item: /rendy/shots/msp.webp
-  - caption: design shot
-    item: /rendy/shots/rinastore.webp
-  - caption: design shot
-    item: /rendy/shots/rinastore2.webp
-  - caption: design shot
-    item: /rendy/shots/tukang.webp
-avatar: /avatar.jpg
+  - caption: dua
+    item: /img5.jpg
+  - caption: satu
+    item: /img3.jpg
+avatar: /nanda.png
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
