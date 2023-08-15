@@ -74,7 +74,7 @@ export default function Content() {
               ) => (
                 <Link
                   key={i}
-                  href={"https://" + linkItem.linkUrl}
+                  href={linkItem.linkUrl}
                   target="_blank"
                   className="flex h-auto w-full min-w-[260px] flex-col items-center justify-start gap-0 overflow-hidden rounded-xl bg-gray-100"
                   // style={{
