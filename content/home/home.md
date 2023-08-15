@@ -13,22 +13,17 @@ about: >-
 gallery:
   - caption: img1
     galleryItem: /img1.jpg
-  - caption: img2
-    galleryItem: /img2.jpg
   - caption: img3
     galleryItem: /img3.jpg
   - caption: img4
     galleryItem: /img4.jpg
   - caption: img5
     galleryItem: /img5.jpg
-  - caption: img6
-    galleryItem: /img6.jpg
-  - caption: img7
-    galleryItem: /img7.jpg
   - caption: img8
     galleryItem: /img8.jpg
 avatar: /avatar.jpg
 ---
+
 
 
 
