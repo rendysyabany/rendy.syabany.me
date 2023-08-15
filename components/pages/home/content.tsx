@@ -86,10 +86,10 @@ export default function Content() {
         {/* <img className="h-14 w-14 sm:h-16 sm:w-16 rounded-full" src={avatar} /> */}
         <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
           <div className="self-stretch">
-            <span className="text-md font-sans font-semibold leading-loose text-gray-700 sm:text-xl">
+            <span className="text-lg font-sans font-semibold leading-loose text-gray-700 sm:text-xl">
               {firstName}{" "}
             </span>
-            <span className="text-md font-sans font-light leading-loose text-gray-700 sm:text-xl">
+            <span className="text-lg font-sans font-light leading-loose text-gray-700 sm:text-xl">
               {lastName}
             </span>
           </div>
