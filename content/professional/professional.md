@@ -15,8 +15,8 @@ expertise:
 social:
   - socialUrl: 'mailto:rendy@syabany.me'
     socialIcon: /envelope.png
-  - socialUrl: 'https://github.com'
-    socialIcon: /logo.png
+  - socialUrl: 'https://twitter.com/rendysyabany'
+    socialIcon: /ic-twitter.png
   - socialUrl: 'https://linkedin.com'
     socialIcon: /authjs.webp
 productSectionTitle: My own beloved productss
@@ -53,6 +53,7 @@ designGallery:
     item: /img3.jpg
 avatar: /avatar.jpg
 ---
+
 
 
 
