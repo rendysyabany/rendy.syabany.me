@@ -1,8 +1,8 @@
 ---
-firstName: Rendyansyah
-lastName: Sya’bany
+firstName: Nanda
+lastName: Sari Ningrum
 description: Product Designer & Indie Maker
-about: "I thrive on transforming ideas into tangible solutions, blending aesthetics with functionality to create products that delight users.\L\n\n\n\nThe empathy-driven approach allows me to create products that truly resonate with the end-users, making a positive impact on their lives. I am dedicated to human-centered design principles, where the user's experience takes center stage in every decision I make."
+about: "I thrive on transforming ideas into tangible solutions, blending aesthetics with functionality to create products that delight users.\L\n\nThe empathy-driven approach allows me to create products that truly resonate with the end-users, making a positive impact on their lives. I am dedicated to human-centered design principles, where the user's experience takes center stage in every decision I make."
 expertise:
   - title: Figma Expert
     bgColor: '#F6F2E9'
@@ -49,8 +49,9 @@ designGallery:
     item: /img5.jpg
   - caption: satu
     item: /img3.jpg
-avatar: /avatar.jpg
+avatar: /nanda.png
 ---
+
 
 
 
