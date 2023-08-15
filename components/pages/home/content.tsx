@@ -82,6 +82,23 @@ export default function Content() {
 
   return (
     <div className="mx-5 flex flex-col gap-8">
+      <div className="inline-flex h-auto w-full items-center justify-start gap-4">
+        {/* <img className="h-14 w-14 sm:h-16 sm:w-16 rounded-full" src={avatar} /> */}
+        <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
+          <div className="self-stretch">
+            <span className="text-md font-sans font-semibold leading-loose text-gray-700 sm:text-xl">
+              {firstName}{" "}
+            </span>
+            <span className="text-md font-sans font-light leading-loose text-gray-700 sm:text-xl">
+              {lastName}
+            </span>
+          </div>
+          <div className="mt-[-2px] self-stretch text-sm font-normal leading-normal text-gray-500 sm:text-base">
+            {description}
+          </div>
+        </div>
+      </div>
+
       <Markdown className="text-md flex flex-col gap-3 self-stretch font-serif font-normal leading-normal tracking-normal text-gray-600 sm:text-lg">
         {about}
       </Markdown>
@@ -109,9 +126,9 @@ export default function Content() {
         ))}
       </div>
 
-      <div className="flex flex-col gap-6">
-        <p className="self-stretch font-sans text-xl font-semibold leading-loose text-gray-700">
-          Recent Post.
+      <div className="mt-4 flex flex-col gap-6">
+        <p className="my-[-6px] self-stretch font-sans text-xl font-semibold leading-loose text-gray-700">
+          Recent post.
         </p>
         {allPost.slice(0, 4).map((data, i) => (
           <Link href={postUrls[i]} key={i} className="flex flex-col gap-0">
@@ -133,6 +150,10 @@ export default function Content() {
             )}
           </Link>
         ))}
+
+        <Link href={"/writing"} className="font-serif text-md font-normal leading-normal tracking-normal text-gray-700">
+          <span className="font-medium underline">See all post</span>
+        </Link>
       </div>
     </div>
   );
