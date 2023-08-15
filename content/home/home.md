@@ -1,6 +1,6 @@
 ---
-firstName: Rendyansyah
-lastName: Sya'bany
+firstName: "Hey \U0001F44B\U0001F3FB"
+lastName: Rendy here!
 description: 'Technology, SaaS & Digital Product Enthusiast'
 about: >-
   A digital nomad fan who loves designing & building digital products. I have
@@ -23,6 +23,7 @@ gallery:
     galleryItem: /img8.jpg
 avatar: /avatar.jpg
 ---
+
 
 
 
