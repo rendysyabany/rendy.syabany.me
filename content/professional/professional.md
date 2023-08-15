@@ -37,12 +37,51 @@ productItem:
 gearSectionTitle: Stack Gear
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
-  - gearItemLogo: /thirteen.svg
+  - gearItemLogo: /rendy/figma.jpg
+    gearItemName: Figma
+    gearItemDescription: 'UID, DS & prototyping'
+  - gearItemLogo: /rendy/penpot.jpg
+    gearItemName: Penpot
+    gearItemDescription: 'UID, DS & prototyping'
+  - gearItemLogo: /rendy/law-of-ux.jpg
+    gearItemName: Law of UX
+    gearItemDescription: 'UX Best Practice'
+  - gearItemLogo: /rendy/checklist-design.svg
+    gearItemName: Checklist
+    gearItemDescription: 'Design Checklist'
+  - gearItemLogo: /rendy/supernova.jpg
+    gearItemName: Supernova
+    gearItemDescription: 'DS Manager'
+  - gearItemLogo: /rendy/notion.jpg
+    gearItemName: Notion
+    gearItemDescription: 'Doc & Tasks'
+  - gearItemLogo: /rendy/nextjs.jpg
     gearItemName: Nextjs
     gearItemDescription: Frontend Framework
-  - gearItemLogo: /authjs.webp
-    gearItemName: Figma
-    gearItemDescription: 'UI Design, prototyping '
+  - gearItemLogo: /rendy/tailwindcss.jpg
+    gearItemName: Tailwindcss
+    gearItemDescription: 'CSS Framework'
+  - gearItemLogo: /rendy/mantine.jpg
+    gearItemName: Mantine
+    gearItemDescription: 'FE UI Library'
+  - gearItemLogo: /rendy/strapi.jpg
+    gearItemName: Strapi
+    gearItemDescription: 'Headless CMS'
+  - gearItemLogo: /rendy/notion-api.jpg
+    gearItemName: Notion API
+    gearItemDescription: 'Headless CMS'
+  - gearItemLogo: /rendy/vercel.jpg
+    gearItemName: Vercel
+    gearItemDescription: 'PaaS'
+  - gearItemLogo: /rendy/railway.jpg
+    gearItemName: Railway
+    gearItemDescription: 'IaaS'
+  - gearItemLogo: /rendy/better-uptime.jpg
+    gearItemName: Better Uptime
+    gearItemDescription: 'Monitoring Tool'
+  - gearItemLogo: /rendy/umami-is.png
+    gearItemName: Umami.is
+    gearItemDescription: 'Analytics'
 deskSectionTitle: Desk Setup
 deskSectionDescription: "Checkout my desk-setup gallery below \U0001F60A"
 deskGallery:
@@ -53,53 +92,29 @@ deskGallery:
 resumeUrl: >-
   https://drive.google.com/file/d/12whUX_fX5GAs4fVSlhUCOsvyJr0u46Kp/view?usp=sharing
 designGallery:
-  - caption: dua
-    item: /img5.jpg
-  - caption: satu
-    item: /img3.jpg
+  - caption: design shot
+    item: /rendy/shots/aqu.webp
+  - caption: design shot
+    item: /rendy/shots/beautieslife.webp
+  - caption: design shot
+    item: /rendy/shots/dashboardstore.webp
+  - caption: design shot
+    item: /rendy/shots/dashboardstore2.webp
+  - caption: design shot
+    item: /rendy/shots/exera.webp
+  - caption: design shot
+    item: /rendy/shots/goorita.webp
+  - caption: design shot
+    item: /rendy/shots/goorita2.webp
+  - caption: design shot
+    item: /rendy/shots/masuke.webp
+  - caption: design shot
+    item: /rendy/shots/msp.webp
+  - caption: design shot
+    item: /rendy/shots/rinastore.webp
+  - caption: design shot
+    item: /rendy/shots/rinastore2.webp
+  - caption: design shot
+    item: /rendy/shots/tukang.webp
 avatar: /avatar.jpg
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
