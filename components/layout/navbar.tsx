@@ -43,48 +43,46 @@ export default function NavBar() {
   return (
     <>
       <SignInModal />
-      <div
-        className={`fixed z-10 top-0 flex w-full justify-center border-b border-gray-200 bg-white`}
-      >
-        <div className="px-5 flex h-16 w-full max-w-[720px] items-center justify-between">
-          <NavigationMenu>
-            <NavigationMenuList className="gap-2">
-              {navContent.map((nav, i) => (
-                <NavigationMenuItem key={i}>
-                  <Link href={nav.link} legacyBehavior passHref>
-                    <p
-                      className={`cursor-pointer font-sans text-sm text-gray-500 hover:underline ${
-                        currentPath === nav.link && "font-semibold text-gray-700"
-                      }`}
-                    >
-                      {nav.title}
-                    </p>
-                  </Link>
-                </NavigationMenuItem>
-              ))}
-            </NavigationMenuList>
-          </NavigationMenu>
+      {currentPath !== "/link" && (
+        <div
+          className={`fixed top-0 z-10 flex w-full justify-center border-b border-gray-200 bg-white`}
+        >
+          <div className="flex h-16 w-full max-w-[720px] items-center justify-between px-5">
+            <NavigationMenu>
+              <NavigationMenuList className="gap-2">
+                {navContent.map((nav, i) => (
+                  <NavigationMenuItem key={i}>
+                    <Link href={nav.link} legacyBehavior passHref>
+                      <p
+                        className={`cursor-pointer font-sans text-sm text-gray-500 hover:underline ${
+                          currentPath === nav.link &&
+                          "font-semibold text-gray-700"
+                        }`}
+                      >
+                        {nav.title}
+                      </p>
+                    </Link>
+                  </NavigationMenuItem>
+                ))}
+              </NavigationMenuList>
+            </NavigationMenu>
 
-          <NavigationMenu>
-            <NavigationMenuList className="gap-2">
-              {/* <NavigationMenuItem>
-                <Link href="https://syabany.me" legacyBehavior passHref>
-                  <p
-                    className={`cursor-pointer font-sans text-sm text-gray-500 hover:underline`}
+            <NavigationMenu>
+              <NavigationMenuList className="gap-2">
+                <NavigationMenuItem>
+                  <Button
+                    onClick={() => console.log("click-lamp")}
+                    variant="link"
+                    size="icon"
                   >
-                    Connect with me
-                  </p>
-                </Link>
-              </NavigationMenuItem> */}
-              <NavigationMenuItem>
-                <Button onClick={()=> console.log("click-lamp")} variant="link" size="icon">
-                  <Sun className="h-4 w-4" />
-                </Button>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+                    <Sun className="h-4 w-4" />
+                  </Button>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 }

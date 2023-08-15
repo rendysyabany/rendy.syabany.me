@@ -39,7 +39,7 @@ export default function Content() {
   const data = post && post.data;
 
   return (
-    <div className="flex flex-col w-full items-center justify-center px-4">
+    <div className="flex flex-col w-full items-center justify-center px-4 mt-[-64px]">
       <div className="flex flex-col w-full max-w-[460px] gap-2 justify-center">
         <div className="flex h-auto w-full items-center justify-start gap-4">
           <img

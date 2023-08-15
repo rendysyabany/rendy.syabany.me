@@ -93,9 +93,9 @@ export default function Content() {
               {lastName}
             </span>
           </div>
-          <div className="mt-[-2px] self-stretch text-sm font-normal leading-normal text-gray-500 sm:text-base">
+          {/* <div className="mt-[-2px] self-stretch text-sm font-normal leading-normal text-gray-500 sm:text-base">
             {description}
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -126,8 +126,8 @@ export default function Content() {
         ))}
       </div>
 
-      <div className="mt-4 flex flex-col gap-6">
-        <p className="my-[-6px] self-stretch font-sans text-xl font-semibold leading-loose text-gray-700">
+      <div className="mt-8 flex flex-col gap-6">
+        <p className="my-[-6px] self-stretch font-sans text-xl sm:text-2xl font-semibold leading-loose text-gray-700">
           Recent post.
         </p>
         {allPost.slice(0, 4).map((data, i) => (
