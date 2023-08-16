@@ -70,19 +70,7 @@ export default function Content() {
 
   return (
     <>
-      {/* <div className="fixed bottom-4 z-10 flex h-auto w-full max-w-[720px] flex-col items-center justify-start">
-        <div className="inline-flex h-auto w-fit flex-row flex-wrap items-center justify-start gap-5 rounded-md bg-gray-700 px-3 py-2">
-          <Link
-            href={data.resumeUrl}
-            target="_blank"
-            className="font-sans text-xs font-medium leading-tight text-white sm:text-sm"
-          >
-            Download PDF Resume
-          </Link>
-        </div>
-      </div> */}
-
-      <div className="fixed bottom-0 max-w-[720px] z-10 w-full border-t border-gray-200 bg-white py-5 text-center">
+      <div className="fixed bottom-0 max-w-[720px] z-10 w-full border-t border-gray-200 bg-gray-100 py-5 text-center">
         <Link
           href={data.resumeUrl}
           target="_blank"
