@@ -2,6 +2,7 @@ import fs from "fs"
 import Markdown from "markdown-to-jsx"
 import matter from "gray-matter"
 import { getPostMetadata } from "@/lib/getPostMetadata"
+import MainMarkdown from "@/components/ui/markdown"
 
 const getPostContent = (slug: string) => {
 	const folder = "content/posts/"
@@ -33,7 +34,7 @@ const PostPage = (props: any) => {
 				className="prose prose-quoteless prose-neutral md:prose-lg dark:prose-invert prose-h2:font-kasei 
 			 dark:prose-a:text-neutral-500 pb-8"
 			>
-				<Markdown>{post.content}</Markdown>
+				<MainMarkdown classStyle="flex" content={post.content} />
 			</article>
 		</div>
 	)

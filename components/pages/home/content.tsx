@@ -1,3 +1,4 @@
+import MainMarkdown from "@/components/ui/markdown";
 import { format } from "date-fns";
 import fs from "fs";
 import matter from "gray-matter";
@@ -102,23 +103,7 @@ export default function Content() {
         </div>
       </div> */}
 
-      <Markdown
-        className="text-md flex flex-col gap-3 self-stretch font-serif font-normal leading-normal tracking-normal text-gray-600 sm:text-lg"
-        options={{
-          overrides: {
-            h1: { component: "h1", props: { className: h1Style } },
-            h2: { component: "h2", props: { className: h2Style } },
-            h3: { component: "h3", props: { className: h3Style } },
-            p: { component: "p", props: { className: pStyle } },
-            blockquote: {
-              component: "blockquote",
-              props: { className: quoteStyle },
-            },
-          },
-        }}
-      >
-        {about}
-      </Markdown>
+      <MainMarkdown content={about} />
 
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
         <div className="row-span-2">

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Badge } from "@/components/ui/badge";
+import MainMarkdown from "@/components/ui/markdown";
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
@@ -121,9 +122,7 @@ export default function Content() {
           )}
         </div>
 
-        <Markdown className="text-md flex flex-col gap-3 self-stretch font-serif font-normal leading-normal tracking-normal text-gray-600 sm:text-lg">
-          {data.about}
-        </Markdown>
+        <MainMarkdown content={data.about} />
 
         <div className="inline-flex h-auto w-fit flex-wrap items-center justify-start gap-4 rounded-md bg-neutral-100 p-3">
           {data.social.map(
