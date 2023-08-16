@@ -416,13 +416,10 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "string",
+            type: "rich-text",
             name: "about",
             label: "About",
             required: true,
-            ui: {
-              component: "textarea",
-            },
           },
           {
             label: "Gallery",

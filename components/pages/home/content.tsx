@@ -75,15 +75,18 @@ export default function Content() {
     data: { avatar, firstName, lastName, description, about, gallery },
   } = post;
 
-  // console.log(post.data)
-
-  // const avatar =
-  //   "https://pbs.twimg.com/profile_images/1526474082434199552/DyPn7nem_400x400.jpg";
+  const h1Style = "text-2xl sm:text-4xl font-bold mb-4 text-gray-700";
+  const h2Style = "text-xl sm:text-3xl font-semibold mb-3 text-gray-700";
+  const h3Style = "font-sans text-lg sm:text-2xl font-semibold mb-3 text-gray-700";
+  const pStyle =
+    "text-md sm:text-lg mt-[-2px] font-serif font-normal leading-relaxed tracking-normal text-gray-700";
+  const quoteStyle =
+    "text-xl sm:text-2xl mt-[-2px] font-serif font-normal leading-normal tracking-normal text-gray-700 pl-4 border-l-2 border-gray-400 italic";
 
   return (
     <div className="mx-5 flex flex-col gap-8">
-      <div className="inline-flex h-auto w-full items-center justify-start gap-4">
-        {/* <img className="h-14 w-14 sm:h-16 sm:w-16 rounded-full" src={avatar} /> */}
+      {/* <div className="inline-flex h-auto w-full items-center justify-start gap-4">
+        <img className="h-14 w-14 sm:h-16 sm:w-16 rounded-full" src={avatar} />
         <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
           <div className="self-stretch">
             <span className="text-lg font-sans font-semibold leading-loose text-gray-700 sm:text-xl">
@@ -93,13 +96,27 @@ export default function Content() {
               {lastName}
             </span>
           </div>
-          {/* <div className="mt-[-2px] self-stretch text-sm font-normal leading-normal text-gray-500 sm:text-base">
+          <div className="mt-[-2px] self-stretch text-sm font-normal leading-normal text-gray-500 sm:text-base">
             {description}
-          </div> */}
+          </div>
         </div>
-      </div>
+      </div> */}
 
-      <Markdown className="text-md flex flex-col gap-3 self-stretch font-serif font-normal leading-normal tracking-normal text-gray-600 sm:text-lg">
+      <Markdown
+        className="text-md flex flex-col gap-3 self-stretch font-serif font-normal leading-normal tracking-normal text-gray-600 sm:text-lg"
+        options={{
+          overrides: {
+            h1: { component: "h1", props: { className: h1Style } },
+            h2: { component: "h2", props: { className: h2Style } },
+            h3: { component: "h3", props: { className: h3Style } },
+            p: { component: "p", props: { className: pStyle } },
+            blockquote: {
+              component: "blockquote",
+              props: { className: quoteStyle },
+            },
+          },
+        }}
+      >
         {about}
       </Markdown>
 
@@ -127,7 +144,7 @@ export default function Content() {
       </div>
 
       <div className="mt-8 flex flex-col gap-6">
-        <p className="my-[-6px] self-stretch font-sans text-xl sm:text-2xl font-semibold leading-loose text-gray-700">
+        <p className="my-[-6px] self-stretch font-sans text-xl font-semibold leading-loose text-gray-700 sm:text-2xl">
           Recent post.
         </p>
         {allPost.slice(0, 4).map((data, i) => (
@@ -151,7 +168,10 @@ export default function Content() {
           </Link>
         ))}
 
-        <Link href={"/writing"} className="font-serif text-md font-normal leading-normal tracking-normal text-gray-700">
+        <Link
+          href={"/writing"}
+          className="text-md font-serif font-normal leading-normal tracking-normal text-gray-700"
+        >
           <span className="font-medium underline">See all post</span>
         </Link>
       </div>

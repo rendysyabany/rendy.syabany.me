@@ -73,6 +73,7 @@ const PostPage = (props: any) => {
             overrides: {
               h1: { component: "h1", props: { className: h1Style } },
               h2: { component: "h2", props: { className: h2Style } },
+              h3: { component: "h3", props: { className: h3Style } },
               p: { component: "p", props: { className: pStyle } },
               blockquote: {
                 component: "blockquote",
