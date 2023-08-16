@@ -1,3 +1,4 @@
+import MainMarkdown from "@/components/ui/markdown";
 import { format } from "date-fns";
 import fs from "fs";
 import matter from "gray-matter";
@@ -75,10 +76,13 @@ export default function Content() {
     data: { avatar, firstName, lastName, description, about, gallery },
   } = post;
 
-  // console.log(post.data)
-
-  // const avatar =
-  //   "https://pbs.twimg.com/profile_images/1526474082434199552/DyPn7nem_400x400.jpg";
+  const h1Style = "text-2xl sm:text-4xl font-bold mb-4 text-gray-700";
+  const h2Style = "text-xl sm:text-3xl font-semibold mb-3 text-gray-700";
+  const h3Style = "font-sans text-lg sm:text-2xl font-semibold mb-3 text-gray-700";
+  const pStyle =
+    "text-md sm:text-lg mt-[-2px] font-serif font-normal leading-relaxed tracking-normal text-gray-700";
+  const quoteStyle =
+    "text-xl sm:text-2xl mt-[-2px] font-serif font-normal leading-normal tracking-normal text-gray-700 pl-4 border-l-2 border-gray-400 italic";
 
   return (
     <div className="mx-5 flex flex-col gap-8">
@@ -99,9 +103,7 @@ export default function Content() {
         </div>
       </div>
 
-      <Markdown className="text-md flex flex-col gap-3 self-stretch font-serif font-normal leading-normal tracking-normal text-gray-600 sm:text-lg">
-        {about}
-      </Markdown>
+      <MainMarkdown content={about} />
 
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
         <div className="row-span-2">
@@ -127,7 +129,7 @@ export default function Content() {
       </div>
 
       <div className="mt-8 flex flex-col gap-6">
-        <p className="my-[-6px] self-stretch font-sans text-xl sm:text-2xl font-semibold leading-loose text-gray-700">
+        <p className="my-[-6px] self-stretch font-sans text-xl font-semibold leading-loose text-gray-700 sm:text-2xl">
           Recent post.
         </p>
         {allPost.slice(0, 4).map((data, i) => (
@@ -151,7 +153,10 @@ export default function Content() {
           </Link>
         ))}
 
-        <Link href={"/writing"} className="font-serif text-md font-normal leading-normal tracking-normal text-gray-700">
+        <Link
+          href={"/writing"}
+          className="text-md font-serif font-normal leading-normal tracking-normal text-gray-700"
+        >
           <span className="font-medium underline">See all post</span>
         </Link>
       </div>

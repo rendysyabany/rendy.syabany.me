@@ -3,6 +3,9 @@ firstName: Rendyansyah
 lastName: Sya'bany
 description: Rendy.syabany.me
 link:
+  - linkTitle: Rendy.syabany.me
+    linkUrl: 'https://rendy.syabany.me'
+    linkImage: /img5.jpg
   - linkTitle: Kreator Peradaban
     linkUrl: 'https://kreatorperadaban.com'
     linkImage: ''
@@ -17,6 +20,7 @@ link:
     linkImage: ''
 avatar: /avatar.jpg
 ---
+
 
 
 

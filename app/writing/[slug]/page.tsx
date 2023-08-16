@@ -4,6 +4,7 @@ import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetadata"
 import { format } from "date-fns";
+import MainMarkdown from "@/components/ui/markdown";
 
 const getPostContent = (slug: string) => {
   const folder = "content/posts/";
@@ -67,22 +68,7 @@ const PostPage = (props: any) => {
       <div className="my-4 border-t border-gray-300"></div>
 
       <article className="prose prose-quoteless prose-neutral md:prose-lg dark:prose-invert prose-h2:font-kasei dark:prose-a:text-neutral-500 pb-8">
-        <Markdown
-          className="flex flex-col gap-7"
-          options={{
-            overrides: {
-              h1: { component: "h1", props: { className: h1Style } },
-              h2: { component: "h2", props: { className: h2Style } },
-              p: { component: "p", props: { className: pStyle } },
-              blockquote: {
-                component: "blockquote",
-                props: { className: quoteStyle },
-              },
-            },
-          }}
-        >
-          {content}
-        </Markdown>
+        <MainMarkdown classStyle="flex flex-col gap-7" content={content} />
       </article>
     </div>
   );
