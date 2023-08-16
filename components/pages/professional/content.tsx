@@ -70,8 +70,8 @@ export default function Content() {
 
   return (
     <>
-      <div className="flex flex-col fixed bottom-4 z-10 h-auto w-full max-w-[720px] items-center justify-start">
-        <div className="inline-flex flex-row h-auto w-fit flex-wrap items-center justify-start gap-5 rounded-md bg-gray-700 px-3 py-2">
+      {/* <div className="fixed bottom-4 z-10 flex h-auto w-full max-w-[720px] flex-col items-center justify-start">
+        <div className="inline-flex h-auto w-fit flex-row flex-wrap items-center justify-start gap-5 rounded-md bg-gray-700 px-3 py-2">
           <Link
             href={data.resumeUrl}
             target="_blank"
@@ -80,6 +80,17 @@ export default function Content() {
             Download PDF Resume
           </Link>
         </div>
+      </div> */}
+
+      <div className="fixed bottom-0 max-w-[720px] z-10 w-full border-t border-gray-200 bg-white py-5 text-center">
+        <Link
+          href={data.resumeUrl}
+          target="_blank"
+        >
+          <p className="font-sans text-xs font-medium leading-tight text-gray-700 sm:text-sm underline">
+            Download Resume (PDF)
+          </p>
+        </Link>
       </div>
 
       <div className="mx-5 flex flex-col gap-8 pb-10">
