@@ -12,14 +12,12 @@ link:
   - linkTitle: Bahagia.day
     linkUrl: 'https://bahagia.day'
     linkImage: ''
-  - linkTitle: Instagram Threads
-    linkUrl: 'https://threads.net/rendysyabany'
-    linkImage: ''
   - linkTitle: Instagram
-    linkUrl: 'https://instagram.com/rendysyabany'
+    linkUrl: 'https://instagram.com/nandasyabany'
     linkImage: ''
 avatar: /Nanda/Avatar.jpg
 ---
+
 
 
 
