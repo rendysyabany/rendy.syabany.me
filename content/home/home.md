@@ -14,7 +14,7 @@ about: >
   Saat ini aku lagi belajar serba serbi Home Education buat aku terapin di
   keluargaku dan membuat ilustrasi digital. Ya, semua aktifitas yang bisa
   dilakukan di rumah. Semoga dengan adanya blog ini bisa meluaskan manfaat dan
-  menemani buibu yang juga mayoritas aktifitasnya di rumah.
+  menemani ibu2 yang juga mayoritas aktifitasnya di rumah.
 
 
   Oya, aku juga bakal share printable gratis dan tips gambar simpel yang bisa
@@ -32,6 +32,7 @@ gallery:
     galleryItem: /img8.jpg
 avatar: /nanda.png
 ---
+
 
 
 
