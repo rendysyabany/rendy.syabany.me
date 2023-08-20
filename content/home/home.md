@@ -8,7 +8,7 @@ about: >
 
   Buat tamu baru, salam kenal. Aku Nanda, ibu2 yang baru menemukan passionnya di
   tahun ke 3 pernikahan. Nggak kok nggak telat hehe, karna takdir dari Allah
-  adalah yang terbaik.     
+  adalah yang terbaik.
 
 
   Saat ini aku lagi belajar serba serbi Home Education buat aku terapin di
@@ -23,7 +23,7 @@ gallery:
   - caption: img1
     galleryItem: /IMG_20230806_084616_808.jpg
   - caption: img3
-    galleryItem: /img3.jpg
+    galleryItem: /Tak berjudul23_20230808202953.png
   - caption: img4
     galleryItem: /img4.jpg
   - caption: img5
@@ -32,6 +32,7 @@ gallery:
     galleryItem: /img8.jpg
 avatar: /nanda.png
 ---
+
 
 
 
