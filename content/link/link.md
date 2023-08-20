@@ -3,6 +3,8 @@ firstName: Nanda
 lastName: Sari Ningrum
 description: Nanda.syabany.me
 link:
+  - linkTitle: Printable GRATIS
+    linkUrl: 'https://drive.google.com/drive/folders/1PckiPWqSvO7RNyfs_UzAgnZJbOjVZZyj'
   - linkTitle: Nanda.syabany.me
     linkUrl: 'https://nanda.syabany.me'
     linkImage: ''
@@ -17,6 +19,7 @@ link:
     linkImage: ''
 avatar: /Nanda/Avatar.jpg
 ---
+
 
 
 
