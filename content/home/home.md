@@ -21,7 +21,7 @@ about: >
   ibu2 pakek buat nemenin aktifitas anak di rumah.
 gallery:
   - caption: img1
-    galleryItem: /img1.jpg
+    galleryItem: /IMG_20230806_084616_808.jpg
   - caption: img3
     galleryItem: /img3.jpg
   - caption: img4
@@ -32,6 +32,7 @@ gallery:
     galleryItem: /img8.jpg
 avatar: /nanda.png
 ---
+
 
 
 
