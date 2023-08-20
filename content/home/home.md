@@ -14,7 +14,7 @@ gallery:
     galleryItem: /img5.jpg
   - caption: img8
     galleryItem: /img8.jpg
-avatar: /avatar.jpg
+avatar: /rendy.jpg
 ---
 
 

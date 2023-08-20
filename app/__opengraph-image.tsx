@@ -26,7 +26,7 @@ export default async function OG() {
         }}
       >
         <img
-          src={new URL("../public/avatar.jpg", import.meta.url).toString()}
+          src={new URL("../public/rendy.jpg", import.meta.url).toString()}
           alt="Avatar"
           tw="w-20 h-20 mb-4 opacity-95"
         />

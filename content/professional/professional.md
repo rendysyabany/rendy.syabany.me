@@ -118,6 +118,6 @@ designGallery:
     item: /rendy/shots/rinastore2.webp
   - caption: design shot
     item: /rendy/shots/tukang.webp
-avatar: /avatar.jpg
+avatar: /rendy.jpg
 ---
 
