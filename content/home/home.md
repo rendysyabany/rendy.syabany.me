@@ -1,8 +1,24 @@
 ---
 firstName: Nanda
 lastName: Sari Ningrum
-description: 'Technology, SaaS & Digital Product Enthusiast'
-about: "### Hey \U0001F44B\U0001F3FB Rendy here!\n\nA digital nomad fan who loves designing & building digital products. I have embraced a dynamic lifestyle that allows me to work remotely.\n\nAlongside my nomadic adventures, I find immense joy in building digital products, continuously seeking opportunities to combine my technical expertise and creative flair to craft innovative and user-centric solutions.\n"
+description: "Belajar menjadi Ibu produktif dari rumah \U0001F5A4"
+about: >
+  ### Assalamu'alaikum,
+
+
+  Buat tamu baru, salam kenal. Aku Nanda, ibu2 yang baru menemukan passionnya di
+  tahun ke 3 pernikahan. Nggak kok nggak telat hehe, karna takdir dari Allah
+  adalah yang terbaik.
+
+
+  Saat ini aku lagi belajar serba serbi Home Schooling dan membuat ilustrasi
+  digital. Ya, semua aktifitas yang bisa dilakukan di rumah. Semoga dengan
+  adanya blog ini bisa meluaskan manfaat dan menemani buibu yang juga mayoritas
+  aktifitasnya di rumah.
+
+
+  Oya, aku juga bakal share printable gratis dan tips gambar simpel yang bisa
+  ibu2 pakek buat nemenin aktifitas anak di rumah.
 gallery:
   - caption: img1
     galleryItem: /img1.jpg
@@ -16,6 +32,7 @@ gallery:
     galleryItem: /img8.jpg
 avatar: /nanda.png
 ---
+
 
 
 
