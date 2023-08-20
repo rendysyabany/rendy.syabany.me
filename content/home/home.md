@@ -10,14 +10,14 @@ about: >
   tahun ke 3 pernikahan. Nggak kok nggak telat hehe, karna takdir dari Allah
   adalah yang terbaik.
 
-   
+       
 
   Saat ini aku lagi belajar serba serbi Home Schooling dan membuat ilustrasi
   digital. Ya, semua aktifitas yang bisa dilakukan di rumah. Semoga dengan
   adanya blog ini bisa meluaskan manfaat dan menemani buibu yang juga mayoritas
   aktifitasnya di rumah.
 
-   
+        
 
   Oya, aku juga bakal share printable gratis dan tips gambar simpel yang bisa
   ibu2 pakek buat nemenin aktifitas anak di rumah.
@@ -34,6 +34,7 @@ gallery:
     galleryItem: /img8.jpg
 avatar: /nanda.png
 ---
+
 
 
 
