@@ -3,6 +3,9 @@ firstName: Nanda
 lastName: Sari Ningrum
 description: Nanda.syabany.me
 link:
+  - linkTitle: Printable - Angka
+    linkUrl: >-
+      https://drive.google.com/file/d/18qmcN2lskkIeCb_qLM1wO4TKOVrB_stW/view?usp=sharing
   - linkTitle: Printable - Buah
     linkUrl: >-
       https://drive.google.com/file/d/18ougqPYObuA_yUe7Ui4BcmLjhhWd3LE1/view?usp=sharing
@@ -26,6 +29,7 @@ link:
     linkImage: ''
 avatar: /Nanda/Avatar.jpg
 ---
+
 
 
 
