@@ -78,7 +78,8 @@ export default function Content() {
 
   const h1Style = "text-2xl sm:text-4xl font-bold mb-4 text-gray-700";
   const h2Style = "text-xl sm:text-3xl font-semibold mb-3 text-gray-700";
-  const h3Style = "font-sans text-lg sm:text-2xl font-semibold mb-3 text-gray-700";
+  const h3Style =
+    "font-sans text-lg sm:text-2xl font-semibold mb-3 text-gray-700";
   const pStyle =
     "text-md sm:text-lg mt-[-2px] font-serif font-normal leading-relaxed tracking-normal text-gray-700";
   const quoteStyle =
@@ -103,7 +104,7 @@ export default function Content() {
         </div>
       </div> */}
 
-      <MainMarkdown content={about} />
+      <MainMarkdown classStyle="flex flex-col gap-7" content={about} />
 
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
         <div className="row-span-2">

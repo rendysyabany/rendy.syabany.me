@@ -2,7 +2,7 @@
 firstName: Rendyansyah
 lastName: Syabany
 description: 'Technology, SaaS & Digital Product Enthusiast'
-about: "### Hey \U0001F44B\U0001F3FB Rendy here!\n\nA digital nomad fan who loves designing & building digital products. I have embraced a dynamic lifestyle that allows me to work remotely.\n\nAlongside my nomadic adventures, I find immense joy in building digital products, continuously seeking opportunities to combine my technical expertise and creative flair to craft innovative and user-centric solutions.\n"
+about: "### \U0001F44B\U0001F3FB Rendy here!\n\nA digital nomad fan who loves designing & building digital products. I have embraced a dynamic lifestyle that allows me to work remotely.\n\nAlongside my nomadic adventures, I find immense joy in building digital products, continuously seeking opportunities to combine my technical expertise and creative flair to craft innovative and user-centric solutions.\n"
 gallery:
   - caption: img1
     galleryItem: /img1.jpg
@@ -14,8 +14,9 @@ gallery:
     galleryItem: /img5.jpg
   - caption: img8
     galleryItem: /img8.jpg
-avatar: /avatar.jpg
+avatar: /rendy.jpg
 ---
+
 
 
 

@@ -18,7 +18,7 @@ link:
   - linkTitle: Instagram
     linkUrl: 'https://instagram.com/rendysyabany'
     linkImage: ''
-avatar: /avatar.jpg
+avatar: /rendy.jpg
 ---
 
 
