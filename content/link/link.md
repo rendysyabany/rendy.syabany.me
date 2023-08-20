@@ -1,11 +1,11 @@
 ---
-firstName: Rendyansyah
-lastName: Sya'bany
-description: Rendy.syabany.me
+firstName: Nanda
+lastName: Sari Ningrum
+description: Nanda.syabany.me
 link:
-  - linkTitle: Rendy.syabany.me
-    linkUrl: 'https://rendy.syabany.me'
-    linkImage: /img5.jpg
+  - linkTitle: Nanda.syabany.me
+    linkUrl: 'https://nanda.syabany.me'
+    linkImage: ''
   - linkTitle: Kreator Peradaban
     linkUrl: 'https://kreatorperadaban.com'
     linkImage: ''
@@ -18,8 +18,9 @@ link:
   - linkTitle: Instagram
     linkUrl: 'https://instagram.com/rendysyabany'
     linkImage: ''
-avatar: /avatar.jpg
+avatar: /Nanda/Avatar.jpg
 ---
+
 
 
 
