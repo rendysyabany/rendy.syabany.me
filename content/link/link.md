@@ -6,6 +6,7 @@ link:
   - linkTitle: Prewriting - Bubble
     linkUrl: >-
       https://drive.google.com/file/d/11ph-kimxJHhoGfU4mm7TclHSkpMXGwU9/view?usp=sharing
+    linkImage: /Nanda/Ilustrasi-2.png
   - linkTitle: Prewriting - Horizontal
     linkUrl: >-
       https://drive.google.com/file/d/11ld-1AU3RGB9og1WMJj8Wv-MIYEQweR0/view?usp=sharing
@@ -44,6 +45,7 @@ link:
     linkImage: ''
 avatar: /Nanda/Avatar.jpg
 ---
+
 
 
 
