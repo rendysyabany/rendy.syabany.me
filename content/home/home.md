@@ -29,9 +29,10 @@ gallery:
   - caption: img5
     galleryItem: /Tak berjudul25_20230806230256.png
   - caption: img8
-    galleryItem: /img8.jpg
+    galleryItem: /Tak berjudul6.png
 avatar: /nanda.png
 ---
+
 
 
 
