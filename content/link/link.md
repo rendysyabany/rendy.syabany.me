@@ -3,6 +3,9 @@ firstName: Nanda
 lastName: Sari Ningrum
 description: Nanda.syabany.me
 link:
+  - linkTitle: Prewriting - Tracing Pattern
+    linkUrl: >-
+      https://drive.google.com/file/d/11vcQW2inDW267eXhnnqArYM0LP0B-TUu/view?usp=sharing
   - linkTitle: Prewriting - Tracing Line
     linkUrl: >-
       https://drive.google.com/file/d/11j0cfH9YWPY2FChbWoaEqiRTlB1_K_4S/view?usp=sharing
@@ -35,6 +38,7 @@ link:
     linkImage: ''
 avatar: /Nanda/Avatar.jpg
 ---
+
 
 
 
