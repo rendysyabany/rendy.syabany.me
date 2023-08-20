@@ -103,7 +103,7 @@ export default function Content() {
         </div>
       </div>
 
-      <MainMarkdown content={about} />
+      <MainMarkdown classStyle="flex flex-col gap-7" content={about} />
 
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
         <div className="row-span-2">

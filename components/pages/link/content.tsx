@@ -39,8 +39,8 @@ export default function Content() {
   const data = post && post.data;
 
   return (
-    <div className="flex flex-col w-full items-center justify-center px-4 mt-[-64px]">
-      <div className="flex flex-col w-full max-w-[460px] gap-2 justify-center">
+    <div className="mt-[-64px] flex w-full flex-col items-center justify-center px-4">
+      <div className="flex w-full max-w-[460px] flex-col justify-center gap-2">
         <div className="flex h-auto w-full items-center justify-start gap-4">
           <img
             className="h-14 w-14 rounded-full sm:h-16 sm:w-16"
@@ -69,6 +69,7 @@ export default function Content() {
                   linkImage: any;
                   linkTitle: string;
                   linkUrl: string;
+                  linkDescription: string;
                 },
                 i: Key | null | undefined,
               ) => (
@@ -97,9 +98,11 @@ export default function Content() {
                     <div className="text-md self-stretch font-sans font-semibold leading-relaxed text-gray-700">
                       {linkItem.linkTitle}
                     </div>
-                    <p className="text-sm font-medium leading-none text-gray-500 underline">
-                      {linkItem.linkUrl}
-                    </p>
+                    {linkItem.linkDescription && (
+                      <p className="text-sm font-medium leading-none text-gray-500 underline">
+                        {linkItem.linkDescription}
+                      </p>
+                    )}
                   </div>
                 </Link>
               ),

@@ -8,7 +8,7 @@ export default defineConfig({
   clientId: "b9fdf6b8-9339-4f8e-9fd2-1073fab5aff9", // Get this from tina.io
   token: "4ec8084c8ae43f1b221174b291fd47f29fa6c56e", // Get this from tina.io
 
-  cmsCallback: cms => {
+  cmsCallback: (cms) => {
     cms.flags.set("branch-switcher", true);
     return cms;
   },
@@ -25,7 +25,6 @@ export default defineConfig({
   },
   schema: {
     collections: [
-
       {
         name: "post",
         label: "Posts",
@@ -57,7 +56,6 @@ export default defineConfig({
             label: "Body",
             isBody: true,
           },
-          
         ],
         // ui: {
         //   // This is an DEMO router. You can remove this to fit your site
@@ -199,7 +197,9 @@ export default defineConfig({
               // This allows the customization of the list item UI
               // Data can be accessed by item?.<Name of field>
               itemProps: (item) => {
-                return { label: `${item?.socialIcon}  ( ${item?.socialUrl} ) ` };
+                return {
+                  label: `${item?.socialIcon}  ( ${item?.socialUrl} ) `,
+                };
               },
             },
             fields: [
@@ -213,7 +213,7 @@ export default defineConfig({
                 label: "Social Icon",
                 name: "socialIcon",
                 type: "image",
-              }
+              },
             ],
           },
           {
@@ -240,7 +240,9 @@ export default defineConfig({
               // This allows the customization of the list item UI
               // Data can be accessed by item?.<Name of field>
               itemProps: (item) => {
-                return { label: `${item?.productItemName}  ( ${item?.productItemUrl} ) ` };
+                return {
+                  label: `${item?.productItemName}  ( ${item?.productItemUrl} ) `,
+                };
               },
             },
             fields: [
@@ -331,7 +333,9 @@ export default defineConfig({
               // This allows the customization of the list item UI
               // Data can be accessed by item?.<Name of field>
               itemProps: (item) => {
-                return { label: `${item?.deskGalleryCaption}  ( ${item?.deskGalleryItem} ) ` };
+                return {
+                  label: `${item?.deskGalleryCaption}  ( ${item?.deskGalleryItem} ) `,
+                };
               },
             },
             fields: [
@@ -345,10 +349,10 @@ export default defineConfig({
                 label: "Item",
                 name: "deskGalleryItem",
                 type: "image",
-              }
+              },
             ],
           },
-          
+
           {
             label: "Design Gallery",
             name: "designGallery",
@@ -372,7 +376,7 @@ export default defineConfig({
                 label: "Item",
                 name: "item",
                 type: "image",
-              }
+              },
             ],
           },
         ],
@@ -461,7 +465,7 @@ export default defineConfig({
                 //     return value.startsWith("/") ? value.slice(1) : value;
                 //   },
                 // }
-              }
+              },
             ],
           },
         ],
@@ -531,7 +535,15 @@ export default defineConfig({
                 label: "link Image",
                 name: "linkImage",
                 type: "image",
-              }
+              },
+              {
+                label: "link Description",
+                name: "linkDescription",
+                type: "string",
+                ui: {
+                  component: "textarea",
+                },
+              },
             ],
           },
         ],
@@ -577,7 +589,7 @@ export default defineConfig({
       //         component: "textarea",
       //       },
       //     },
-          
+
       //   ],
       // },
 
