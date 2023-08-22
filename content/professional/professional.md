@@ -24,6 +24,10 @@ social:
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
+  - productItemLogo: /pribume-logo.svg
+    productItemName: Pribu.me
+    productItemUrl: Pribu.me
+    productItemBgColor: '#EAF8F4'
   - productItemLogo: /daund-single-380x380.png
     productItemName: Daund ID
     productItemUrl: Daund.id
@@ -124,5 +128,6 @@ designGallery:
     item: /rendy/shots/tukang.webp
 avatar: /rendy.jpg
 ---
+
 
 
