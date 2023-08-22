@@ -27,6 +27,13 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          async
+          src="https://tracking.syabany.com/script.js"
+          data-website-id="6148d5fd-cf2e-48bd-9f92-15637afdd1d2"
+        ></script>
+      </head>
       <body
         className={cx(
           source_serif_4.variable,
