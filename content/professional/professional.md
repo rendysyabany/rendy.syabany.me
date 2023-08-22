@@ -27,7 +27,7 @@ productItem:
   - productItemLogo: /kreatorperadaban-logo.jpg
     productItemName: Kreator Peradaban
     productItemUrl: kreatorperadaban.com
-    productItemBgColor: '#F6F6F9'
+    productItemBgColor: '#FFF6EA'
   - productItemLogo: /bahagia-day-logo.jpg
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
@@ -128,6 +128,7 @@ designGallery:
     item: /rendy/shots/tukang.webp
 avatar: /rendy.jpg
 ---
+
 
 
 
