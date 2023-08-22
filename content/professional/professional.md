@@ -24,14 +24,6 @@ social:
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
-  - productItemLogo: /pribume-logo.svg
-    productItemName: Pribu.me
-    productItemUrl: Pribu.me
-    productItemBgColor: '#EAF8F4'
-  - productItemLogo: /daund-single-380x380.png
-    productItemName: Daund ID
-    productItemUrl: Daund.id
-    productItemBgColor: '#F4F4F4'
   - productItemLogo: /kreatorperadaban-logo.jpg
     productItemName: Kreator Peradaban
     productItemUrl: kreatorperadaban.com
@@ -40,6 +32,14 @@ productItem:
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
+  - productItemLogo: /pribume-logo.svg
+    productItemName: Pribu.me
+    productItemUrl: Pribu.me
+    productItemBgColor: '#EAF8F4'
+  - productItemLogo: /daund-single-380x380.png
+    productItemName: Daund ID
+    productItemUrl: Daund.id
+    productItemBgColor: '#F4F4F4'
 gearSectionTitle: Stack Gear
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
@@ -128,6 +128,7 @@ designGallery:
     item: /rendy/shots/tukang.webp
 avatar: /rendy.jpg
 ---
+
 
 
 
