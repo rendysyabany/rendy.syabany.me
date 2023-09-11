@@ -24,6 +24,9 @@ social:
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
+  - productItemLogo: /Syabany_Logo_Only_min.png
+    productItemName: Syabany Labs
+    productItemUrl: syabany.com
   - productItemLogo: /kreatorperadaban-logo.jpg
     productItemName: Kreator Peradaban
     productItemUrl: kreatorperadaban.com
@@ -120,6 +123,7 @@ designGallery:
     item: /rendy/shots/tukang.webp
 avatar: /rendy.jpg
 ---
+
 
 
 
