@@ -24,6 +24,9 @@ social:
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
+  - productItemLogo: /synapse-kit.png
+    productItemName: Synapse Kits
+    productItemUrl: synapse.syabany.com
   - productItemLogo: /Syabany_Logo_Only_min.png
     productItemName: Syabany Labs
     productItemUrl: syabany.com
@@ -123,6 +126,7 @@ designGallery:
     item: /rendy/shots/tukang.webp
 avatar: /rendy.jpg
 ---
+
 
 
 
