@@ -24,9 +24,6 @@ social:
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
-  - productItemLogo: /synapse-kit.png
-    productItemName: Synapse Kits
-    productItemUrl: synapse.syabany.com
   - productItemLogo: /Syabany_Logo_Only_min.png
     productItemName: Syabany Labs
     productItemUrl: syabany.com
@@ -38,6 +35,9 @@ productItem:
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
+  - productItemLogo: /synapse-kit.png
+    productItemName: Synapse Kits
+    productItemUrl: synapse.syabany.com
 gearSectionTitle: Stack Gear
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
@@ -126,6 +126,7 @@ designGallery:
     item: /rendy/shots/tukang.webp
 avatar: /rendy.jpg
 ---
+
 
 
 
