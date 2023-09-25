@@ -24,17 +24,9 @@ social:
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
-  - productItemLogo: /daund-logo.jpg
-    productItemName: Daund ID
-    productItemUrl: daund.id
-    productItemBgColor: '#EAF8F4'
   - productItemLogo: /Syabany_Logo_Only_min.png
     productItemName: Syabany Labs
     productItemUrl: syabany.com
-  - productItemLogo: /kreatorperadaban-logo.jpg
-    productItemName: Kreator Peradaban
-    productItemUrl: kreatorperadaban.com
-    productItemBgColor: '#FFF6EA'
   - productItemLogo: /bahagia-day-logo.jpg
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
@@ -42,6 +34,10 @@ productItem:
   - productItemLogo: /synapse-kit.png
     productItemName: Synapse Kits
     productItemUrl: synapse.syabany.com
+  - productItemLogo: /daund-logo.jpg
+    productItemName: Daund ID
+    productItemUrl: daund.id
+    productItemBgColor: '#EAF8F4'
 gearSectionTitle: Stack Gear
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
@@ -130,6 +126,7 @@ designGallery:
     item: /rendy/shots/tukang.webp
 avatar: /rendy.jpg
 ---
+
 
 
 
