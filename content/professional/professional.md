@@ -24,6 +24,10 @@ social:
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
+  - productItemLogo: /daund-logo.jpg
+    productItemName: Daund ID
+    productItemUrl: daund.id
+    productItemBgColor: '#EAF8F4'
   - productItemLogo: /Syabany_Logo_Only_min.png
     productItemName: Syabany Labs
     productItemUrl: syabany.com
@@ -126,6 +130,7 @@ designGallery:
     item: /rendy/shots/tukang.webp
 avatar: /rendy.jpg
 ---
+
 
 
 
