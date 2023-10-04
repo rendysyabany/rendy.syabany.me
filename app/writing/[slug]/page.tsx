@@ -7,6 +7,13 @@ import { format } from "date-fns";
 import MainMarkdown from "@/components/ui/markdown";
 import { NextSeo } from 'next-seo';
 
+import type { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Rendyansyah Syabany | Writing',
+  description: 'Digital Product Designer & Builder',
+}
+
 const getPostContent = (slug: string) => {
   const folder = "content/posts/";
   const file = `${folder}${slug}.md`;

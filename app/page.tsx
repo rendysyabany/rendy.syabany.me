@@ -1,16 +1,15 @@
 import Content from "@/components/pages/home/content";
-import { DEPLOY_URL } from "@/lib/constants";
-import Image from "next/image";
-import Balancer from "react-wrap-balancer";
-import { NextSeo } from "next-seo";
+
+import type { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Rendyansyah Syabany',
+  description: 'Digital Product Designer & Builder',
+}
 
 export default async function Home() {
   return (
     <>
-      <NextSeo
-        title="Rendyansyah Syabany"
-        description="Digital Product Designer & Builder"
-      />
       <Content />
     </>
   );

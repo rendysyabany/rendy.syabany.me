@@ -1,10 +1,15 @@
-import React from "react";
+import { format } from "date-fns";
 import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
-import { format } from "date-fns";
-import { NextSeo } from 'next-seo';
+import path from "path";
+
+import type { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Rendyansyah Syabany | Writing',
+  description: 'Digital Product Designer & Builder',
+}
 
 interface PostData {
   data: {
@@ -41,10 +46,6 @@ const Writing = () => {
 
   return (
     <>
-      <NextSeo
-        title="Rendyansyah Syabany | Writing"
-        description="Digital Product Designer & Builder"
-      />
       <div className="mx-5 flex flex-col gap-6">
         {post.map((data, i) => (
           <Link href={postUrls[i]} key={i} className="flex flex-col gap-0">
