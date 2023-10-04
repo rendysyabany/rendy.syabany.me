@@ -2,9 +2,10 @@ import React from "react";
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
-import getPostMetadata from "@/components/getPostMetadata"
+import getPostMetadata from "@/components/getPostMetadata";
 import { format } from "date-fns";
 import MainMarkdown from "@/components/ui/markdown";
+import { NextSeo } from 'next-seo';
 
 const getPostContent = (slug: string) => {
   const folder = "content/posts/";
@@ -21,12 +22,11 @@ const getPostContent = (slug: string) => {
 };
 
 export const generateStaticParams = async () => {
-	const posts = getPostMetadata()
-	return posts.map((post: { slug: any; }) => ({
-		slug: post.slug,
-	}))
-}
-
+  const posts = getPostMetadata();
+  return posts.map((post: { slug: any }) => ({
+    slug: post.slug,
+  }));
+};
 
 const PostPage = (props: any) => {
   const { slug } = props.params;
@@ -50,27 +50,33 @@ const PostPage = (props: any) => {
     "text-xl sm:text-2xl mt-[-2px] font-serif font-normal leading-normal tracking-normal text-gray-700 pl-4 border-l-2 border-gray-400 italic";
 
   return (
-    <div className="mx-5 flex flex-col gap-6">
-      <div className="flex flex-col gap-8">
-        <div className="inline-flex flex-col items-start justify-start gap-4">
-          <p className="text-sm mb-2 font-serif font-normal leading-normal tracking-normal text-gray-500">
-          Published on {format(new Date(datePublished), 'dd MMMM yyyy')}
-          </p>
-          <p className="font-sans text-xl sm:text-3xl font-semibold leading-7 sm:leading-9 tracking-normal text-gray-700">
-            {title}
-          </p>
-          <p className="text-md font-serif font-normal leading-normal tracking-normal text-gray-500">
-            {shortDescription}
-          </p>
+    <>
+      <NextSeo
+        title={`${title} | Rendyansyah Syabany`}
+        description={shortDescription}
+      />
+      <div className="mx-5 flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
+          <div className="inline-flex flex-col items-start justify-start gap-4">
+            <p className="mb-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-500">
+              Published on {format(new Date(datePublished), "dd MMMM yyyy")}
+            </p>
+            <p className="font-sans text-xl font-semibold leading-7 tracking-normal text-gray-700 sm:text-3xl sm:leading-9">
+              {title}
+            </p>
+            <p className="text-md font-serif font-normal leading-normal tracking-normal text-gray-500">
+              {shortDescription}
+            </p>
+          </div>
         </div>
+
+        <div className="my-4 border-t border-gray-300"></div>
+
+        <article className="prose prose-quoteless prose-neutral md:prose-lg dark:prose-invert prose-h2:font-kasei dark:prose-a:text-neutral-500 pb-8">
+          <MainMarkdown classStyle="flex flex-col gap-7" content={content} />
+        </article>
       </div>
-
-      <div className="my-4 border-t border-gray-300"></div>
-
-      <article className="prose prose-quoteless prose-neutral md:prose-lg dark:prose-invert prose-h2:font-kasei dark:prose-a:text-neutral-500 pb-8">
-        <MainMarkdown classStyle="flex flex-col gap-7" content={content} />
-      </article>
-    </div>
+    </>
   );
 };
 

@@ -4,6 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
 import { format } from "date-fns";
+import { NextSeo } from 'next-seo';
 
 interface PostData {
   data: {
@@ -39,25 +40,34 @@ const Writing = () => {
     .map((filename) => `/writing/${filename.replace(/\.md$/, "")}`);
 
   return (
-    <div className="mx-5 flex flex-col gap-6">
-      {post.map((data, i) => (
-        <Link href={postUrls[i]} key={i} className="flex flex-col gap-0">
-          <div className="inline-flex flex-col items-start justify-start gap-2">
-            <p className="text-md font-sans font-semibold leading-6 tracking-normal text-gray-700 sm:text-lg">
-              {data.data.title}
-            </p>
-            <p className="line-clamp-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-500">
-              {data.data.shortDescription}
-            </p>
-            <p className="mt-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-700">
-              Published on {format(new Date(data.data.datePublished), 'dd MMMM yyyy')},{" "}
-              <span className="font-medium underline">Read more</span>
-            </p>
-          </div>
-          {i !== post.length - 1 && <div className="mt-6 border-t border-gray-300 w-full mx-auto"></div>}
-        </Link>
-      ))}
-    </div>
+    <>
+      <NextSeo
+        title="Rendyansyah Syabany | Writing"
+        description="Digital Product Designer & Builder"
+      />
+      <div className="mx-5 flex flex-col gap-6">
+        {post.map((data, i) => (
+          <Link href={postUrls[i]} key={i} className="flex flex-col gap-0">
+            <div className="inline-flex flex-col items-start justify-start gap-2">
+              <p className="text-md font-sans font-semibold leading-6 tracking-normal text-gray-700 sm:text-lg">
+                {data.data.title}
+              </p>
+              <p className="line-clamp-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-500">
+                {data.data.shortDescription}
+              </p>
+              <p className="mt-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-700">
+                Published on{" "}
+                {format(new Date(data.data.datePublished), "dd MMMM yyyy")},{" "}
+                <span className="font-medium underline">Read more</span>
+              </p>
+            </div>
+            {i !== post.length - 1 && (
+              <div className="mx-auto mt-6 w-full border-t border-gray-300"></div>
+            )}
+          </Link>
+        ))}
+      </div>
+    </>
   );
 };
 export default Writing;
