@@ -1,7 +1,7 @@
 ---
 firstName: Rendyansyah
 lastName: Sya’bany
-description: Product Designer & Indie Maker
+description: Digital Product Designer & Builder
 about: "I thrive on transforming ideas into tangible solutions, blending aesthetics with functionality to create products that delight users.\L\n\nThe empathy-driven approach allows me to create products that truly resonate with the end-users, making a positive impact on their lives. I am dedicated to human-centered design principles, where the user's experience takes center stage in every decision I make."
 expertise:
   - title: Figma Expert
@@ -24,22 +24,20 @@ social:
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
-  - productItemLogo: /kreatorperadaban-logo.jpg
-    productItemName: Kreator Peradaban
-    productItemUrl: kreatorperadaban.com
-    productItemBgColor: '#FFF6EA'
+  - productItemLogo: /Syabany_Logo_Only_min.png
+    productItemName: Syabany Labs
+    productItemUrl: syabany.com
   - productItemLogo: /bahagia-day-logo.jpg
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
-  - productItemLogo: /pribume-logo.svg
-    productItemName: Pribu.me
-    productItemUrl: Pribu.me
-    productItemBgColor: '#EAF8F4'
-  - productItemLogo: /daund-single-380x380.png
+  - productItemLogo: /synapse-kit.png
+    productItemName: Synapse Kits
+    productItemUrl: synapse.syabany.com
+  - productItemLogo: /daund-logo.jpg
     productItemName: Daund ID
-    productItemUrl: Daund.id
-    productItemBgColor: '#F4F4F4'
+    productItemUrl: daund.id
+    productItemBgColor: '#EAF8F4'
 gearSectionTitle: Stack Gear
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
@@ -128,6 +126,13 @@ designGallery:
     item: /rendy/shots/tukang.webp
 avatar: /rendy.jpg
 ---
+
+
+
+
+
+
+
 
 
 
