@@ -1,11 +1,8 @@
-import React from "react";
-import fs from "fs";
-import Markdown from "markdown-to-jsx";
-import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetadata";
-import { format } from "date-fns";
 import MainMarkdown from "@/components/ui/markdown";
-import { NextSeo } from 'next-seo';
+import { format } from "date-fns";
+import fs from "fs";
+import matter from "gray-matter";
 
 import type { Metadata } from 'next';
  
@@ -58,10 +55,6 @@ const PostPage = (props: any) => {
 
   return (
     <>
-      <NextSeo
-        title={`${title} | Rendyansyah Syabany`}
-        description={shortDescription}
-      />
       <div className="mx-5 flex flex-col gap-6">
         <div className="flex flex-col gap-8">
           <div className="inline-flex flex-col items-start justify-start gap-4">
