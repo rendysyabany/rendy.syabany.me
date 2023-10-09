@@ -5,6 +5,7 @@ import cx from "classnames";
 import { Suspense } from "react";
 import { inter, roboto_mono, roboto_serif, source_serif_4 } from "./fonts";
 import "./globals.css";
+import Script from "next/script";
 // import { Roboto, Roboto_Serif } from 'next/font/google'
 
 export const metadata = {
@@ -28,11 +29,27 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        {/* <script
           async
           src="https://tracking.syabany.com/script.js"
           data-website-id="6148d5fd-cf2e-48bd-9f92-15637afdd1d2"
-        ></script>
+        ></script> */}
+
+        <Script
+          strategy="lazyOnload"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-WL8LK9LTVT`}
+        />
+
+        <Script id="google-analytics-script" strategy="lazyOnload">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WL8LK9LTVT', {
+          page_path: window.location.pathname,
+          });
+    `}
+        </Script>
       </head>
       <body
         className={cx(
