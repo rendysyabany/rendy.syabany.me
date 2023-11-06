@@ -10,7 +10,7 @@ expertise:
     bgColor: '#EAF8F4'
   - title: Design System Architect
     bgColor: '#FFE8E8'
-  - title: No-Code Enthusiast
+  - title: No-Code User
     bgColor: '#ECF2F9'
   - title: Product Management
     bgColor: '#EDF1F0'
