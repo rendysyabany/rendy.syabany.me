@@ -1,8 +1,8 @@
 ---
+avatar: /rendy.jpg
 firstName: Rendyansyah
 lastName: Sya’bany
-description: Digital Product Designer & Builder
-about: "I thrive on transforming ideas into tangible solutions, blending aesthetics with functionality to create products that delight users.\L\n\nThe empathy-driven approach allows me to create products that truly resonate with the end-users, making a positive impact on their lives. I am dedicated to human-centered design principles, where the user's experience takes center stage in every decision I make."
+description: Digital Product Crafter
 expertise:
   - title: Figma Expert
     bgColor: '#F6F2E9'
@@ -12,6 +12,9 @@ expertise:
     bgColor: '#FFE8E8'
   - title: No-Code Enthusiast
     bgColor: '#ECF2F9'
+  - title: Product Management
+    bgColor: '#EDF1F0'
+about: "I thrive on transforming ideas into tangible solutions, blending aesthetics with functionality to create products that delight users.\L\n\nThe empathy-driven approach allows me to create products that truly resonate with the end-users, making a positive impact on their lives. I am dedicated to human-centered design principles, where the user's experience takes center stage in every decision I make."
 social:
   - socialUrl: 'mailto:rendy@syabany.me'
     socialIcon: /envelope.png
@@ -21,6 +24,8 @@ social:
     socialIcon: /ic-whatsapp.png
   - socialUrl: 'https://t.me/rendysyabany'
     socialIcon: /ic-telegram.png
+resumeUrl: >-
+  https://drive.google.com/file/d/12whUX_fX5GAs4fVSlhUCOsvyJr0u46Kp/view?usp=sharing
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
@@ -97,8 +102,6 @@ deskGallery:
     deskGalleryItem: /img3.jpg
   - deskGalleryCaption: desk gallery
     deskGalleryItem: /img8.jpg
-resumeUrl: >-
-  https://drive.google.com/file/d/12whUX_fX5GAs4fVSlhUCOsvyJr0u46Kp/view?usp=sharing
 designGallery:
   - caption: design shot
     item: /rendy/shots/aqua.webp
@@ -124,17 +127,5 @@ designGallery:
     item: /rendy/shots/rinastore2.webp
   - caption: design shot
     item: /rendy/shots/tukang.webp
-avatar: /rendy.jpg
 ---
-
-
-
-
-
-
-
-
-
-
-
 
