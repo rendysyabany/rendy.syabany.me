@@ -29,6 +29,10 @@ resumeUrl: >-
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
+  - productItemLogo: /Syabany-Logo-Single-rectangle.png
+    productItemName: Syabany Hub
+    productItemUrl: 'https://hub.syabany.com'
+    productItemBgColor: '#EBF4FA'
   - productItemLogo: /Syabany_Logo_Only_min.png
     productItemName: Syabany Labs
     productItemUrl: syabany.com
