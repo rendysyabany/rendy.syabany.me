@@ -34,7 +34,7 @@ productItem:
     productItemUrl: syabany.com
   - productItemLogo: /Syabany-Logo-Single-rectangle.png
     productItemName: Syabany Hub
-    productItemUrl: 'https://hub.syabany.com'
+    productItemUrl: hub.syabany.com
     productItemBgColor: '#EBF4FA'
   - productItemLogo: /bahagia-day-logo.jpg
     productItemName: Bahagia.day
