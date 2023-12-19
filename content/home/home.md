@@ -1,4 +1,5 @@
 ---
+avatar: /rendy.jpg
 firstName: Rendyansyah
 lastName: Syabany
 description: 'Technology, SaaS & Digital Product Enthusiast'
@@ -13,39 +14,6 @@ gallery:
   - caption: img5
     galleryItem: /img5.jpg
   - caption: img8
-    galleryItem: /img8.jpg
-avatar: /rendy.jpg
+    galleryItem: /20231217_114109.jpg
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
