@@ -99,6 +99,8 @@ deskSectionTitle: Desk Setup
 deskSectionDescription: "Checkout my desk-setup gallery below \U0001F60A"
 deskGallery:
   - deskGalleryCaption: desk gallery
+    deskGalleryItem: /20230903_093715.jpg
+  - deskGalleryCaption: desk gallery
     deskGalleryItem: /20231001_003936.jpg
   - deskGalleryCaption: desk gallery
     deskGalleryItem: /20230911_163945.jpg
