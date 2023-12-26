@@ -29,6 +29,10 @@ resumeUrl: >-
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
+  - productItemLogo: /titiktemukita-avatar.jpg
+    productItemName: Titik Temu Kita
+    productItemUrl: instagram.com/titiktemukita_id
+    productItemBgColor: '#F3F4F6'
   - productItemLogo: /Syabany_Logo_Only_min.png
     productItemName: Syabany Labs
     productItemUrl: syabany.com
