@@ -29,28 +29,28 @@ resumeUrl: >-
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
-  - productItemLogo: /titiktemukita-avatar.jpg
-    productItemName: Titik Temu Kita
-    productItemUrl: instagram.com/titiktemukita_id
-    productItemBgColor: '#F3F4F6'
   - productItemLogo: /Syabany_Logo_Only_min.png
     productItemName: Syabany Labs
     productItemUrl: syabany.com
-  - productItemLogo: /Syabany-Logo-Single-rectangle.png
-    productItemName: Syabany Hub
-    productItemUrl: hub.syabany.com
-    productItemBgColor: '#EBF4FA'
   - productItemLogo: /bahagia-day-logo.jpg
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
-  - productItemLogo: /synapse-kit.png
-    productItemName: Synapse Kits
-    productItemUrl: synapse.syabany.com
   - productItemLogo: /daund-logo.jpg
     productItemName: Daund ID
     productItemUrl: daund.id
     productItemBgColor: '#EAF8F4'
+  - productItemLogo: /titiktemukita-avatar.jpg
+    productItemName: Titik Temu Kita
+    productItemUrl: instagram.com/titiktemukita_id
+    productItemBgColor: '#F3F4F6'
+  - productItemLogo: /Syabany-Logo-Single-rectangle.png
+    productItemName: Syabany Hub
+    productItemUrl: hub.syabany.com
+    productItemBgColor: '#EBF4FA'
+  - productItemLogo: /synapse-kit.png
+    productItemName: Synapse Kits
+    productItemUrl: synapse.syabany.com
 gearSectionTitle: Stack Gear
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
