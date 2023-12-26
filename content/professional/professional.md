@@ -36,6 +36,9 @@ productItem:
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
+  - productItemLogo: /synapse-kit.png
+    productItemName: Synapse Kits
+    productItemUrl: synapse.syabany.com
   - productItemLogo: /daund-logo.jpg
     productItemName: Daund ID
     productItemUrl: daund.id
@@ -48,9 +51,6 @@ productItem:
     productItemName: Syabany Hub
     productItemUrl: hub.syabany.com
     productItemBgColor: '#EBF4FA'
-  - productItemLogo: /synapse-kit.png
-    productItemName: Synapse Kits
-    productItemUrl: synapse.syabany.com
 gearSectionTitle: Stack Gear
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
