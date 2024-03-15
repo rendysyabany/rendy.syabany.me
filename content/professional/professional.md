@@ -41,7 +41,7 @@ productItem:
     productItemUrl: synapse.syabany.com
   - productItemLogo: /daund-logo.jpg
     productItemName: Daund ID
-    productItemUrl: daund.id
+    productItemUrl: daund-fe-main.vercel.app
     productItemBgColor: '#EAF8F4'
   - productItemLogo: /titiktemukita-avatar.jpg
     productItemName: Titik Temu Kita
