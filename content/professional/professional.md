@@ -36,6 +36,10 @@ productItem:
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
+  - productItemLogo: /Syabany-Logo-Single-rectangle.png
+    productItemName: Syabany Hub
+    productItemUrl: hub.syabany.com
+    productItemBgColor: '#EBF4FA'
   - productItemLogo: /synapse-kit.png
     productItemName: Synapse Kits
     productItemUrl: synapse.syabany.com
@@ -47,10 +51,6 @@ productItem:
     productItemName: Titik Temu Kita
     productItemUrl: instagram.com/titiktemukita.id
     productItemBgColor: '#F3F4F6'
-  - productItemLogo: /Syabany-Logo-Single-rectangle.png
-    productItemName: Syabany Hub
-    productItemUrl: hub.syabany.com
-    productItemBgColor: '#EBF4FA'
 gearSectionTitle: Stack Gear
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
