@@ -45,7 +45,7 @@ productItem:
     productItemBgColor: '#EAF8F4'
   - productItemLogo: /titiktemukita-avatar.jpg
     productItemName: Titik Temu Kita
-    productItemUrl: instagram.com/titiktemukita_id
+    productItemUrl: instagram.com/titiktemukita.id
     productItemBgColor: '#F3F4F6'
   - productItemLogo: /Syabany-Logo-Single-rectangle.png
     productItemName: Syabany Hub
