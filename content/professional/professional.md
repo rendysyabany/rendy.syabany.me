@@ -40,8 +40,8 @@ productItem:
     productItemName: Synapse Kits
     productItemUrl: synapse.syabany.com
   - productItemLogo: /daund-logo.jpg
-    productItemName: Daund ID
-    productItemUrl: daund-fe-main.vercel.app
+    productItemName: Daund Coffee
+    productItemUrl: instagram.com/daundcoffee
     productItemBgColor: '#EAF8F4'
   - productItemLogo: /titiktemukita-avatar.jpg
     productItemName: Titik Temu Kita
