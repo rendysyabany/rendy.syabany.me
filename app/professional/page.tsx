@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
  
 export const metadata: Metadata = {
   title: 'Rendyansyah Syabany | Professional',
-  description: 'Digital Product Designer & Builder',
+  description: 'Crafting Empathy-driven products',
 }
 
 export default async function Professional() {
