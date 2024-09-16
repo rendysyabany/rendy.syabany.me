@@ -29,18 +29,18 @@ resumeUrl: >-
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
-  - productItemLogo: /Syabany_Logo_Only_min.png
-    productItemName: Syabany Labs
-    productItemUrl: labs.syabany.com
-    productItemBgColor: '#DCFCE7'
-  - productItemLogo: /bahagia-day-logo.jpg
-    productItemName: Bahagia.day
-    productItemUrl: bahagia.day
-    productItemBgColor: '#FFE4E6'
   - productItemLogo: /Syabany-HQ-Logo.jpg
     productItemName: Syabany HQ
     productItemUrl: syabany.com
     productItemBgColor: '#EBF4FA'
+  - productItemLogo: /bahagia-day-logo.jpg
+    productItemName: Bahagia.day
+    productItemUrl: bahagia.day
+    productItemBgColor: '#FFE4E6'
+  - productItemLogo: /Syabany_Logo_Only_min.png
+    productItemName: Syabany Labs
+    productItemUrl: labs.syabany.com
+    productItemBgColor: '#DCFCE7'
   - productItemLogo: /synapse-kit.png
     productItemName: Synapse Kits
     productItemUrl: synapse.syabany.com
