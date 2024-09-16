@@ -37,9 +37,9 @@ productItem:
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
-  - productItemLogo: /Syabany-Logo-Single-rectangle.png
-    productItemName: Syabany Hub
-    productItemUrl: hub.syabany.com
+  - productItemLogo: /Syabany-HQ-Logo.jpg
+    productItemName: Syabany HQ
+    productItemUrl: syabany.com
     productItemBgColor: '#EBF4FA'
   - productItemLogo: /synapse-kit.png
     productItemName: Synapse Kits
