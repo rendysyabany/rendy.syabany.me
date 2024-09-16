@@ -32,6 +32,7 @@ productItem:
   - productItemLogo: /Syabany_Logo_Only_min.png
     productItemName: Syabany Labs
     productItemUrl: labs.syabany.com
+    productItemBgColor: '#DCFCE7'
   - productItemLogo: /bahagia-day-logo.jpg
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
