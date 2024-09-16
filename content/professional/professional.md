@@ -31,7 +31,7 @@ productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
   - productItemLogo: /Syabany_Logo_Only_min.png
     productItemName: Syabany Labs
-    productItemUrl: syabany.com
+    productItemUrl: labs.syabany.com
   - productItemLogo: /bahagia-day-logo.jpg
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
