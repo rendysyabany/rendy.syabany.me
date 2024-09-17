@@ -55,10 +55,10 @@ productItem:
 gearSectionTitle: Stack Gear
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
-- gearItemLogo: /rendy/notion.jpg
+  - gearItemLogo: /rendy/notion.jpg
     gearItemName: Notion
     gearItemDescription: Doc & Tasks
-- gearItemLogo: /rendy/lark-logo.png
+  - gearItemLogo: /lark-logo.png
     gearItemName: Lark Suite
     gearItemDescription: Doc & Tasks
   - gearItemLogo: /rendy/figma.jpg
@@ -85,19 +85,19 @@ gearItem:
   - gearItemLogo: /rendy/mantine.jpg
     gearItemName: Mantine
     gearItemDescription: FE UI Library
-  - gearItemLogo: /rendy/shadcn.png
+  - gearItemLogo: /shadcn.png
     gearItemName: Shadcn UI
     gearItemDescription: FE UI Library
-  - gearItemLogo: /rendy/supabase.png
+  - gearItemLogo: /supabase.png
     gearItemName: Supabase
     gearItemDescription: BaaS
-  - gearItemLogo: /rendy/pocketbase.png
+  - gearItemLogo: /pocketbase.png
     gearItemName: Pocketbase
     gearItemDescription: BaaS
   - gearItemLogo: /rendy/strapi.jpg
     gearItemName: Strapi
     gearItemDescription: Headless CMS
-  - gearItemLogo: /rendy/directus.png
+  - gearItemLogo: /directus.png
     gearItemName: Directus
     gearItemDescription: Headless CMS
   - gearItemLogo: /rendy/notion-api.jpg
@@ -109,13 +109,13 @@ gearItem:
   - gearItemLogo: /rendy/railway.jpg
     gearItemName: Railway
     gearItemDescription: PaaS
-  - gearItemLogo: /rendy/dokploy.png
+  - gearItemLogo: /dokploy.png
     gearItemName: Dokploy
     gearItemDescription: PaaS
-  - gearItemLogo: /rendy/flyio.png
+  - gearItemLogo: /flyio.png
     gearItemName: Fly.io
     gearItemDescription: PaaS
-  - gearItemLogo: /rendy/coolify.png
+  - gearItemLogo: /coolify.png
     gearItemName: Coolify
     gearItemDescription: PaaS
   - gearItemLogo: /rendy/better-uptime.jpg
