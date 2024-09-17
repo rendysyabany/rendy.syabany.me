@@ -55,9 +55,12 @@ productItem:
 gearSectionTitle: Stack Gear
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
-  - gearItemLogo: /Screenshot 2024-09-17 at 1.42.05 PM.png
-    gearItemName: Remix
-    gearItemDescription: FE Framework
+- gearItemLogo: /rendy/notion.jpg
+    gearItemName: Notion
+    gearItemDescription: Doc & Tasks
+- gearItemLogo: /rendy/lark-logo.png
+    gearItemName: Lark Suite
+    gearItemDescription: Doc & Tasks
   - gearItemLogo: /rendy/figma.jpg
     gearItemName: Figma
     gearItemDescription: 'UID, DS & prototyping'
@@ -72,15 +75,30 @@ gearItem:
     gearItemDescription: Design Checklist
   - gearItemLogo: /rendy/nextjs.jpg
     gearItemName: Nextjs
-    gearItemDescription: Frontend Framework
+    gearItemDescription: FE Framework
+  - gearItemLogo: /remix.png
+    gearItemName: Remix
+    gearItemDescription: FE Framework
   - gearItemLogo: /rendy/tailwindcss.jpg
     gearItemName: Tailwindcss
     gearItemDescription: CSS Framework
   - gearItemLogo: /rendy/mantine.jpg
     gearItemName: Mantine
     gearItemDescription: FE UI Library
+  - gearItemLogo: /rendy/shadcn.png
+    gearItemName: Shadcn UI
+    gearItemDescription: FE UI Library
+  - gearItemLogo: /rendy/supabase.png
+    gearItemName: Supabase
+    gearItemDescription: BaaS
+  - gearItemLogo: /rendy/pocketbase.png
+    gearItemName: Pocketbase
+    gearItemDescription: BaaS
   - gearItemLogo: /rendy/strapi.jpg
     gearItemName: Strapi
+    gearItemDescription: Headless CMS
+  - gearItemLogo: /rendy/directus.png
+    gearItemName: Directus
     gearItemDescription: Headless CMS
   - gearItemLogo: /rendy/notion-api.jpg
     gearItemName: Notion API
@@ -90,16 +108,22 @@ gearItem:
     gearItemDescription: PaaS
   - gearItemLogo: /rendy/railway.jpg
     gearItemName: Railway
-    gearItemDescription: IaaS
+    gearItemDescription: PaaS
+  - gearItemLogo: /rendy/dokploy.png
+    gearItemName: Dokploy
+    gearItemDescription: PaaS
+  - gearItemLogo: /rendy/flyio.png
+    gearItemName: Fly.io
+    gearItemDescription: PaaS
+  - gearItemLogo: /rendy/coolify.png
+    gearItemName: Coolify
+    gearItemDescription: PaaS
   - gearItemLogo: /rendy/better-uptime.jpg
     gearItemName: Better Uptime
     gearItemDescription: Monitoring Tool
   - gearItemLogo: /rendy/umami-is.png
     gearItemName: Umami.is
     gearItemDescription: Analytics
-  - gearItemLogo: /rendy/notion.jpg
-    gearItemName: Notion
-    gearItemDescription: Doc & Tasks
 deskSectionTitle: Desk Setup
 deskSectionDescription: "Checkout my desk-setup gallery below \U0001F60A"
 deskGallery:
