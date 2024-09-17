@@ -55,6 +55,9 @@ productItem:
 gearSectionTitle: Stack Gear
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
+  - gearItemLogo: /Screenshot 2024-09-17 at 1.42.05 PM.png
+    gearItemName: Remix
+    gearItemDescription: FE Framework
   - gearItemLogo: /rendy/figma.jpg
     gearItemName: Figma
     gearItemDescription: 'UID, DS & prototyping'
