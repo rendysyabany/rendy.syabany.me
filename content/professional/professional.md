@@ -67,12 +67,6 @@ gearItem:
   - gearItemLogo: /rendy/checklist-design.svg
     gearItemName: Checklist
     gearItemDescription: Design Checklist
-  - gearItemLogo: /rendy/supernova.jpg
-    gearItemName: Supernova
-    gearItemDescription: DS Manager
-  - gearItemLogo: /rendy/notion.jpg
-    gearItemName: Notion
-    gearItemDescription: Doc & Tasks
   - gearItemLogo: /rendy/nextjs.jpg
     gearItemName: Nextjs
     gearItemDescription: Frontend Framework
@@ -100,6 +94,9 @@ gearItem:
   - gearItemLogo: /rendy/umami-is.png
     gearItemName: Umami.is
     gearItemDescription: Analytics
+  - gearItemLogo: /rendy/notion.jpg
+    gearItemName: Notion
+    gearItemDescription: Doc & Tasks
 deskSectionTitle: Desk Setup
 deskSectionDescription: "Checkout my desk-setup gallery below \U0001F60A"
 deskGallery:
