@@ -254,7 +254,7 @@ export default function Content() {
           </div>
         </div>
 
-{/*         <div className="my-4 border-t border-gray-300"></div>
+        <div className="my-4 border-t border-gray-300"></div>
 
         <div className="flex flex-col gap-8">
           <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
@@ -299,7 +299,7 @@ export default function Content() {
               ),
             )}
           </div>
-        </div> */}
+        </div>
 
         <div className="my-4 border-t border-gray-300"></div>
         <div className="flex flex-col gap-8">
