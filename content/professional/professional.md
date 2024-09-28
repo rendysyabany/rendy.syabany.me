@@ -37,13 +37,13 @@ productItem:
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
-  - productItemLogo: /Syabany_Logo_Only_min.png
-    productItemName: Syabany Labs
-    productItemUrl: labs.syabany.com
-    productItemBgColor: '#DCFCE7'
-  - productItemLogo: /synapse-kit.png
-    productItemName: Synapse Kits
-    productItemUrl: synapse.syabany.com
+  # - productItemLogo: /Syabany_Logo_Only_min.png
+  #   productItemName: Syabany Labs
+  #   productItemUrl: labs.syabany.com
+  #   productItemBgColor: '#DCFCE7'
+  # - productItemLogo: /synapse-kit.png
+  #   productItemName: Synapse Kits
+  #   productItemUrl: synapse.syabany.com
   - productItemLogo: /daund-logo.jpg
     productItemName: Daund Coffee
     productItemUrl: instagram.com/daundcoffee
@@ -76,9 +76,9 @@ gearItem:
   - gearItemLogo: /rendy/nextjs.jpg
     gearItemName: Nextjs
     gearItemDescription: FE Framework
-  - gearItemLogo: /remix.png
-    gearItemName: Remix
-    gearItemDescription: FE Framework
+  # - gearItemLogo: /remix.png
+  #   gearItemName: Remix
+  #   gearItemDescription: FE Framework
   - gearItemLogo: /rendy/tailwindcss.jpg
     gearItemName: Tailwindcss
     gearItemDescription: CSS Framework
@@ -97,9 +97,9 @@ gearItem:
   - gearItemLogo: /rendy/strapi.jpg
     gearItemName: Strapi
     gearItemDescription: Headless CMS
-  - gearItemLogo: /directus.png
-    gearItemName: Directus
-    gearItemDescription: Headless CMS
+  # - gearItemLogo: /directus.png
+  #   gearItemName: Directus
+  #   gearItemDescription: Headless CMS
   - gearItemLogo: /rendy/notion-api.jpg
     gearItemName: Notion API
     gearItemDescription: Headless CMS
@@ -112,9 +112,9 @@ gearItem:
   - gearItemLogo: /dokploy.png
     gearItemName: Dokploy
     gearItemDescription: PaaS
-  - gearItemLogo: /flyio.png
-    gearItemName: Fly.io
-    gearItemDescription: PaaS
+  # - gearItemLogo: /flyio.png
+  #   gearItemName: Fly.io
+  #   gearItemDescription: PaaS
   - gearItemLogo: /coolify.png
     gearItemName: Coolify
     gearItemDescription: PaaS

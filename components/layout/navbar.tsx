@@ -15,7 +15,7 @@ import { useSignInModal } from "./sign-in-modal";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
-import { Sun, SunIcon } from "lucide-react";
+import { Mail, Sun, SunIcon } from "lucide-react";
 
 export default function NavBar() {
   const currentPath = usePathname();
@@ -27,8 +27,8 @@ export default function NavBar() {
       link: "/",
     },
     {
-      title: "Professional",
-      link: "/professional",
+      title: "About",
+      link: "/about",
     },
     {
       title: "Writing",
@@ -56,7 +56,7 @@ export default function NavBar() {
                       <p
                         className={`cursor-pointer font-sans text-sm text-gray-500 hover:underline ${
                           currentPath === nav.link &&
-                          "font-semibold text-gray-700"
+                          "font-semibold text-gray-700 underline"
                         }`}
                       >
                         {nav.title}
@@ -70,13 +70,26 @@ export default function NavBar() {
             <NavigationMenu>
               <NavigationMenuList className="gap-2">
                 <NavigationMenuItem>
-                  <Button
+                  <a
+                    href="mailto:rendysyabany@gmail.com"
+                    className="variant-link size-icon"
+                  >
+                    <div className="flex bg-slate-600 px-2 rounded-full py-2 min-[400px]:px-3 items-center gap-2">
+                      <p
+                        className={`hidden min-[400px]:block cursor-pointer font-sans text-sm text-white hover:underline`}
+                      >
+                        Contact
+                      </p>
+                      <Mail className="h-4 w-4 text-white" />
+                    </div>
+                  </a>
+                  {/* <Button
                     onClick={() => console.log("click-lamp")}
                     variant="link"
                     size="icon"
                   >
                     <Sun className="h-4 w-4" />
-                  </Button>
+                  </Button> */}
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
