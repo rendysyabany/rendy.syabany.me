@@ -73,7 +73,7 @@ const PostPage = (props: any) => {
         <div className="my-4 border-t border-gray-300"></div>
 
         <article className="prose prose-quoteless prose-neutral md:prose-lg dark:prose-invert prose-h2:font-kasei dark:prose-a:text-neutral-500 pb-8">
-          <MainMarkdown classStyle="flex flex-col gap-7" content={content} />
+          <MainMarkdown classStyle="flex flex-col gap-2" content={content} />
         </article>
       </div>
     </>
