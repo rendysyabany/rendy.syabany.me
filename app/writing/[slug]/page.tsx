@@ -5,12 +5,12 @@ import { format } from "date-fns";
 import fs from "fs";
 import matter from "gray-matter";
 
-import type { Metadata } from 'next';
- 
+import type { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: 'Rendyansyah Syabany | Writing',
-  description: 'Digital Product Designer & Builder',
-}
+  title: "Rendyansyah Syabany | Writing",
+  description: "Digital Product Designer & Builder",
+};
 
 const getPostContent = (slug: string) => {
   const folder = "content/posts/";
@@ -69,7 +69,9 @@ const PostPage = (props: any) => {
           <MainMarkdown classStyle="flex flex-col gap-2" content={content} />
         </article>
       </div>
-      <Comments title={title} />
+      <div className="mx-4">
+        <Comments title={title} />
+      </div>
     </div>
   );
 };
