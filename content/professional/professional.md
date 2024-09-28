@@ -45,12 +45,12 @@ productItem:
   #   productItemName: Synapse Kits
   #   productItemUrl: synapse.syabany.com
   - productItemLogo: /daund-logo.jpg
-    productItemName: Daund Coffee
-    productItemUrl: instagram.com/daundcoffee
+    productItemName: Daund ID
+    productItemUrl: instagram.com/daund.id
     productItemBgColor: '#EAF8F4'
   - productItemLogo: /titiktemukita-avatar.jpg
     productItemName: Titik Temu Kita
-    productItemUrl: instagram.com/titiktemukita.id
+    productItemUrl: titiktemukita.id
     productItemBgColor: '#F3F4F6'
 gearSectionTitle: Stack Gear
 gearSectionDescription: Empower with the technology stack I use
