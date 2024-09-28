@@ -65,6 +65,23 @@ export default async function RootLayout({
           });
     `}
         </Script>
+
+        <script
+          src="https://giscus.app/client.js"
+          data-repo="rendysyabany/rendy-blog-discussion"
+          data-repo-id="R_kgDOM4glqA"
+          data-category="Announcements"
+          data-category-id="DIC_kwDOM4glqM4Ci4Jx"
+          data-mapping="pathname"
+          data-strict="1"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          crossOrigin="anonymous"
+          async
+        ></script>
       </head>
       <body
         className={cx(

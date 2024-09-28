@@ -8,8 +8,8 @@ interface MainMarkdownProps {
 
 const MainMarkdown = ({ content, classStyle }: MainMarkdownProps) => {
   const h1Style = "text-3xl sm:text-4xl font-bold mb-4 text-gray-700";
-  const h2Style = "text-2xl sm:text-3xl font-semibold mb-3 text-gray-700";
-  const h3Style = "font-sans text-xl sm:text-2xl font-semibold mt-6 mb-1 text-gray-700";
+  const h2Style = "text-2xl sm:text-3xl font-bold mb-3 text-gray-700";
+  const h3Style = "font-sans text-xl sm:text-2xl font-bold mt-6 mb-1 text-gray-700";
   const pStyle =
     "text-[18px] sm:text-[20px] mt-[-2px] font-serif font-normal leading-[1.5] tracking-normal text-gray-700";
   const quoteStyle =

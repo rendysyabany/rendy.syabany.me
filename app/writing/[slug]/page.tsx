@@ -1,4 +1,5 @@
 import getPostMetadata from "@/components/getPostMetadata";
+import { Comments } from "@/components/ui/comments";
 import MainMarkdown from "@/components/ui/markdown";
 import { format } from "date-fns";
 import fs from "fs";
@@ -46,7 +47,7 @@ const PostPage = (props: any) => {
   } = post;
 
   return (
-    <>
+    <div className="flex flex-col">
       <div className="mx-5 flex flex-col gap-6">
         <div className="flex flex-col gap-8">
           <div className="inline-flex flex-col items-start justify-start gap-4">
@@ -68,7 +69,8 @@ const PostPage = (props: any) => {
           <MainMarkdown classStyle="flex flex-col gap-2" content={content} />
         </article>
       </div>
-    </>
+      <Comments title={title} />
+    </div>
   );
 };
 

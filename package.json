@@ -11,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@giscus/react": "^3.0.0",
     "@next-auth/prisma-adapter": "^1.0.5",
     "@prisma/client": "^4.8.1",
     "@radix-ui/react-aspect-ratio": "^1.0.3",
