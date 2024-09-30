@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 
 import useScroll from "@/lib/hooks/use-scroll";
-import { useSignInModal } from "./sign-in-modal";
+// import { useSignInModal } from "./sign-in-modal";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
@@ -19,7 +19,7 @@ import { Mail, Sun, SunIcon } from "lucide-react";
 
 export default function NavBar() {
   const currentPath = usePathname();
-  const { SignInModal, setShowSignInModal } = useSignInModal();
+  // const { SignInModal, setShowSignInModal } = useSignInModal();
   const scrolled = useScroll(50);
   const navContent = [
     {
@@ -42,7 +42,7 @@ export default function NavBar() {
 
   return (
     <>
-      <SignInModal />
+      {/* <SignInModal /> */}
       {currentPath !== "/link" && (
         <div
           className={`fixed top-0 z-10 flex w-full justify-center border-b border-gray-200 bg-white`}
