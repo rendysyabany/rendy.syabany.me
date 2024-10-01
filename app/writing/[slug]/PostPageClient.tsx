@@ -1,36 +1,75 @@
-// app/writing/[slug]/PostPageClient.tsx
 "use client"; // This marks the component as a Client Component
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Comments } from "@/components/ui/comments";
 import MainMarkdown from "@/components/ui/markdown";
-import { format } from "date-fns/format";
+import { format } from "date-fns";
+import { usePathname } from "next/navigation";
+import { HeartIcon } from "lucide-react";
+import Confetti from 'react-confetti'; // Import the Confetti component
+
+
 
 const PostPageClient = ({ post }: any) => {
-  const {
-    data: { title, shortDescription, datePublished },
-    content,
-  } = post;
+  const { data: { title, shortDescription, datePublished }, content } = post;
+  const [claps, setClaps] = useState(0); // Initialize claps as 0
+  const [showConfetti, setShowConfetti] = useState(false); // State to control confetti
+  const path = usePathname(); // Get the current path
 
-  const [claps, setClaps] = useState(post.claps || 0); // Initial clap count
+  // Extract the slug from the path
+  const slug = path.split('/').pop(); // Get the last part of the path
+
+  // Fetch the claps when the component mounts
+  useEffect(() => {
+    const fetchClaps = async () => {
+      if (!slug) {
+        console.error("Slug is missing from the URL");
+        return;
+      }
+  
+      try {
+        const response = await fetch(`/api/clap/${slug}`); // Ensure this path is correct
+        if (response.ok) {
+          const data = await response.json();
+          setClaps(data.claps); // Update claps state
+        } else {
+          console.error("Failed to fetch claps:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Error fetching claps:", error);
+      }
+    };
+  
+    fetchClaps();
+  }, [slug]); // Fetch claps when slug changes
+  
 
   const handleClap = async () => {
-    const response = await fetch("/api/clap", {
+    if (!slug) {
+      console.error("Slug is missing from the URL");
+      return;
+    }
+
+    const response = await fetch(`/api/clap/${slug}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ slug: post.slug }), // Ensure post.slug is defined
+      body: JSON.stringify({ slug }), // Send the slug to the API for clapping
     });
-  
+
     if (response.ok) {
       const updatedPost = await response.json();
       setClaps(updatedPost.claps); // Update the clap count state
+      setShowConfetti(true); // Show confetti when claps are registered
+
+      setTimeout(() => {
+        setShowConfetti(false);
+      }, 3000); // 3 seconds
     } else {
-      console.error("Failed to register clap:", response.statusText); // Log the status text for debugging
+      console.error("Failed to register clap:", response.statusText);
     }
   };
-  
 
   return (
     <div className="flex flex-col">
@@ -55,18 +94,19 @@ const PostPageClient = ({ post }: any) => {
           <MainMarkdown classStyle="flex flex-col gap-2" content={content} />
         </article>
       </div>
-      <div className="mx-4">
+      {/* <div className="mx-4">
         <Comments title={title} />
-      </div>
-      <div className="mx-5 my-4">
-        <button
+      </div> */}
+      <div className="mx-5 my-4 flex items-center justify-center">
+        <span
           onClick={handleClap}
-          className="p-2 bg-blue-500 text-white rounded"
+          className="cursor-pointer text-red-500 hover:text-red-700 transition duration-200"
         >
-          Clap
-        </button>
-        <p className="mt-2 text-gray-600">Claps: {claps}</p>
+          <HeartIcon className="w-7 h-7" />
+        </span>
+        <p className="ml-2 text-gray-600 text-2xl font-medium">{claps}</p> {/* Display claps */}
       </div>
+      {showConfetti && <Confetti />}
     </div>
   );
 };

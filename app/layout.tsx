@@ -18,7 +18,7 @@ export const metadata = {
     creator: "@rendysyabany",
   },
   metadataBase: new URL("https://syabany.me"),
-  themeColor: "#FFF",
+  // themeColor: "#FFF",
 };
 
 export default async function RootLayout({

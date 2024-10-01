@@ -9,13 +9,9 @@ datasource db {
 }
 
 model Post {
-  id              Int      @id @default(autoincrement())
-  title           String
-  shortDescription String
-  content         String
-  slug            String   @unique
-  datePublished   DateTime
-  claps           Int      @default(0) // New field to track claps
+  id        Int     @id @default(autoincrement())
+  slug      String  @unique
+  claps     Int     @default(0) // Ensure this field exists
 }
 
 

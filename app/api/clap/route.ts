@@ -1,28 +1,27 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  console.log("Request method:", req.method); // Log the incoming method
+// Handle POST request to increment claps
+export async function POST(req: Request) {
+  try {
+    // Parse the request body
+    const { path } = await req.json();
+    const slug = path.split("/").pop(); // Extract the slug from the path
+    // console.log("Clap for slug:", slug);
 
-  if (req.method === "POST") {
-    const { slug } = req.body;
-
-    try {
-      const post = await prisma.post.update({
-        where: { slug },
-        data: {
-          claps: {
-            increment: 1, // Increment the clap count
-          },
+    // Update the claps count for the post with this slug
+    const updatedPost = await prisma.post.update({
+      where: { slug },
+      data: {
+        claps: {
+          increment: 1, // Increment the claps by 1
         },
-      });
-      res.status(200).json(post);
-    } catch (error) {
-      console.error("Error updating claps:", error);
-      res.status(500).json({ error: "Failed to update claps" });
-    }
-  } else {
-    res.setHeader("Allow", ["POST"]);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
+      },
+    });
+
+    return NextResponse.json(updatedPost, { status: 200 });
+  } catch (error) {
+    console.error("Error in POST handler:", error);
+    return NextResponse.json({ error: "Failed to update claps" }, { status: 500 });
   }
-};
+}
