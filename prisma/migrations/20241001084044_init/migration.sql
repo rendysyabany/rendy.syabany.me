@@ -1,8 +1,10 @@
 -- CreateTable
 CREATE TABLE "Post" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "id" SERIAL NOT NULL,
     "slug" TEXT NOT NULL,
-    "claps" INTEGER NOT NULL DEFAULT 0
+    "claps" INTEGER NOT NULL DEFAULT 0,
+
+    CONSTRAINT "Post_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateIndex
