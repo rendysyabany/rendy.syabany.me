@@ -21,13 +21,13 @@ export default function Footer() {
 
   const post = getPostContent(filePath);
 
-  if (!post) {
-    return <div>Content not found.</div>;
-  }
+  // if (!post) {
+  //   return <div>Content not found.</div>;
+  // }
 
-  const {
-    data: { firstName, lastName }
-  } = post;
+  // const {
+  //   data: { firstName, lastName }
+  // } = post;
 
   return (
     
@@ -40,7 +40,8 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {firstName}{" "}{lastName}
+          Rendyansyah Sya'bany
+          {/* {firstName}{" "}{lastName} */}
         </a>
       </p>
     </div>
