@@ -11,12 +11,12 @@ const MainMarkdown = ({ content, classStyle }: MainMarkdownProps) => {
   const h2Style = "text-2xl sm:text-3xl font-bold mb-3 text-gray-700";
   const h3Style = "font-sans text-xl sm:text-2xl font-bold mt-6 mb-1 text-gray-700";
   const pStyle =
-    "text-[18px] sm:text-[20px] mt-[-2px] font-serif font-normal leading-[1.5] tracking-normal text-gray-700";
+    "text-[15px] sm:text-[18px] mt-[-2px] font-sans font-normal leading-[1.6] tracking-normal text-gray-600";
   const quoteStyle =
-    "text-xl sm:text-2xl mt-[-2px] font-serif font-normal leading-normal tracking-normal text-gray-700 pl-4 border-l-2 border-gray-400 italic";
+    "text-xl sm:text-2xl mt-[-2px] font-sans font-normal leading-normal tracking-normal text-gray-700 pl-4 border-l-2 border-gray-400 italic";
   return (
     <Markdown
-      className={classStyle ? classStyle : "text-md flex flex-col gap-3 self-stretch font-serif font-normal leading-normal tracking-normal text-gray-600 sm:text-lg"}
+      className={classStyle ? classStyle : "text-md flex flex-col gap-3 self-stretch font-sans font-normal leading-normal tracking-normal text-gray-600 sm:text-lg"}
       options={{
         overrides: {
           h1: { component: "h1", props: { className: h1Style } },

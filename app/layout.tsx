@@ -94,7 +94,7 @@ export default async function RootLayout({
         <Suspense fallback="...">
           <NavBar />
         </Suspense>
-        <main className="flex min-h-screen w-full flex-col items-center pb-6 pt-24">
+        <main style={{ minHeight: "calc(100vh - 62px)"}} className="flex w-full flex-col items-center pb-6 pt-24">
           <div className="flex w-full max-w-[720px]">{children}</div>
         </main>
         <Footer />

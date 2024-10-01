@@ -76,15 +76,6 @@ export default function Content() {
     data: { avatar, firstName, lastName, description, about, gallery },
   } = post;
 
-  const h1Style = "text-2xl sm:text-4xl font-bold mb-4 text-gray-700";
-  const h2Style = "text-xl sm:text-3xl font-semibold mb-3 text-gray-700";
-  const h3Style =
-    "font-sans text-lg sm:text-2xl font-semibold mb-3 text-gray-700";
-  const pStyle =
-    "text-md sm:text-lg mt-[-2px] font-serif font-normal leading-relaxed tracking-normal text-gray-700";
-  const quoteStyle =
-    "text-xl sm:text-2xl mt-[-2px] font-serif font-normal leading-normal tracking-normal text-gray-700 pl-4 border-l-2 border-gray-400 italic";
-
   return (
     <div className="mx-5 flex flex-col gap-8">
       {/* <div className="inline-flex h-auto w-full items-center justify-start gap-4">
@@ -139,10 +130,10 @@ export default function Content() {
               <p className="text-md font-sans font-semibold leading-6 tracking-normal text-gray-700 sm:text-lg">
                 {data.data.title}
               </p>
-              <p className="line-clamp-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-500">
+              <p className="line-clamp-2 font-sans text-sm font-normal leading-normal tracking-normal text-gray-500">
                 {data.data.shortDescription}
               </p>
-              <p className="mt-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-700">
+              <p className="mt-2 font-sans text-xs sm:text-sm font-normal leading-normal tracking-normal text-gray-700">
                 Published on{" "}
                 {format(new Date(data.data.datePublished), "dd MMMM yyyy")},{" "}
                 <span className="font-medium underline">Read more</span>
@@ -156,7 +147,7 @@ export default function Content() {
 
         <Link
           href={"/writing"}
-          className="text-md font-serif font-normal leading-normal tracking-normal text-gray-700"
+          className="text-md font-sans font-normal leading-normal tracking-normal text-gray-700"
         >
           <span className="font-medium underline">See all post</span>
         </Link>

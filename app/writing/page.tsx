@@ -53,10 +53,10 @@ const Writing = () => {
               <p className="text-md font-sans font-semibold leading-6 tracking-normal text-gray-700 sm:text-lg">
                 {data.data.title}
               </p>
-              <p className="line-clamp-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-500">
+              <p className="line-clamp-2 font-sans text-sm font-normal leading-normal tracking-normal text-gray-500">
                 {data.data.shortDescription}
               </p>
-              <p className="mt-2 font-serif text-sm font-normal leading-normal tracking-normal text-gray-700">
+              <p className="mt-2 font-sans text-xs sm:text-sm font-normal leading-normal tracking-normal text-gray-700">
                 Published on{" "}
                 {format(new Date(data.data.datePublished), "dd MMMM yyyy")},{" "}
                 <span className="font-medium underline">Read more</span>

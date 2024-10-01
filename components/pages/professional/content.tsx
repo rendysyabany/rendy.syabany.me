@@ -146,7 +146,7 @@ export default function Content() {
             <p className="self-stretch font-sans text-xl font-semibold leading-loose text-gray-700">
               {data.productSectionTitle}
             </p>
-            <p className="text-md mt-[-2px] self-stretch font-serif font-normal leading-snug text-gray-500">
+            <p className="text-sm mt-[-2px] self-stretch font-sans font-normal leading-snug text-gray-500">
               {data.productSectionDescription}
             </p>
           </div>
@@ -201,7 +201,7 @@ export default function Content() {
             <p className="self-stretch font-sans text-xl font-semibold leading-loose text-gray-700">
               Selected Works.
             </p>
-            <p className="text-md mt-[-2px] self-stretch font-serif font-normal leading-snug text-gray-500">
+            <p className="text-sm mt-[-2px] self-stretch font-sans font-normal leading-snug text-gray-500">
               Elevating excellence through my selected work.
             </p>
           </div>
@@ -217,7 +217,7 @@ export default function Content() {
                   <div className="text-md self-stretch font-sans font-semibold leading-normal text-gray-700">
                     {project.title}
                   </div>
-                  <div className="self-stretch font-serif text-sm font-normal leading-normal text-gray-500">
+                  <div className="self-stretch font-sans text-xs font-normal leading-normal text-gray-500">
                     {project.description}
                   </div>
                 </div>
@@ -226,7 +226,7 @@ export default function Content() {
                     <Badge
                       key={i}
                       variant="secondary"
-                      className="bg-white font-medium text-gray-600"
+                      className="bg-white font-sans font-medium text-gray-600"
                     >
                       {category.title}
                     </Badge>
@@ -261,7 +261,7 @@ export default function Content() {
             <p className="self-stretch font-sans text-xl font-semibold leading-loose text-gray-700">
               {data.gearSectionTitle}
             </p>
-            <p className="text-md mt-[-2px] self-stretch font-serif font-normal leading-snug text-gray-500">
+            <p className="text-sm mt-[-2px] self-stretch font-sans font-normal leading-snug text-gray-500">
               {data.gearSectionDescription}
             </p>
           </div>
@@ -307,7 +307,7 @@ export default function Content() {
             <p className="self-stretch font-sans text-xl font-semibold leading-loose text-gray-700">
               {data.deskSectionTitle}
             </p>
-            <p className="text-md mt-[-2px] self-stretch font-serif font-normal leading-snug text-gray-500">
+            <p className="text-sm mt-[-2px] self-stretch font-sans font-normal leading-snug text-gray-500">
               {data.deskSectionDescription}
             </p>
           </div>
