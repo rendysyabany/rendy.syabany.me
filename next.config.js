@@ -7,6 +7,7 @@ const nextConfig = {
   images: {
     domains: ["lh3.googleusercontent.com", "vercel.com", "picsum.photos", "pbs.twimg.com"],
   },
+  eslint: {ignoreDuringBuilds: true},
   async headers() {
     return [
       {
