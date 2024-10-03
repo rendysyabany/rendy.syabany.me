@@ -124,7 +124,7 @@ export default function Content() {
         <p className="my-[-6px] self-stretch font-sans text-xl font-semibold leading-loose text-gray-700 sm:text-2xl">
           Recent post.
         </p>
-        {allPost.slice(0, 4).map((data, i) => (
+        {allPost.slice(0, 3).map((data, i) => (
           <Link href={postUrls[i]} key={i} className="flex flex-col gap-0">
             <div className="inline-flex flex-col items-start justify-start gap-2">
               <p className="text-md font-sans font-semibold leading-6 tracking-normal text-gray-700 sm:text-lg">
