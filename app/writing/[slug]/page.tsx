@@ -111,7 +111,7 @@ const PostPageClient = () => {
   return (
     <>
       <head>
-        <title>{post?.data.title || 'Rendyansyah Syabany'}</title>
+        <title>{post?.data.title || 'Rendyansyah Syabany | Writing'}</title>
         <meta name="description" content={post?.data.shortDescription || 'Personal Website'} />
       </head>
 

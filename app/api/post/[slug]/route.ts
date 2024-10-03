@@ -1,49 +1,42 @@
-// pages/api/post.ts
 import { promises as fs } from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { NextApiRequest, NextApiResponse } from "next";
 import { NextRequest, NextResponse } from "next/server";
-import prisma from "@/lib/prisma";
+import { LRUCache } from "lru-cache";
 
-export async function GET(req: NextRequest, { params }: { params: { slug: string } }) {
+// Initialize the cache using the function-based API
+const cache = new LRUCache<string, any>({
+  max: 100, // Maximum number of items in the cache
+  ttl: 1000 * 60 * 60, // Time to live (TTL) in milliseconds (1 hour)
+});
+
+export async function GET(
+  req: NextRequest,
+  { params }: { params: { slug: string } }
+) {
   const { slug } = params; // Get the slug from the URL params
 
   if (!slug) {
-    return NextResponse.json({ error: 'Slug is required' }, { status: 400 });
+    return NextResponse.json({ error: "Slug is required" }, { status: 400 });
   }
 
   try {
+    // Check if the post is in the cache
+    if (cache.has(slug)) {
+      const cachedData = cache.get(slug);
+      return NextResponse.json(cachedData);
+    }
+
     const folder = path.join(process.cwd(), "content", "posts");
-    // const folder = "content/posts/";
     const file = `${folder}/${slug}.md`;
     const content = await fs.readFile(file, "utf8");
     const matterResult = matter(content);
-    
+
+    // Store the parsed result in the cache
+    cache.set(slug, matterResult);
+
     return NextResponse.json(matterResult);
-    // return NextResponse(matterResult);
   } catch (error) {
-    return NextResponse.json({ error: "Post not found" });
+    return NextResponse.json({ error: "Post not found" }, { status: 404 });
   }
 }
-
-
-// export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-//   const { slug } = req.query;
-
-//   if (!slug) {
-//     return res.status(400).json({ error: "Missing slug" });
-//   }
-
-//   try {
-//     const folder = path.join(process.cwd(), "content", "posts");
-//     // const folder = "content/posts/";
-//     const file = `${folder}/${slug}.md`;
-//     const content = await fs.readFile(file, "utf8");
-//     const matterResult = matter(content);
-    
-//     return res.status(200).json(matterResult);
-//   } catch (error) {
-//     return res.status(500).json({ error: "Post not found" });
-//   }
-// }
