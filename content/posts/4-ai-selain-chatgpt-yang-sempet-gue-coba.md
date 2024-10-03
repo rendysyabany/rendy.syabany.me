@@ -1,9 +1,9 @@
 ---
-title: 4 AI selain ChatGPT yang sempet gue coba
+title: 🤖 4 AI selain ChatGPT yang sempet gue coba
 shortDescription: >-
   Ada sekitar 4 AI yang pernah gue pake buat produktivity mulai dari buat
   bantuin coding, bantuin nulis, bantuin cari ide projek, dll.
-datePublished: 2024-09-27T17:00:00.000Z
+datePublished: 2024-09-06T17:00:00.000Z
 ---
 
 ![](/post/Post-10-1.jpg)

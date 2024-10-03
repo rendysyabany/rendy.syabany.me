@@ -16,6 +16,8 @@ export async function GET(
 ) {
   const { slug } = params; // Get the slug from the URL params
 
+  console.log(slug)
+
   if (!slug) {
     return NextResponse.json({ error: "Slug is required" }, { status: 400 });
   }

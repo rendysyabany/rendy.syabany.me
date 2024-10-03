@@ -10,6 +10,7 @@ import Confetti from "react-confetti";
 import { useWindowSize } from "react-use"; // For better confetti responsiveness
 import Head from "next/head";
 
+
 type Post = {
   data: { title: any; shortDescription: any; datePublished: any; };
   content: string;
