@@ -5,15 +5,19 @@ lastName: Sya’bany
 description: Digital Product Crafter
 expertise:
   - title: Figma Expert
+    bgColor: '#F6DDF5'
+  - title: Penpot Expert
     bgColor: '#F6F2E9'
   - title: Usability Analyst
     bgColor: '#EAF8F4'
   - title: Design System Architect
     bgColor: '#FFE8E8'
-  - title: No-Code User
+  - title: No-Code Enthusiast
     bgColor: '#ECF2F9'
-  - title: Product Management
+  - title: Product Owner
     bgColor: '#EDF1F0'
+  - title: Project Management
+    bgColor: '#E5E7F1'
 about: "I thrive on transforming ideas into tangible solutions, blending aesthetics with functionality to create products that delight users.\L\n\nThe empathy-driven approach allows me to create products that truly resonate with the end-users, making a positive impact on their lives. I am dedicated to human-centered design principles, where the user's experience takes center stage in every decision I make."
 social:
   - socialUrl: 'mailto:rendy@syabany.me'
