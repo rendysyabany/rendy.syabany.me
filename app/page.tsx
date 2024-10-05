@@ -1,4 +1,5 @@
-import Content from "@/components/pages/home/content";
+// import Content from "@/components/pages/home/content";
+import Content from "@/components/pages/professional/content";
 
 import type { Metadata } from 'next';
  
