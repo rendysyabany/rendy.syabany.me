@@ -94,7 +94,7 @@ export default function Content() {
                 <span className="font-light">{data.lastName}</span>
               </p>
             </div>
-            <div className="mt-[-2px] self-stretch text-sm font-normal leading-normal text-gray-500 sm:text-base">
+            <div className="font-sans mt-[-2px] sm:mt-[2px] self-stretch text-sm font-normal leading-normal text-gray-500 sm:text-md">
               {data.description}
             </div>
           </div>
@@ -122,22 +122,6 @@ export default function Content() {
         </div>
 
         <MainMarkdown content={data.about} />
-
-        <div className="inline-flex h-auto w-fit flex-wrap items-center justify-start gap-4 rounded-md bg-neutral-100 p-3">
-          {data.social.map(
-            (soc: { socialUrl: string; socialIcon: any }, i: any) => (
-              <Link key={i} href={soc.socialUrl}>
-                <Image
-                  src={soc.socialIcon}
-                  alt={soc.socialUrl}
-                  className="h-6 w-6 object-cover"
-                  width={600}
-                  height={600}
-                />
-              </Link>
-            ),
-          )}
-        </div>
 
         <div className="my-4 border-t border-gray-300"></div>
 
@@ -330,6 +314,24 @@ export default function Content() {
                 </div>
               ),
             )}
+          </div>
+
+          <div className="flex w-full justify-center mt-8">
+            <div className="inline-flex h-auto w-fit flex-wrap items-center justify-start gap-4 rounded-2xl bg-neutral-100 p-5">
+              {data.social.map(
+                (soc: { socialUrl: string; socialIcon: any }, i: any) => (
+                  <Link key={i} href={soc.socialUrl}>
+                    <Image
+                      src={soc.socialIcon}
+                      alt={soc.socialUrl}
+                      className="h-10 w-10 object-cover"
+                      width={600}
+                      height={600}
+                    />
+                  </Link>
+                ),
+              )}
+            </div>
           </div>
         </div>
       </div>

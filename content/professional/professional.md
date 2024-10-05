@@ -52,7 +52,7 @@ productItem:
     productItemName: Titik Temu Kita
     productItemUrl: titiktemukita.id
     productItemBgColor: '#F3F4F6'
-gearSectionTitle: Stack Gear
+gearSectionTitle: Tech Stack
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
   - gearItemLogo: /rendy/notion.jpg
@@ -124,7 +124,7 @@ gearItem:
   - gearItemLogo: /rendy/umami-is.png
     gearItemName: Umami.is
     gearItemDescription: Analytics
-deskSectionTitle: Desk Setup
+deskSectionTitle: Desk Activities
 deskSectionDescription: "Checkout my desk-setup gallery below \U0001F60A"
 deskGallery:
   - deskGalleryCaption: desk gallery
