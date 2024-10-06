@@ -82,6 +82,8 @@ export default async function RootLayout({
           crossOrigin="anonymous"
           async
         ></script>
+
+        <script defer src="https://analytics.syabany.com/script.js" data-website-id="3fcd794b-0439-4590-baad-9e860542045d"></script>
       </head>
       <body
         className={cx(
