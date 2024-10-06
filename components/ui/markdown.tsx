@@ -13,7 +13,7 @@ const MainMarkdown = ({ content, classStyle }: MainMarkdownProps) => {
   const pStyle =
     "text-[15px] sm:text-[18px] mt-[-2px] font-sans font-normal leading-[1.6] tracking-normal text-gray-600";
   const quoteStyle =
-    "text-xl sm:text-2xl mt-[-2px] font-sans font-normal leading-normal tracking-normal text-gray-700 pl-4 border-l-2 border-gray-400 italic";
+    "text-4xl sm:text-6xl mt-[-2px] font-sans font-normal leading-normal tracking-normal text-gray-700 pl-4 border-l-2 border-gray-400 italic";
   const imageStyle =
     "py-4";
   return (
@@ -28,7 +28,7 @@ const MainMarkdown = ({ content, classStyle }: MainMarkdownProps) => {
           img: { component: "img", props: { className: imageStyle } },
           blockquote: {
             component: "blockquote",
-            props: { className: quoteStyle },
+            props: { className: quoteStyle, },
           },
         },
       }}
