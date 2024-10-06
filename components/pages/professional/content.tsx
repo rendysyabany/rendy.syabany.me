@@ -9,6 +9,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Key } from "react";
 
+interface ImageData {
+  galleryItem: string;
+  caption: string;
+}
+
 const getPostContent = (filePath: string) => {
   try {
     const content = fs.readFileSync(filePath, "utf8");
@@ -30,14 +35,22 @@ export const generateStaticParams = async () => {
 export default function Content() {
   const slug = "professional"; // Slug for the homepage
   const filePath = `content/professional/${slug}.md`;
+  const gelleryPath = `content/home/home.md`;
 
   const post = getPostContent(filePath);
+
+  const galleryData = getPostContent(gelleryPath);
+  const gallery = galleryData && galleryData.data.gallery;
 
   if (!post) {
     return <div>Content not found.</div>;
   }
 
   const data = post && post.data;
+
+  // const {
+  //   data: { gallery },
+  // } = gelleryData;
 
   const project = [
     {
@@ -122,6 +135,29 @@ export default function Content() {
         </div>
 
         <MainMarkdown content={data.about} />
+
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+          <div className="row-span-2">
+            <Image
+              src={gallery[0].galleryItem}
+              alt={gallery[0].caption}
+              width={400}
+              height={400}
+              className="h-full w-full rounded-xl object-cover"
+            />
+          </div>
+          {gallery.slice(1).map((image: ImageData, i: number) => (
+            <div key={i} className="col-span-1 row-span-1">
+              <Image
+                src={image.galleryItem}
+                alt={image.caption}
+                width={400}
+                height={400}
+                className="h-[120px] w-full rounded-xl object-cover sm:h-[160px]"
+              />
+            </div>
+          ))}
+        </div>
 
         <div className="my-4 border-t border-gray-300"></div>
 
