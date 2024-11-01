@@ -37,10 +37,15 @@ productItem:
     productItemName: Syabany HQ
     productItemUrl: syabany.com
     productItemBgColor: '#EBF4FA'
+  - productItemLogo: /ketumbar_logo.jpg
+    productItemName: Ketumbar for SMEs
+    productItemUrl: ketumbar.web.id
+    productItemBgColor: '#EAF8F4'
   - productItemLogo: /bahagia-day-logo.jpg
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
+  
   # - productItemLogo: /Syabany_Logo_Only_min.png
   #   productItemName: Syabany Labs
   #   productItemUrl: labs.syabany.com
