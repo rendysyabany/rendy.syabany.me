@@ -2,7 +2,7 @@
 avatar: /rendy.jpg
 firstName: Rendyansyah
 lastName: Sya’bany
-description: Digital Product Crafter
+description: MVP & SaaS Crafter
 expertise:
   - title: Figma Expert
     bgColor: '#F6DDF5'
