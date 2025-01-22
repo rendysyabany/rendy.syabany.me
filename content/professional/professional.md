@@ -2,7 +2,7 @@
 avatar: /rendy.jpg
 firstName: Rendyansyah
 lastName: Sya’bany
-description: MVP & SaaS Crafter
+description: Crafting Emphaty-Driven SaaS Products
 expertise:
   - title: MVP Enabler
     bgColor: '#F6F2E9'
