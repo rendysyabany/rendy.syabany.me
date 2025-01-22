@@ -191,7 +191,7 @@ export default function Content() {
                   }}
                 >
                   <Image
-                    className="h-14 w-14 rounded-lg object-cover"
+                    className="h-14 w-14 rounded-full object-cover"
                     src={product.productItemLogo}
                     alt={product.productItemName}
                     width={600}

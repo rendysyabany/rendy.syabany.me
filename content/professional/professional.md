@@ -4,23 +4,25 @@ firstName: Rendyansyah
 lastName: Sya’bany
 description: MVP & SaaS Crafter
 expertise:
-  - title: Figma Expert
-    bgColor: '#F6DDF5'
-  - title: Penpot Expert
+  - title: MVP Enabler
     bgColor: '#F6F2E9'
+  - title: Indie-Maker
+    bgColor: '#DCEAFA'
+  - title: Figma/Penpot Expert
+    bgColor: '#F6DDF5'
   - title: Usability Analyst
     bgColor: '#EAF8F4'
   - title: Design System Architect
     bgColor: '#FFE8E8'
-  - title: No-Code Enthusiast
-    bgColor: '#ECF2F9'
-  - title: Product Owner
+  - title: Design Thinker
     bgColor: '#EDF1F0'
   - title: Project Management
-    bgColor: '#E5E7F1'
+    bgColor: '#EAEBF1'
+  - title: Productivity Explorer
+    bgColor: '#E0EEE0'
 about: "I thrive on transforming ideas into tangible solutions, blending aesthetics with functionality to create products that delight users.\L\n\nThe empathy-driven approach allows me to create products that truly resonate with the end-users, making a positive impact on their lives. I am dedicated to human-centered design principles, where the user's experience takes center stage in every decision I make."
 social:
-  - socialUrl: 'mailto:rendy@syabany.me'
+  - socialUrl: 'mailto:rendy@syabany.com'
     socialIcon: /envelope.png
   - socialUrl: 'https://linkedin.com/in/rendysyabany'
     socialIcon: /ic-linkedIn.png
@@ -33,19 +35,23 @@ resumeUrl: >-
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
 productItem:
+  - productItemLogo: /titiktemukita_logo.svg
+    productItemName: Titik Temu Kita
+    productItemUrl: titiktemukita.id
+    productItemBgColor: '#F3F4F6'
   - productItemLogo: /Syabany-HQ-Logo.jpg
     productItemName: Syabany HQ
-    productItemUrl: syabany.com
+    productItemUrl: hq.syabany.com
     productItemBgColor: '#EBF4FA'
-  - productItemLogo: /ketumbar_logo.jpg
-    productItemName: Ketumbar for SMEs
-    productItemUrl: ketumbar.web.id
-    productItemBgColor: '#EAF8F4'
   - productItemLogo: /bahagia-day-logo.jpg
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
-  
+  - productItemLogo: /ketumbar_logo.jpg
+    productItemName: Ketumbar for SMEs
+    productItemUrl: ketumbar.web.id
+    productItemBgColor: '#EAF8F4'
+
   # - productItemLogo: /Syabany_Logo_Only_min.png
   #   productItemName: Syabany Labs
   #   productItemUrl: labs.syabany.com
@@ -53,14 +59,10 @@ productItem:
   # - productItemLogo: /synapse-kit.png
   #   productItemName: Synapse Kits
   #   productItemUrl: synapse.syabany.com
-  - productItemLogo: /daund-logo.jpg
-    productItemName: Daund ID
-    productItemUrl: instagram.com/daund.id
-    productItemBgColor: '#EAF8F4'
-  - productItemLogo: /titiktemukita-avatar.jpg
-    productItemName: Titik Temu Kita
-    productItemUrl: titiktemukita.id
-    productItemBgColor: '#F3F4F6'
+  # - productItemLogo: /daund-logo.jpg
+  #   productItemName: Daund ID
+  #   productItemUrl: instagram.com/daund.id
+  #   productItemBgColor: '#EAF8F4'
 gearSectionTitle: Tech Stack
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
@@ -115,12 +117,12 @@ gearItem:
   - gearItemLogo: /rendy/vercel.jpg
     gearItemName: Vercel
     gearItemDescription: PaaS
-  - gearItemLogo: /rendy/railway.jpg
-    gearItemName: Railway
-    gearItemDescription: PaaS
-  - gearItemLogo: /dokploy.png
-    gearItemName: Dokploy
-    gearItemDescription: PaaS
+  # - gearItemLogo: /rendy/railway.jpg
+  #   gearItemName: Railway
+  #   gearItemDescription: PaaS
+  # - gearItemLogo: /dokploy.png
+  #   gearItemName: Dokploy
+  #   gearItemDescription: PaaS
   # - gearItemLogo: /flyio.png
   #   gearItemName: Fly.io
   #   gearItemDescription: PaaS
@@ -180,4 +182,3 @@ designGallery:
   - caption: design shot
     item: /rendy/shots/tukang.webp
 ---
-
