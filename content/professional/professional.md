@@ -2,7 +2,7 @@
 avatar: /rendy.jpg
 firstName: Rendyansyah
 lastName: Sya’bany
-description: Crafting Emphaty-Driven Micro SaaS
+description: Crafting Emphaty-Driven Products
 expertise:
   - title: MVP Enabler
     bgColor: '#F6F2E9'
@@ -10,8 +10,8 @@ expertise:
   #   bgColor: '#DCEAFA'
   - title: Usability Analyst
     bgColor: '#EAF8F4'
-  - title: Figma/Penpot Expert
-    bgColor: '#F6DDF5'
+  # - title: Figma/Penpot Expert
+  #   bgColor: '#F6DDF5'
   - title: Design System Architect
     bgColor: '#FFE8E8'
   - title: Design Thinker
@@ -47,10 +47,10 @@ productItem:
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFE4E6'
-  - productItemLogo: /ketumbar_logo.jpg
-    productItemName: Ketumbar for SMEs
-    productItemUrl: ketumbar.web.id
-    productItemBgColor: '#EAF8F4'
+  # - productItemLogo: /ketumbar_logo.jpg
+  #   productItemName: Ketumbar for SMEs
+  #   productItemUrl: ketumbar.web.id
+  #   productItemBgColor: '#EAF8F4'
 
   # - productItemLogo: /Syabany_Logo_Only_min.png
   #   productItemName: Syabany Labs

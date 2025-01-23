@@ -6,7 +6,7 @@ import { Suspense } from "react";
 import { inter, roboto_mono, roboto_serif, source_serif_4 } from "./fonts";
 import "./globals.css";
 import Script from "next/script";
-import 'remixicon/fonts/remixicon.css'
+// import 'remixicon/fonts/remixicon.css'
 // import { Roboto, Roboto_Serif } from 'next/font/google'
 
 export const metadata = {
