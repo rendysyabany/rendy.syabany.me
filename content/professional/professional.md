@@ -6,12 +6,12 @@ description: Crafting Emphaty-Driven Micro SaaS
 expertise:
   - title: MVP Enabler
     bgColor: '#F6F2E9'
-  - title: Indie-Maker
-    bgColor: '#DCEAFA'
-  - title: Figma/Penpot Expert
-    bgColor: '#F6DDF5'
+  # - title: Indie-Maker
+  #   bgColor: '#DCEAFA'
   - title: Usability Analyst
     bgColor: '#EAF8F4'
+  - title: Figma/Penpot Expert
+    bgColor: '#F6DDF5'
   - title: Design System Architect
     bgColor: '#FFE8E8'
   - title: Design Thinker
