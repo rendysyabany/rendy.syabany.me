@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import { inter, roboto_mono, roboto_serif, source_serif_4 } from "./fonts";
 import "./globals.css";
 import Script from "next/script";
+import 'remixicon/fonts/remixicon.css'
 // import { Roboto, Roboto_Serif } from 'next/font/google'
 
 export const metadata = {
@@ -83,7 +84,7 @@ export default async function RootLayout({
           async
         ></script>
 
-<script defer src="https://analytics.syabany.com/script.js" data-website-id="7a08883e-ea71-4649-af5f-73c93fe6c068"></script>
+        	<script defer src="https://analytics.syabany.com/script.js" data-website-id="7a08883e-ea71-4649-af5f-73c93fe6c068"></script>
       </head>
       <body
         className={cx(
