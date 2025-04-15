@@ -84,7 +84,7 @@ export default async function RootLayout({
           async
         ></script>
 
-        	<script defer src="https://analytics.syabany.com/script.js" data-website-id="7a08883e-ea71-4649-af5f-73c93fe6c068"></script>
+        	
       </head>
       <body
         className={cx(
