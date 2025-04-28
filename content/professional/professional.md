@@ -38,19 +38,23 @@ productItem:
   - productItemLogo: /titiktemukita_logo.svg
     productItemName: Titik Temu Kita
     productItemUrl: titiktemukita.id
-    productItemBgColor: '#F3F4F6'
+    productItemBgColor: '#F8F4E8'
+    productDescription: "Family Growth & Home Education Platform"
   - productItemLogo: /Syabany-HQ-Logo.jpg
     productItemName: Syabany HQ
     productItemUrl: hq.syabany.com
     productItemBgColor: '#EBF4FA'
-  - productItemLogo: /bahagia-day-logo.jpg
+    productDescription: "Idea to MVP-Ready in weeks, not months"
+  - productItemLogo: /bahagia-logo-avatar.png
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
-    productItemBgColor: '#FFE4E6'
-  # - productItemLogo: /ketumbar_logo.jpg
-  #   productItemName: Ketumbar for SMEs
-  #   productItemUrl: ketumbar.web.id
-  #   productItemBgColor: '#EAF8F4'
+    productItemBgColor: '#FFEBED'
+    productDescription: "All-in-one integrated moment & wedding app "
+  - productItemLogo: /ketumbar_logo.jpg
+    productItemName: Ketumbar for SMEs
+    productItemUrl: ketumbar.web.id
+    productItemBgColor: '#EAF8F4'
+    productDescription: "Creative Studio - Teman Bertumbuh UMKM"
 
   # - productItemLogo: /Syabany_Logo_Only_min.png
   #   productItemName: Syabany Labs

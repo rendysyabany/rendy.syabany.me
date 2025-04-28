@@ -8,6 +8,7 @@ import Markdown from "markdown-to-jsx";
 import Image from "next/image";
 import Link from "next/link";
 import { Key } from "react";
+import { motion } from "framer-motion";
 
 interface ImageData {
   galleryItem: string;
@@ -107,7 +108,7 @@ export default function Content() {
                 <span className="font-light">{data.lastName}</span>
               </p>
             </div>
-            <div className="font-sans mt-[-2px] sm:mt-[2px] self-stretch text-sm font-normal leading-normal text-gray-500 sm:text-md">
+            <div className="font-sans mt-[-2px] sm:mt-[2px] self-stretch text-[13px] font-normal leading-normal text-gray-500 sm:text-md">
               {data.description}
             </div>
           </div>
@@ -153,13 +154,13 @@ export default function Content() {
                 alt={image.caption}
                 width={400}
                 height={400}
-                className="h-[120px] w-full rounded-xl object-cover sm:h-[160px]"
+                className="h-full max-h-[160px] w-full rounded-xl object-cover sm:h-[160px]"
               />
             </div>
           ))}
         </div>
 
-        <div className="my-4 border-t border-gray-300"></div>
+        <div className="mt-4 mb-0 border-t border-gray-300"></div>
 
         <div className="flex flex-col gap-8">
           <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
@@ -179,11 +180,14 @@ export default function Content() {
                   productItemName: string;
                   productItemUrl: string;
                   productItemBgColor: string;
+                  productDescription: string;
                 },
                 i: Key | null | undefined,
               ) => (
-                <div
+                <a
                   key={i}
+                  href={"https://" + product.productItemUrl}
+                  target="_blank"
                   className="flex h-auto w-full min-w-[260px] items-center justify-start gap-4 rounded-xl bg-gray-100 p-4"
                   style={{
                     backgroundColor:
@@ -201,14 +205,18 @@ export default function Content() {
                     <div className="text-md self-stretch font-sans font-semibold leading-relaxed text-gray-700">
                       {product.productItemName}
                     </div>
-                    <a
-                      href={"https://" + product.productItemUrl}
-                      className="text-sm font-medium leading-none text-gray-500 underline"
+                    <p className="text-[12.5px] font-sans font-normal leading-[135%] text-gray-500"
                     >
-                      {product.productItemUrl}
-                    </a>
+                      {product.productDescription}
+                    </p>
+                    {/* <a
+                      href={"https://" + product.productItemUrl}
+                      className="text-xs font-sans font-normal leading-none text-gray-500 underline"
+                    >
+                      www.{product.productItemUrl}
+                    </a> */}
                   </div>
-                </div>
+                </a>
               ),
             )}
           </div>
@@ -321,7 +329,8 @@ export default function Content() {
           </div>
         </div> */}
 
-        <div className="my-4 border-t border-gray-300"></div>
+        <div className="mt-4 mb-0 border-t border-gray-300"></div>
+
         <div className="flex flex-col gap-8">
           <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
             <p className="self-stretch font-sans text-xl font-semibold leading-loose text-gray-700">
@@ -352,7 +361,7 @@ export default function Content() {
             )}
           </div>
 
-          <div className="flex w-full justify-center mt-8">
+          {/* <div className="flex w-full justify-center mt-8">
             <div className="inline-flex h-auto w-fit flex-wrap items-center justify-start gap-4 rounded-2xl bg-neutral-100 p-5">
               {data.social.map(
                 (soc: { socialUrl: string; socialIcon: any }, i: any) => (
@@ -368,7 +377,7 @@ export default function Content() {
                 ),
               )}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

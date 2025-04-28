@@ -16,6 +16,7 @@ const MainMarkdown = ({ content, classStyle }: MainMarkdownProps) => {
     "text-4xl sm:text-6xl mt-[-2px] font-sans font-normal leading-normal tracking-normal text-gray-700 pl-4 border-l-2 border-gray-400 italic";
   const imageStyle =
     "py-4";
+  const linkStyle = "text-blue-600 hover:text-blue-800 underline decoration-blue-400 decoration-2 underline-offset-2 transition-colors duration-200";
   return (
     <Markdown
       className={classStyle ? classStyle : "text-md flex flex-col gap-3 self-stretch font-sans font-normal leading-normal tracking-normal text-gray-600 sm:text-lg"}
@@ -29,6 +30,10 @@ const MainMarkdown = ({ content, classStyle }: MainMarkdownProps) => {
           blockquote: {
             component: "blockquote",
             props: { className: quoteStyle, },
+          },
+          a: {
+            component: "a",
+            props: { className: linkStyle, target: "_blank", rel: "noopener noreferrer" },
           },
         },
       }}
