@@ -1,5 +1,5 @@
 ---
-avatar: /rendy.jpg
+avatar: https://be.titiktemukita.id/api/files/users/61a68ef1f9d4be7/blob_zi6m2rb5u9.png
 firstName: Rendyansyah
 lastName: Syabany
 description: 'Technology, SaaS & Digital Product Enthusiast'

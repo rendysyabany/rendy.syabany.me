@@ -1,5 +1,5 @@
 ---
-avatar: /rendy.jpg
+avatar: https://be.titiktemukita.id/api/files/users/61a68ef1f9d4be7/blob_zi6m2rb5u9.png
 firstName: Rendyansyah
 lastName: Sya’bany
 description: Crafting Emphaty-Driven Products
@@ -39,22 +39,22 @@ productItem:
     productItemName: Titik Temu Kita
     productItemUrl: titiktemukita.id
     productItemBgColor: '#F8F4E8'
-    productDescription: "Family Growth & Home Education Platform"
+    productDescription: "Family Productivity & Home Education Platform"
   - productItemLogo: /Syabany-HQ-Logo.jpg
-    productItemName: Syabany HQ
-    productItemUrl: hq.syabany.com
+    productItemName: Syabany Labs
+    productItemUrl: syabany.com
     productItemBgColor: '#EBF4FA'
     productDescription: "Idea to MVP-Ready in weeks, not months"
   - productItemLogo: /bahagia-logo-avatar.png
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFEBED'
-    productDescription: "All-in-one integrated moment & wedding app "
+    productDescription: "Muslim Wedding App"
   - productItemLogo: /ketumbar_logo.jpg
-    productItemName: Ketumbar for SMEs
-    productItemUrl: ketumbar.web.id
+    productItemName: Qadha & Fidyah Tracker
+    productItemUrl: ramadan.titiktemukita.id
     productItemBgColor: '#EAF8F4'
-    productDescription: "Creative Studio - Teman Bertumbuh UMKM"
+    productDescription: "Kelola hutang puasa dan pembayaran fidyah"
 
   # - productItemLogo: /Syabany_Logo_Only_min.png
   #   productItemName: Syabany Labs
