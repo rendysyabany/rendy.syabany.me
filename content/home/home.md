@@ -6,8 +6,7 @@ description: 'Technology, SaaS & Digital Product Enthusiast'
 about: "### \U0001F44B\U0001F3FB Rendy here!\n\nA digital nomad fan who loves designing & building digital products. I have embraced a dynamic lifestyle that allows me to work remotely.\n\nAlongside my nomadic adventures, I find immense joy in building digital products, continuously seeking opportunities to combine my technical expertise and creative flair to craft innovative and user-centric solutions.\n"
 gallery:
   - caption: img1
-    # galleryItem: /img1.jpg
-    galleryItem: https://be.titiktemukita.id/api/files/users/61a68ef1f9d4be7/blob_zi6m2rb5u9.png
+    galleryItem: /avatar.png
   - caption: img3
     galleryItem: /img3.jpg
   - caption: img4

@@ -151,8 +151,7 @@ deskGallery:
   - deskGalleryCaption: desk gallery
     deskGalleryItem: /20231119_154608.jpg
   - deskGalleryCaption: desk gallery
-    # deskGalleryItem: /20231217_114109.jpg
-    deskGalleryItem: https://be.titiktemukita.id/api/files/users/61a68ef1f9d4be7/blob_zi6m2rb5u9.png
+    deskGalleryItem: /img1.jpg
   - deskGalleryCaption: desk gallery
     deskGalleryItem: /img6.jpg
   - deskGalleryCaption: desk gallery
