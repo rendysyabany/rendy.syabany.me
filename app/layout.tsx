@@ -9,17 +9,52 @@ import Script from "next/script";
 // import 'remixicon/fonts/remixicon.css'
 // import { Roboto, Roboto_Serif } from 'next/font/google'
 
-export const metadata = {
-  title: "Rendyansyah Sya'bany",
-  description: "Personal Website & Profile",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://rendy.syabany.com"),
+  title: {
+    default: "Rendyansyah Syabany",
+    template: "%s | Rendyansyah Syabany",
+  },
+  description: "Digital Product Designer & Builder. Specializing in MVP and SaaS.",
+  keywords: ["Digital Product Designer", "Frontend Developer", "Next.js", "React", "UI/UX Design", "Rendyansyah Syabany", "Product Design", "Web Development"],
+  authors: [{ name: "Rendyansyah Syabany", url: "https://rendy.syabany.me" }],
+  creator: "Rendyansyah Syabany",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://rendy.syabany.com",
+    title: "Rendyansyah Syabany",
+    description: "Digital Product Designer & Builder. Specializing in MVP and SaaS.",
+    siteName: "Rendyansyah Syabany",
+    images: [
+      {
+        url: "/og_image_rendy.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Rendyansyah Syabany",
+      },
+    ],
+  },
   twitter: {
     card: "summary_large_image",
-    title: "Personal Website & Profile",
-    description: "Personal Website & Profile",
+    title: "Rendyansyah Syabany",
+    description: "Digital Product Designer & Builder. Specializing in MVP and SaaS.",
     creator: "@rendysyabany",
+    images: ["/og_image_rendy.jpg"],
   },
-  metadataBase: new URL("https://syabany.me"),
-  // themeColor: "#FFF",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default async function RootLayout({
@@ -36,7 +71,7 @@ export default async function RootLayout({
           data-website-id="6148d5fd-cf2e-48bd-9f92-15637afdd1d2"
         ></script> */}
 
-        <link rel="icon" href="/favicon.jpg" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
 
         <link
           rel="stylesheet"

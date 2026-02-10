@@ -79,7 +79,20 @@ export default function FloatingConnectButton() {
                     <X className="h-5 w-5" />
                   </button>
                 </div>
-                <div className="flex flex-col gap-0">
+                <motion.div 
+                  className="flex flex-col gap-0"
+                  initial="hidden"
+                  animate="show"
+                  variants={{
+                    hidden: { opacity: 0 },
+                    show: {
+                      opacity: 1,
+                      transition: {
+                        staggerChildren: 0.05
+                      }
+                    }
+                  }}
+                >
                   {socialLinks.map((social, i) => (
                     <motion.a
                       key={i}
@@ -87,6 +100,10 @@ export default function FloatingConnectButton() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex font-sans items-center gap-4 px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors"
+                      variants={{
+                        hidden: { opacity: 0, x: -10 },
+                        show: { opacity: 1, x: 0 }
+                      }}
                       whileHover={{ x: 5 }}
                     >
                       <img
@@ -97,7 +114,7 @@ export default function FloatingConnectButton() {
                       {social.title}
                     </motion.a>
                   ))}
-                </div>
+                </motion.div>
               </div>
             </motion.div>
           </>

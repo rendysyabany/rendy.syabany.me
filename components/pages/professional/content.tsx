@@ -49,38 +49,53 @@ export default function Content() {
 
   const data = post && post.data;
 
-  // const {
-  //   data: { gallery },
-  // } = gelleryData;
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.2
+      }
+    }
+  };
 
-  const project = [
-    {
-      title: "Coming soon project case study",
-      description: "here ini for project case study description...",
-      category: [
-        {
-          title: "Mobile App",
-        },
-        {
-          title: "Design System",
-        },
-      ],
-      bgColor: "#F9F7E1",
-    },
-    {
-      title: "Coming soon project case study",
-      description: "here ini for project case study description...",
-      category: [
-        {
-          title: "Mobile App",
-        },
-        {
-          title: "Design System",
-        },
-      ],
-      bgColor: "#FFE4E6",
-    },
-  ];
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    show: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 15
+      }
+    }
+  };
+
+  const fadeInVariants = {
+    hidden: { opacity: 0 },
+    show: { 
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const stickyHeaderVariants = {
+    initial: { y: -20, opacity: 0 },
+    animate: { 
+      y: 0, 
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut"
+      }
+    }
+  };
 
   return (
     <>
@@ -95,12 +110,24 @@ export default function Content() {
         </Link>
       </div> */}
 
-      <div className="mx-5 flex flex-col gap-8 pb-10">
-        <div className="sticky top-0 z-20 -mx-5 bg-white/90 px-5 py-4 backdrop-blur-sm">
+      <motion.div 
+        className="mx-5 flex flex-col gap-8 pb-10"
+        initial="hidden"
+        animate="show"
+        variants={containerVariants}
+      >
+        <motion.div 
+          className="sticky top-0 z-20 -mx-5 bg-white/90 px-5 py-4 backdrop-blur-sm"
+          variants={stickyHeaderVariants}
+          initial="initial"
+          animate="animate"
+        >
           <div className="inline-flex h-auto w-full items-center justify-start gap-4">
-            <img
+            <motion.img
               className="h-14 w-14 rounded-full sm:h-16 sm:w-16"
               src={data.avatar}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
             />
             <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
               <div className="self-stretch">
@@ -114,9 +141,9 @@ export default function Content() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-wrap gap-2">
+        <motion.div className="flex flex-wrap gap-2" variants={itemVariants}>
           {data.expertise.map(
             (
               tag: {
@@ -125,54 +152,61 @@ export default function Content() {
               },
               i: Key | null | undefined,
             ) => (
-              <Badge
+              <motion.div
                 key={i}
-                variant="secondary"
-                style={{ backgroundColor: tag.bgColor }}
-                className="font-sans font-medium text-gray-600"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                {tag.title}
-              </Badge>
+                <Badge
+                  variant="secondary"
+                  style={{ backgroundColor: tag.bgColor }}
+                  className="font-sans font-medium text-gray-600 cursor-default"
+                >
+                  {tag.title}
+                </Badge>
+              </motion.div>
             ),
           )}
-        </div>
+        </motion.div>
 
-        <MainMarkdown content={data.about} />
+        <motion.div variants={itemVariants}>
+          <MainMarkdown content={data.about} />
+        </motion.div>
 
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-          <div className="row-span-2">
+        <motion.div className="grid grid-cols-2 gap-2 sm:grid-cols-3" variants={containerVariants}>
+          <motion.div className="row-span-2" variants={itemVariants}>
             <Image
               src={gallery[0].galleryItem}
               alt={gallery[0].caption}
               width={400}
               height={400}
-              className="h-full w-full rounded-xl object-cover"
+              className="h-full w-full rounded-xl object-cover transition-transform duration-300 hover:scale-[1.02]"
             />
-          </div>
+          </motion.div>
           {gallery.slice(1).map((image: ImageData, i: number) => (
-            <div key={i} className="col-span-1 row-span-1">
+            <motion.div key={i} className="col-span-1 row-span-1" variants={itemVariants}>
               <Image
                 src={image.galleryItem}
                 alt={image.caption}
                 width={400}
                 height={400}
-                className="h-full max-h-[160px] w-full rounded-xl object-cover sm:h-[160px]"
+                className="h-full max-h-[160px] w-full rounded-xl object-cover sm:h-[160px] transition-transform duration-300 hover:scale-[1.02]"
               />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
-        <div className="mt-4 mb-0 border-t border-gray-300"></div>
+        <motion.div className="mt-4 mb-0 border-t border-gray-300" variants={fadeInVariants}></motion.div>
 
-        <div className="flex flex-col gap-8">
-          <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
+        <motion.div className="flex flex-col gap-8" variants={containerVariants}>
+          <motion.div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0" variants={itemVariants}>
             <p className="self-stretch font-sans text-xl font-semibold leading-loose text-gray-700">
               {data.productSectionTitle}
             </p>
             <p className="text-sm mt-[-2px] self-stretch font-sans font-normal leading-snug text-gray-500">
               {data.productSectionDescription}
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid h-auto w-full grid-cols-1 items-start justify-start gap-2.5 sm:grid-cols-2">
             {data.productItem.map(
@@ -186,11 +220,14 @@ export default function Content() {
                 },
                 i: Key | null | undefined,
               ) => (
-                <a
+                <motion.a
                   key={i}
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.02, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
                   href={"https://" + product.productItemUrl}
                   target="_blank"
-                  className="flex h-auto w-full min-w-[260px] items-center justify-start gap-4 rounded-xl bg-gray-100 p-4"
+                  className="flex h-auto w-full min-w-[260px] items-center justify-start gap-4 rounded-xl bg-gray-100 p-4 transition-colors"
                   style={{
                     backgroundColor:
                       product.productItemBgColor && product.productItemBgColor,
@@ -218,11 +255,11 @@ export default function Content() {
                       www.{product.productItemUrl}
                     </a> */}
                   </div>
-                </a>
+                </motion.a>
               ),
             )}
           </div>
-        </div>
+        </motion.div>
 
         {/* <div className="my-4 border-t border-gray-300"></div>
 
@@ -331,57 +368,39 @@ export default function Content() {
           </div>
         </div> */}
 
-        <div className="mt-4 mb-0 border-t border-gray-300"></div>
+        <motion.div className="mt-4 mb-0 border-t border-gray-300" variants={fadeInVariants}></motion.div>
 
-        <div className="flex flex-col gap-8">
-          <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
+        <motion.div className="flex flex-col gap-8" variants={containerVariants}>
+          <motion.div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0" variants={itemVariants}>
             <p className="self-stretch font-sans text-xl font-semibold leading-loose text-gray-700">
               {data.deskSectionTitle}
             </p>
             <p className="text-sm mt-[-2px] self-stretch font-sans font-normal leading-snug text-gray-500">
               {data.deskSectionDescription}
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+          <motion.div className="grid grid-cols-2 gap-2 sm:grid-cols-3" variants={containerVariants}>
             {data.deskGallery.map(
               (
                 shot: { deskGalleryCaption: string; deskGalleryItem: any },
                 i: any,
               ) => (
-                <div key={i} className="col-span-1 row-span-1">
+                <motion.div key={i} className="col-span-1 row-span-1" variants={itemVariants}>
                   <AspectRatio className="z-0" ratio={1 / 1}>
                     <Image
                       src={shot.deskGalleryItem}
                       alt={shot.deskGalleryCaption}
-                      className="rounded-xl object-cover"
+                      className="rounded-xl object-cover transition-transform duration-300 hover:scale-[1.02]"
                       fill
                     />
                   </AspectRatio>
-                </div>
+                </motion.div>
               ),
             )}
-          </div>
-
-          {/* <div className="flex w-full justify-center mt-8">
-            <div className="inline-flex h-auto w-fit flex-wrap items-center justify-start gap-4 rounded-2xl bg-neutral-100 p-5">
-              {data.social.map(
-                (soc: { socialUrl: string; socialIcon: any }, i: any) => (
-                  <Link key={i} href={soc.socialUrl}>
-                    <Image
-                      src={soc.socialIcon}
-                      alt={soc.socialUrl}
-                      className="h-10 w-10 object-cover"
-                      width={600}
-                      height={600}
-                    />
-                  </Link>
-                ),
-              )}
-            </div>
-          </div> */}
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </>
   );
 }
