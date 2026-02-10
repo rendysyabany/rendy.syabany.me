@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   description: "Digital Product Designer & Builder. Specializing in MVP and SaaS.",
   keywords: ["Digital Product Designer", "Frontend Developer", "Next.js", "React", "UI/UX Design", "Rendyansyah Syabany", "Product Design", "Web Development"],
-  authors: [{ name: "Rendyansyah Syabany", url: "https://rendy.syabany.me" }],
+  authors: [{ name: "Rendyansyah Syabany", url: "https://rendy.syabany.com" }],
   creator: "Rendyansyah Syabany",
   openGraph: {
     type: "website",
