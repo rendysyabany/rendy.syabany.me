@@ -96,20 +96,22 @@ export default function Content() {
       </div> */}
 
       <div className="mx-5 flex flex-col gap-8 pb-10">
-        <div className="inline-flex h-auto w-full items-center justify-start gap-4">
-          <img
-            className="h-14 w-14 rounded-full sm:h-16 sm:w-16"
-            src={data.avatar}
-          />
-          <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
-            <div className="self-stretch">
-              <p className="text-md font-sans font-semibold leading-loose text-gray-700 sm:text-xl">
-                {data.firstName}{" "}
-                <span className="font-light">{data.lastName}</span>
-              </p>
-            </div>
-            <div className="font-sans mt-[-2px] sm:mt-[2px] self-stretch text-[13px] font-normal leading-normal text-gray-500 sm:text-md">
-              {data.description}
+        <div className="sticky top-0 z-20 -mx-5 bg-white/90 px-5 py-4 backdrop-blur-sm">
+          <div className="inline-flex h-auto w-full items-center justify-start gap-4">
+            <img
+              className="h-14 w-14 rounded-full sm:h-16 sm:w-16"
+              src={data.avatar}
+            />
+            <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
+              <div className="self-stretch">
+                <p className="text-md font-sans font-semibold leading-loose text-gray-700 sm:text-xl">
+                  {data.firstName}{" "}
+                  <span className="font-light">{data.lastName}</span>
+                </p>
+              </div>
+              <div className="font-sans mt-[-2px] sm:mt-[2px] self-stretch text-[13px] font-normal leading-normal text-gray-500 sm:text-md">
+                {data.description}
+              </div>
             </div>
           </div>
         </div>

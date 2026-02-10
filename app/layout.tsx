@@ -1,5 +1,5 @@
 import Footer from "@/components/layout/footer";
-import NavBar from "@/components/layout/navbar";
+import FloatingConnectButton from "@/components/ui/floating-connect";
 import { Analytics } from "@vercel/analytics/react";
 import cx from "classnames";
 import { Suspense } from "react";
@@ -94,10 +94,8 @@ export default async function RootLayout({
         )}
       >
         {/* <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" /> */}
-        <Suspense fallback="...">
-          <NavBar />
-        </Suspense>
-        <main style={{ minHeight: "calc(100vh - 62px)"}} className="flex w-full flex-col items-center pb-6 pt-24">
+        <FloatingConnectButton />
+        <main style={{ minHeight: "calc(100vh - 62px)"}} className="flex w-full flex-col items-center pb-6 pt-6">
           <div className="flex w-full max-w-[720px]">{children}</div>
         </main>
         <Footer />
