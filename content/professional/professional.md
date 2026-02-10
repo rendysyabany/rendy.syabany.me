@@ -1,5 +1,5 @@
 ---
-avatar: https://be.titiktemukita.id/api/files/users/61a68ef1f9d4be7/blob_zi6m2rb5u9.png
+avatar: /avatar.png
 firstName: Rendyansyah
 lastName: Sya’bany
 description: Crafting Emphaty-Driven Products
