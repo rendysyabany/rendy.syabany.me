@@ -96,7 +96,6 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
             <motion.img
               className="h-14 w-14 rounded-full sm:h-16 sm:w-16"
               src={data.avatar}
-              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             />
             <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
@@ -150,7 +149,7 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
               alt={gallery[0].caption}
               width={400}
               height={400}
-              className="h-full w-full rounded-xl object-cover transition-transform duration-300 hover:scale-[1.02]"
+              className="h-full w-full rounded-xl object-cover transition-transform duration-300"
             />
           </motion.div>
           {gallery.slice(1).map((image: ImageData, i: number) => (
@@ -160,7 +159,7 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
                 alt={image.caption}
                 width={400}
                 height={400}
-                className="h-full max-h-[160px] w-full rounded-xl object-cover sm:h-[160px] transition-transform duration-300 hover:scale-[1.02]"
+                className="h-full max-h-[160px] w-full rounded-xl object-cover sm:h-[160px] transition-transform duration-300"
               />
             </motion.div>
           ))}
@@ -248,7 +247,7 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
                     <Image
                       src={shot.deskGalleryItem}
                       alt={shot.deskGalleryCaption}
-                      className="rounded-xl object-cover transition-transform duration-300 hover:scale-[1.02]"
+                      className="rounded-xl object-cover transition-transform duration-300"
                       fill
                     />
                   </AspectRatio>
