@@ -40,7 +40,7 @@ export default function FloatingConnectButton() {
       <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
         <motion.button
           onClick={() => setShowSocial(!showSocial)}
-          className="bg-white text-slate-800 shadow-lg border border-gray-200 px-6 py-2.5 rounded-full flex items-center gap-2 hover:bg-gray-50 transition-colors"
+          className="bg-slate-700 text-white shadow-lg border border-late-300 px-6 py-2.5 rounded-full flex items-center gap-2 hover:bg-slate-800 transition-colors"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           initial={{ y: 100, opacity: 0 }}
