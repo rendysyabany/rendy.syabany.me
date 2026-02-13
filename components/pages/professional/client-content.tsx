@@ -324,13 +324,13 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
               className="relative -mx-4 mt-4 flex w-[calc(100%+2rem)] items-center justify-center overflow-hidden sm:-mx-0 sm:w-full sm:rounded-2xl"
               variants={itemVariants}
             >
-              <Marquee pauseOnHover className="[--duration:50s] py-4">
+              <Marquee pauseOnHover className="[--duration:30s] py-4">
                  {data?.clients?.map((client: any, i: number) => (
                    <div key={i} className="mx-4 flex items-center justify-center">
                       <img
                         src={client.logo}
                         alt={client.name}
-                        className="w-20 h-auto object-contain opacity-50 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                        className="w-[90px] h-auto object-contain opacity-50 grayscale transition-all hover:opacity-100 hover:grayscale-0"
                       />
                     </div>
                  ))}
