@@ -330,7 +330,7 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
                       <img
                         src={client.logo}
                         alt={client.name}
-                        className="w-[90px] h-auto object-contain opacity-50 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                        className="w-[90px] h-auto object-contain opacity-75 grayscale transition-all hover:opacity-100 hover:grayscale-0"
                       />
                     </div>
                  ))}
