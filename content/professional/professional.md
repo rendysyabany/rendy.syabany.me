@@ -40,7 +40,7 @@ productItem:
     productItemUrl: titiktemukita.id
     productItemBgColor: '#F8F4E8'
     productDescription: "Family Productivity & Home Education Platform"
-    productScreenshot: /rendy/shots/aqua.webp
+    productScreenshot: https://titiktemukita.id/ss-home-edu-feature.png
   # - productItemLogo: /Syabany-HQ-Logo.jpg
   #   productItemName: Syabany Labs
   #   productItemUrl: syabany.com
@@ -52,13 +52,13 @@ productItem:
     productItemUrl: bahagia.day
     productItemBgColor: '#FFEBED'
     productDescription: "Muslim Wedding App"
-    productScreenshot: /rendy/shots/beautieslife.webp
-  - productItemLogo: /ketumbar_logo.jpg
+    productScreenshot: https://bahagia.day/images/bahagia-invitation.png
+  - productItemLogo: /adha_tracker.png
     productItemName: Qadha & Fidyah Tracker
     productItemUrl: ramadan.titiktemukita.id
     productItemBgColor: '#EAF8F4'
     productDescription: "Kelola hutang puasa dan pembayaran fidyah"
-    productScreenshot: /rendy/shots/dashboardstore.webp
+    productScreenshot: https://be.titiktemukita.id/api/files/pbc_3633026341/6pidjax9xkfxdux/qadha_tracker_cya07q6c6l.png
   # - productItemLogo: /synapse-kit.png
   #   productItemName: Synapse Kits
   #   productItemUrl: synapse.syabany.com
