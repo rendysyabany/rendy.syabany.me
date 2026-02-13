@@ -207,7 +207,7 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
 
         <motion.div className="flex flex-col gap-8" variants={containerVariants}>
           <motion.div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0" variants={itemVariants}>
-            <p className="self-stretch font-sans text-xl font-semibold leading-loose text-gray-700">
+            <p className="self-stretch font-sans text-2xl md:text-4xl font-bold leading-loose text-gray-700">
               {data?.productSectionTitle}
             </p>
             <p className="text-sm mt-[-2px] self-stretch font-sans font-normal leading-snug text-gray-500">
@@ -300,7 +300,7 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
         <motion.div className="flex flex-col gap-8" variants={containerVariants}>
           <div className="grid grid-cols-1 gap-6">
             <motion.div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0" variants={itemVariants}>
-              <p className="self-stretch font-sans text-xl font-semibold leading-loose text-gray-700">
+              <p className="self-stretch font-sans text-2xl md:text-4xl font-semibold leading-loose text-gray-700">
                 {data?.clientSectionTitle}
               </p>
               <p className="text-sm mt-[-2px] self-stretch font-sans font-normal leading-snug text-gray-500">
