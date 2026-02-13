@@ -131,18 +131,18 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
           <div className="inline-flex h-auto w-full items-center justify-start gap-4">
             <motion.img
               className="h-14 w-14 rounded-full sm:h-16 sm:w-16"
-              src={data.avatar}
+              src={data?.avatar}
               transition={{ duration: 0.2 }}
             />
             <div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0">
               <div className="self-stretch">
                 <p className="text-md font-sans font-semibold leading-loose text-gray-700 sm:text-xl">
-                  {data.firstName}{" "}
-                  <span className="font-light">{data.lastName}</span>
+                  {data?.firstName}{" "}
+                  <span className="font-light">{data?.lastName}</span>
                 </p>
               </div>
               <div className="font-sans mt-[-2px] sm:mt-[2px] self-stretch text-[13px] font-normal leading-normal text-gray-500 sm:text-md">
-                {data.description}
+                {data?.description}
               </div>
             </div>
           </div>
@@ -369,15 +369,15 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
         <motion.div className="flex flex-col gap-8" variants={containerVariants}>
           <motion.div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0" variants={itemVariants}>
             <p className="self-stretch font-sans text-xl font-semibold leading-loose text-gray-700">
-              {data.deskSectionTitle}
+              {data?.deskSectionTitle}
             </p>
             <p className="text-sm mt-[-2px] self-stretch font-sans font-normal leading-snug text-gray-500">
-              {data.deskSectionDescription}
+              {data?.deskSectionDescription}
             </p>
           </motion.div>
 
           <motion.div className="grid grid-cols-2 gap-2 sm:grid-cols-3" variants={containerVariants}>
-            {data.deskGallery.map(
+            {data?.deskGallery?.map(
               (
                 shot: { deskGalleryCaption: string; deskGalleryItem: string },
                 i: number,
