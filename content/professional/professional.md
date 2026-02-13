@@ -34,7 +34,7 @@ resumeUrl: >-
   https://drive.google.com/file/d/12whUX_fX5GAs4fVSlhUCOsvyJr0u46Kp/view?usp=sharing
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
-# productItem:
+productItem:
   - productItemLogo: /titiktemukita_logo.svg
     productItemName: Titik Temu Kita
     productItemUrl: titiktemukita.id
