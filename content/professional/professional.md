@@ -93,18 +93,18 @@ clients:
   - name: RRQ Mabar
     logo: https://media.syabany.com/clients/logo_rrq_mabar.jpg
 serviceItem:
-  - title: User Research & Data Collection
-    description: Mengumpulkan data dan insight pengguna untuk membantu membentuk design decisions dan menjawab kebutuhan user.
-  - title: Usability Audit
-    description: Mengevaluasi desain yang sudah ada untuk menemukan dan menyelesaikan usability issues.
-  - title: Design Strategy
-    description: Menyusun dan merencanakan design strategy, termasuk wireframes dan prototypes, sebagai panduan proses development.
-  - title: Process Optimization
-    description: Merapikan dan mengoptimalkan proses design dan development supaya lebih efisien dan efektif.
+  - title: User Research & Data Intelligence
+    description: Synthesizing deep user insights to drive data-backed design decisions and ensure every product feature solves a high-value user pain point.
+  - title: Usability Audit & Optimization
+    description: Conducting rigorous evaluations of existing interfaces to identify friction points and eliminate usability bottlenecks, ensuring a seamless end-to-end experience.
+  - title: Product Design Strategy
+    description: Architecting robust design frameworks from high-fidelity wireframes to interactive prototypes that serve as the strategic blueprint for rapid, scalable development.
+  - title: Process Engineering
+    description: Streamlining the design-to-development pipeline to remove operational silos, maximizing efficiency and speed-to-market without compromising quality.
   - title: Technology Integration
-    description: Mengimplementasikan dan mengintegrasikan tools dan technologies yang dibutuhkan untuk mendukung proses design dan development.
-  - title: Continuous Iteration
-    description: Menyempurnakan dan meningkatkan MVP secara berkelanjutan lewat testing dan user feedback.
+    description: Deploying and orchestrating cutting-edge tools and tech stacks to create a unified ecosystem that empowers both design and engineering teams.
+  - title: Continuous Product Iteration
+    description: Evolving MVPs through constant testing and real-world feedback loops to achieve product-market fit and long-term technical excellence.
 gearSectionTitle: Tech Stack
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
