@@ -53,7 +53,7 @@ productItem:
     productItemBgColor: '#FFEBED'
     productDescription: "Muslim Wedding App"
     productScreenshot: /ss-bahagia-invitation.png
-  - productItemLogo: /adha_tracker.png
+  - productItemLogo: /qadha_tracker.png
     productItemName: Qadha & Fidyah Tracker
     productItemUrl: ramadan.titiktemukita.id
     productItemBgColor: '#EAF8F4'

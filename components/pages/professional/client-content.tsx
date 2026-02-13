@@ -234,7 +234,7 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
                       product.productItemBgColor && product.productItemBgColor,
                   }}
                 >
-                  <div className="relative w-full overflow-hidden pt-4 px-4">
+                  <div className="relative w-full overflow-hidden p-4">
                     <AspectRatio ratio={4 / 3} className="relative w-full overflow-hidden rounded-xl border border-black/5 shadow-sm transition-all duration-500">
                       {product.productScreenshot ? (
                         <Image
@@ -261,7 +261,7 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
                     <div className="flex w-full items-start justify-between">
                       <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white p-1.5 shadow-sm ring-1 ring-black/5">
                         <Image
-                          className="h-full w-full object-contain"
+                          className="h-full w-full object-contain rounded-md"
                           src={product.productItemLogo}
                           alt={product.productItemName}
                           width={40}
@@ -320,47 +320,44 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
               </div>
             </motion.div>
 
-            <div className="grid grid-cols-2 gap-4 items-center sm:grid-cols-3 md:grid-cols-4 sm:gap-8">
-              {data?.clients?.map((client: any, i: number) => (
-                <motion.div 
-                  key={i} 
-                  className="mx-auto flex w-full items-center justify-center p-4"
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <Image
-                    src={client.logo}
-                    alt={client.name}
-                    width={120}
-                    height={60}
-                    className="aspect-[2/1] w-full max-w-[120px] object-contain opacity-80 grayscale transition-all hover:opacity-100 hover:grayscale-0"
-                  />
-                </motion.div>
-              ))}
-            </div>
+            <motion.div 
+              className="relative -mx-4 mt-4 flex w-[calc(100%+2rem)] items-center justify-center overflow-hidden sm:-mx-0 sm:w-full sm:rounded-2xl"
+              variants={itemVariants}
+            >
+              <Marquee pauseOnHover className="[--duration:40s] py-8">
+                {data?.clients?.map((client: any, i: number) => (
+                  <div key={i} className="mx-8 flex items-center justify-center">
+                    <img
+                      src={client.logo}
+                      alt={client.name}
+                      className="h-10 w-auto object-contain opacity-50 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                    />
+                  </div>
+                ))}
+              </Marquee>
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-white sm:rounded-l-2xl"></div>
+              <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-white sm:rounded-r-2xl"></div>
+            </motion.div>
           </div>
 
           <motion.div 
-            className="relative -mx-4 mt-4 flex h-full w-[calc(100%+2rem)] flex-col items-center justify-center overflow-x-auto pb-0 no-scrollbar sm:-mx-0 sm:w-full sm:rounded-2xl"
-            variants={itemVariants}
+            className="grid grid-cols-1 gap-4 sm:grid-cols-2"
+            variants={containerVariants}
           >
-            <Marquee pauseOnHover className="[--duration:40s] py-4">
-              {data?.serviceItem?.map((service: any, i: number) => (
-                <div 
-                  key={i} 
-                  className="mx-4 flex h-full w-[280px] flex-col gap-3 rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all sm:w-[320px]"
-                >
-                  <p className="font-sans text-lg font-bold text-gray-800">
-                    {service.title}
-                  </p>
-                  <p className="font-sans text-sm leading-relaxed text-gray-500">
-                    {service.description}
-                  </p>
-                </div>
-              ))}
-            </Marquee>
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-white sm:rounded-l-2xl"></div>
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-white sm:rounded-r-2xl"></div>
+            {data?.serviceItem?.map((service: any, i: number) => (
+              <motion.div 
+                key={i} 
+                variants={itemVariants}
+                className="flex flex-col gap-2 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:border-gray-200"
+              >
+                <p className="font-sans text-base font-bold text-gray-800">
+                  {service.title}
+                </p>
+                <p className="font-sans text-[13px] leading-relaxed text-gray-500">
+                  {service.description}
+                </p>
+              </motion.div>
+            ))}
           </motion.div>
         </motion.div>
 
