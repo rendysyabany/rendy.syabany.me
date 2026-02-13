@@ -327,12 +327,12 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
               <Marquee pauseOnHover className="[--duration:40s] py-8">
                  {data?.clients?.map((client: any, i: number) => (
                    <div key={i} className="mx-8 flex items-center justify-center">
-                     <img
-                       src={client.logo}
-                       alt={client.name}
-                       className="h-5 w-auto object-contain opacity-50 grayscale transition-all hover:opacity-100 hover:grayscale-0"
-                     />
-                   </div>
+                      <img
+                        src={client.logo}
+                        alt={client.name}
+                        className="w-16 h-auto object-contain opacity-50 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                      />
+                    </div>
                  ))}
                </Marquee>
               <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-white sm:rounded-l-2xl"></div>
