@@ -5,7 +5,7 @@ const nextConfig = {
   swcMinify: true,
   optimizeFonts: false,
   images: {
-    domains: ["lh3.googleusercontent.com", "vercel.com", "picsum.photos", "pbs.twimg.com", "be.syabany.com", "syabany-pb.fly.dev"],
+    domains: ["lh3.googleusercontent.com", "vercel.com", "picsum.photos", "pbs.twimg.com", "be.syabany.com", "syabany-pb.fly.dev", "media.syabany.com"],
   },
   eslint: {ignoreDuringBuilds: true},
   async headers() {

@@ -6,8 +6,8 @@ description: Crafting Emphaty-Driven Products
 expertise:
   - title: MVP Enabler
     bgColor: '#F6F2E9'
-  # - title: Indie-Maker
-  #   bgColor: '#DCEAFA'
+  - title: Product Builder
+    bgColor: '#DCEAFA'
   - title: Usability Analyst
     bgColor: '#EAF8F4'
   # - title: Figma/Penpot Expert
@@ -16,11 +16,11 @@ expertise:
     bgColor: '#FFE8E8'
   - title: Design Thinker
     bgColor: '#EDF1F0'
-  - title: Project Management
+  - title: Project Manager
     bgColor: '#EAEBF1'
   - title: Productivity Explorer
     bgColor: '#E0EEE0'
-about: "I thrive on transforming ideas into tangible solutions, blending aesthetics with functionality to create products that delight users.\L\n\nThe empathy-driven approach allows me to create products that truly resonate with the end-users, making a positive impact on their lives. I am dedicated to human-centered design principles, where the user's experience takes center stage in every decision I make."
+about: "I thrive on transforming ideas into tangible solutions, blending aesthetics with functionality to create products that delight users.\n\nThe empathy-driven approach allows me to create products that truly resonate with the end-users, making a positive impact on their lives. I am dedicated to human-centered design principles, where the user's experience takes center stage in every decision I make."
 social:
   - socialUrl: 'mailto:rendy@syabany.com'
     socialIcon: /envelope.png
@@ -34,39 +34,77 @@ resumeUrl: >-
   https://drive.google.com/file/d/12whUX_fX5GAs4fVSlhUCOsvyJr0u46Kp/view?usp=sharing
 productSectionTitle: My own beloved products
 productSectionDescription: 'Crafted with passion, shared with pride.'
-productItem:
+# productItem:
   - productItemLogo: /titiktemukita_logo.svg
     productItemName: Titik Temu Kita
     productItemUrl: titiktemukita.id
     productItemBgColor: '#F8F4E8'
     productDescription: "Family Productivity & Home Education Platform"
-  - productItemLogo: /Syabany-HQ-Logo.jpg
-    productItemName: Syabany Labs
-    productItemUrl: syabany.com
-    productItemBgColor: '#EBF4FA'
-    productDescription: "Idea to MVP-Ready in weeks, not months"
+    productScreenshot: /rendy/shots/aqua.webp
+  # - productItemLogo: /Syabany-HQ-Logo.jpg
+  #   productItemName: Syabany Labs
+  #   productItemUrl: syabany.com
+  #   productItemBgColor: '#EBF4FA'
+  #   productDescription: "Idea to MVP-Ready in weeks, not months"
+  #   productScreenshot: /rendy/shots/goorita.webp
   - productItemLogo: /bahagia-logo-avatar.png
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
     productItemBgColor: '#FFEBED'
     productDescription: "Muslim Wedding App"
+    productScreenshot: /rendy/shots/beautieslife.webp
   - productItemLogo: /ketumbar_logo.jpg
     productItemName: Qadha & Fidyah Tracker
     productItemUrl: ramadan.titiktemukita.id
     productItemBgColor: '#EAF8F4'
     productDescription: "Kelola hutang puasa dan pembayaran fidyah"
-
-  # - productItemLogo: /Syabany_Logo_Only_min.png
-  #   productItemName: Syabany Labs
-  #   productItemUrl: labs.syabany.com
-  #   productItemBgColor: '#DCFCE7'
+    productScreenshot: /rendy/shots/dashboardstore.webp
   # - productItemLogo: /synapse-kit.png
   #   productItemName: Synapse Kits
   #   productItemUrl: synapse.syabany.com
-  # - productItemLogo: /daund-logo.jpg
+  #   productItemBgColor: '#F5F5F7'
+  #   productDescription: "Premium Design System for Figma & Penpot"
+  #   productScreenshot: /rendy/shots/exera.webp
+  # - productItemLogo: /daund-logo.svg
   #   productItemName: Daund ID
   #   productItemUrl: instagram.com/daund.id
   #   productItemBgColor: '#EAF8F4'
+  #   productDescription: "Sustainable & Ethical Fashion Brand"
+  #   productScreenshot: /rendy/shots/rinastore.webp
+
+clientSectionTitle: Featured Clients
+clientSectionDescription: It’s so exciting to partner with and be trusted by innovative startups 😊
+clientHeroImage: https://media.syabany.com/hub_2.webp
+clients:
+  - name: Tukang
+    logo: https://media.syabany.com/clients/logo_tukang.png
+  - name: Propertree
+    logo: https://media.syabany.com/clients/logo_propertree.svg
+  - name: Sharp
+    logo: https://media.syabany.com/clients/logo_sharp.svg
+  - name: Rekadia
+    logo: https://media.syabany.com/clients/logo_rekadia.png
+  - name: Silversea
+    logo: https://media.syabany.com/clients/logo_silversea.png
+  - name: Sakupos
+    logo: https://media.syabany.com/clients/logo_sakupos.jpg
+  - name: Hobiholidays
+    logo: https://media.syabany.com/clients/logo_hobiholidays.jpg
+  - name: RRQ Mabar
+    logo: https://media.syabany.com/clients/logo_rrq_mabar.jpg
+serviceItem:
+  - title: User Research & Data Collection
+    description: Mengumpulkan data dan insight pengguna untuk membantu membentuk design decisions dan menjawab kebutuhan user.
+  - title: Usability Audit
+    description: Mengevaluasi desain yang sudah ada untuk menemukan dan menyelesaikan usability issues.
+  - title: Design Strategy
+    description: Menyusun dan merencanakan design strategy, termasuk wireframes dan prototypes, sebagai panduan proses development.
+  - title: Process Optimization
+    description: Merapikan dan mengoptimalkan proses design dan development supaya lebih efisien dan efektif.
+  - title: Technology Integration
+    description: Mengimplementasikan dan mengintegrasikan tools dan technologies yang dibutuhkan untuk mendukung proses design dan development.
+  - title: Continuous Iteration
+    description: Menyempurnakan dan meningkatkan MVP secara berkelanjutan lewat testing dan user feedback.
 gearSectionTitle: Tech Stack
 gearSectionDescription: Empower with the technology stack I use
 gearItem:
@@ -140,7 +178,7 @@ gearItem:
     gearItemName: Umami.is
     gearItemDescription: Analytics
 deskSectionTitle: Desk Activities
-deskSectionDescription: "Checkout my desk-setup gallery below \U0001F60A"
+deskSectionDescription: "Checkout my desk-setup gallery below 😊"
 deskGallery:
   - deskGalleryCaption: desk gallery
     deskGalleryItem: /20230903_093715.jpg
