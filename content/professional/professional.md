@@ -32,8 +32,8 @@ social:
     socialIcon: /ic-telegram.png
 resumeUrl: >-
   https://drive.google.com/file/d/12whUX_fX5GAs4fVSlhUCOsvyJr0u46Kp/view?usp=sharing
-productSectionTitle: My own beloved products
-productSectionDescription: 'Crafted with passion, shared with pride.'
+productSectionTitle: Dream. Build. Ship.
+productSectionDescription: 'Crafted with passion, shared with value.'
 productItem:
   - productItemLogo: /titiktemukita_logo.svg
     productItemName: Titik Temu Kita
