@@ -235,7 +235,7 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
                   }}
                 >
                   <div className="relative w-full overflow-hidden pt-4 px-4">
-                    <div className="relative h-40 w-full overflow-hidden rounded-xl border border-black/5 shadow-sm transition-all duration-500">
+                    <AspectRatio ratio={4 / 3} className="relative w-full overflow-hidden rounded-xl border border-black/5 shadow-sm transition-all duration-500">
                       {product.productScreenshot ? (
                         <Image
                           src={product.productScreenshot}
@@ -254,7 +254,7 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
                           />
                         </div>
                       )}
-                    </div>
+                    </AspectRatio>
                   </div>
 
                   <div className="flex w-full flex-col gap-4 p-6">
