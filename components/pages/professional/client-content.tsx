@@ -299,14 +299,14 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
 
         <motion.div className="flex flex-col gap-8" variants={containerVariants}>
           <div className="grid grid-cols-1 gap-6">
-            <motion.div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0" variants={itemVariants}>
+            {/* <motion.div className="inline-flex shrink grow basis-0 flex-col items-start justify-start gap-0" variants={itemVariants}>
               <p className="self-stretch font-sans text-2xl md:text-4xl font-semibold leading-loose text-gray-700">
                 {data?.clientSectionTitle}
               </p>
               <p className="text-sm mt-[-2px] self-stretch font-sans font-normal leading-snug text-gray-500">
                 {data?.clientSectionDescription}
               </p>
-            </motion.div>
+            </motion.div> */}
             <motion.div className="space-y-4" variants={itemVariants}>
               <div className="relative h-[200px] w-full overflow-hidden rounded-3xl sm:h-[300px]">
                 {data?.clientHeroImage && (
