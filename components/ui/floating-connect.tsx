@@ -40,14 +40,13 @@ export default function FloatingConnectButton() {
       <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
         <motion.button
           onClick={() => setShowSocial(!showSocial)}
-          className="bg-gray-700 text-white shadow-lg border border-gray-400 px-6 py-2.5 rounded-full flex items-center gap-2 hover:bg-gray-800 transition-colors"
-          whileHover={{ scale: 1.05 }}
+          className="bg-gray-700 text-white shadow-lg border border-gray-400 px-6 py-2.5 rounded-full flex items-center gap-2 hover:bg-gray-800 transition-colors animate-bounce"
           whileTap={{ scale: 0.95 }}
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
         >
-          <span className="font-sans font-medium text-sm">Connect</span>
+          <span className="font-sans font-medium text-sm">Connect with me</span>
         </motion.button>
       </div>
 

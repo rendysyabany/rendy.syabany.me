@@ -4,10 +4,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Badge } from "@/components/ui/badge";
 import MainMarkdown from "@/components/ui/markdown";
 import Image from "next/image";
-import Link from "next/link";
-import { Key } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
 import Marquee from "@/components/magicui/marquee";
 
 interface ImageData {
@@ -215,7 +212,7 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
             </p>
           </motion.div>
 
-          <div className="grid h-auto w-full grid-cols-1 items-stretch justify-start gap-4 sm:grid-cols-2">
+          <div className="grid h-auto w-full grid-cols-1 items-stretch justify-start gap-4 sm:grid-cols-2 lg:grid-cols-3 [grid-auto-rows:1fr]">
             {data?.productItem?.map(
               (
                 product: Product,
@@ -228,14 +225,14 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
                   whileTap={{ scale: 0.98 }}
                   href={"https://" + product.productItemUrl}
                   target="_blank"
-                  className="group relative flex h-full w-full min-w-[260px] flex-col items-start justify-between gap-0 overflow-hidden rounded-2xl border border-black/5 p-0 transition-all hover:border-black/20 hover:shadow-sm"
+                  className="group relative flex h-full w-full flex-col items-start justify-between gap-0 overflow-hidden rounded-2xl border border-black/5 p-0 transition-all hover:border-black/20 hover:shadow-sm"
                   style={{
                     backgroundColor:
                       product.productItemBgColor && product.productItemBgColor,
                   }}
                 >
-                  <div className="relative w-full overflow-hidden p-4">
-                    <AspectRatio ratio={4 / 3} className="relative w-full overflow-hidden rounded-xl border border-black/5 shadow-sm transition-all duration-500">
+                  <div className="relative w-full overflow-hidden">
+                    <AspectRatio ratio={4 / 3} className="relative w-full overflow-hidden">
                       {product.productScreenshot ? (
                         <Image
                           src={product.productScreenshot}
@@ -257,34 +254,29 @@ export default function ClientContent({ data, gallery }: ClientContentProps) {
                     </AspectRatio>
                   </div>
 
-                  <div className="flex w-full flex-col gap-4 p-6">
-                    <div className="flex w-full items-start justify-between">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white p-1.5 shadow-sm ring-1 ring-black/5">
+                  <div className="flex w-full flex-col gap-3 p-6">
+                    <div className="flex w-full items-center gap-3">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-white ring-1 ring-black/5">
                         <Image
-                          className="h-full w-full object-contain rounded-md"
+                          className="h-full w-full object-contain rounded-lg"
                           src={product.productItemLogo}
                           alt={product.productItemName}
-                          width={40}
-                          height={40}
+                          width={30}
+                          height={30}
                         />
                       </div>
-                      <div className="rounded-full bg-black/5 p-1.5 transition-all group-hover:bg-black group-hover:text-white">
-                        <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                      </div>
-                    </div>
-
-                    <div className="flex flex-col gap-1.5">
-                      <div className="text-lg font-sans font-bold leading-tight text-gray-900 group-hover:text-black">
+                      <div className="text-md font-sans font-bold leading-tight text-gray-900 group-hover:text-black">
                         {product.productItemName}
                       </div>
-                      <p className="text-[13px] font-sans font-normal leading-relaxed text-gray-600 line-clamp-2">
-                        {product.productDescription}
-                      </p>
                     </div>
 
+                    <p className="text-[13px] font-sans font-normal leading-relaxed text-gray-600 line-clamp-2">
+                      {product.productDescription}
+                    </p>
+
                     <div className="mt-1 flex items-center gap-2">
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400 group-hover:text-gray-900 transition-colors">
-                        Launch App
+                      <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-gray-400 group-hover:text-gray-900 transition-colors">
+                        {product.productItemUrl}
                       </span>
                       <div className="h-[1px] w-6 bg-gray-200 transition-all group-hover:w-10 group-hover:bg-gray-900" />
                     </div>

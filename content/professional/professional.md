@@ -50,11 +50,11 @@ productItem:
   - productItemLogo: /bahagia-logo-avatar.png
     productItemName: Bahagia.day
     productItemUrl: bahagia.day
-    productItemBgColor: '#FFEBED'
-    productDescription: "Muslim Wedding App"
+    productItemBgColor: '#FFEEF0'
+    productDescription: "Muslim Wedding App. Manage your wedding with ease."
     productScreenshot: /ss-bahagia-invitation.png
   - productItemLogo: /qadha_tracker.png
-    productItemName: Qadha & Fidyah Tracker
+    productItemName: Qadha & Fidyah
     productItemUrl: ramadan.titiktemukita.id
     productItemBgColor: '#EAF8F4'
     productDescription: "Kelola hutang puasa dan pembayaran fidyah"
